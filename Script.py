@@ -104,7 +104,8 @@ ID - <code>{}</code>
 Name - {}
 """
 
-    START_TXT = """Hay , I'm Powerful <a href=https://t.me/{}>{}</a>, 😍 Bot You Can Use Me As A Auto-filter in Your Group ....
+    START_TXT = """Hay , <a href=https://t.me/{}>{}</a>, I'm Powerful Auto-Filter Bot 
+😎 You Can Use Me As A Auto-filter in Your Group ....
 
 Its Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provide Movies There...😎
 
