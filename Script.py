@@ -104,12 +104,13 @@ ID - <code>{}</code>
 Name - {}
 """
 
-    START_TXT = """Hay {},
-I'm Powerful <a href=https://t.me/{}>{}</a>,  Auto-Filter Bot 
+    START_TXT = """<b>Hay {},
+
+I'm ⚡️ Powerful Auto-Filter Bot... 
 😎 You Can Use Me As A Auto-filter in Your Group ....
 
 Its Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provide Movies There...😎
 
 ⚠️ More Help Check Help Button Below
 
-©️Mantained Bʏ  @sahid_malik"""
+©️Mantained Bʏ  @sahid_malik"""</b>
