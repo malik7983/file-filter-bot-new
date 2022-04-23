@@ -8,9 +8,9 @@ class script(object):
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
 ✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
-    SOURCE_TXT = """<b>NOTE:</b>9
-- Eva Maria is a open source project. 
-- Source 👉 <b><a href=https://t.me/malik_bots>CLICK HERE</a>
+    SOURCE_TXT = """<b>NOTE:</b>
+- <b>Eva Maria is a open source project. 
+- Source 👉 <b><a href=https://t.me/malik_bots>CLICK HERE</a></b>
 
 <b>DEVS:</b>
 - <a href=https://t.me/sahid_malik>Sahid malik</a>"""
