@@ -21,12 +21,10 @@ BATCH_FILES = {}
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
-        buttons = [
-            [
-                InlineKeyboardButton('♻️Updates Channel♻️', url='https://t.me/m_house786'),
-            ],[
+        buttons = [[
+            InlineKeyboardButton('♻️Updates Channel♻️', url='https://t.me/m_house786'),
             InlineKeyboardButton('⚡️Join My group 🌷', url='https://t.me/+gXuMKXOWm1UyOTdl')
-            [
+            ],[
                 InlineKeyboardButton('❇️ Help ❇️', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
