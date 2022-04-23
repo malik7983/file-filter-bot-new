@@ -10,7 +10,7 @@ class script(object):
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
     SOURCE_TXT = """<b>NOTE:</b>9
 - Eva Maria is a open source project. 
-- Source  <a href=https://t.me/sahid_nalik>Sahid malik</a>
+- Source 👉 <b><a href=https://t.me/malik_bots>CLICK HERE</a>
 
 <b>DEVS:</b>
 - <a href=https://t.me/sahid_malik>Sahid malik</a>"""
