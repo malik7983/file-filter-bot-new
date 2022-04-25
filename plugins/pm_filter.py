@@ -646,6 +646,7 @@ async def auto_filter(client, msg, spoll=False):
             [
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                [
                 InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots')
                 ),
             ]
@@ -657,6 +658,7 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton(
                     text=f"{file.file_name}",
                     callback_data=f'{pre}#{file.file_id},
+                [
                 InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots')
                 ),
                 InlineKeyboardButton(
