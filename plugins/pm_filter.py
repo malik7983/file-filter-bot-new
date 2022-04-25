@@ -649,8 +649,7 @@ async def auto_filter(client, msg, spoll=False):
                 ),
                 InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots')
                 ),   
-            ],
-            [
+            ]
             for file in files
         ]
     else:
@@ -662,8 +661,7 @@ async def auto_filter(client, msg, spoll=False):
                 ),
                 InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots')
                 ),
-            ],
-            [
+            ]
                 InlineKeyboardButton(
                     text=f"{get_size(file.file_size)}",
                     callback_data=f'{pre}_#{file.file_id}',
