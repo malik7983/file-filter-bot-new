@@ -344,7 +344,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
                                                        file_size='' if size is None else size,
                                                        file_caption='' if f_caption is None else f_caption)
-
             except Exception as e:
                 logger.exception(e)
             f_caption = f_caption
@@ -643,22 +642,22 @@ async def auto_filter(client, msg, spoll=False):
         search, files, offset, total_results = spoll
     pre = 'filep' if settings['file_secure'] else 'file'
     if settings["button"]:
-        btn = [
+        buttons = [[
             [
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
-                )
-                InlineKeyboardButton('🧑‍💻 How To Own 🧑‍💻', url='https://t.me/Mo_Tech_Group')
+                InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots')
                 ),
             ]
             for file in files
         ]
     else:
-        btn = [
+        buttons = [[
             [
                 InlineKeyboardButton(
                     text=f"{file.file_name}",
-                    callback_data=f'{pre}#{file.file_id}',
+                    callback_data=f'{pre}#{file.file_id},
+                InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots')
                 ),
                 InlineKeyboardButton(
                     text=f"{get_size(file.file_size)}",
@@ -783,7 +782,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE..              दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें 👇👇👇 ",
+    await msg.reply("CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE..                        दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें 👇👇👇 ",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
