@@ -666,6 +666,14 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
+                buttons = [
+                    [
+                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
+                    ],
+                    [
+                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                    ]
+                    ]
     else:
         btn = [
             [
@@ -680,6 +688,14 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
+                buttons = [
+                    [
+                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
+                    ],
+                    [
+                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                    ]
+                    ]
 
     if offset != "":
         key = f"{message.chat.id}-{message.message_id}"
