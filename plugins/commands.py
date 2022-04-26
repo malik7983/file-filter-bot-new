@@ -21,10 +21,11 @@ BATCH_FILES = {}
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
-        buttons = [[
-            InlineKeyboardButton('♻️Updates Channel♻️', url='https://t.me/m_house786'),
-            InlineKeyboardButton('⚡️Join My group 🌷', url='https://t.me/+gXuMKXOWm1UyOTdl')
-            ],[
+        buttons = [
+            [
+                InlineKeyboardButton('♻️ Updates Channel ♻️', url='https://t.me/m_house786')
+            ],
+            [
                 InlineKeyboardButton('❇️ Help ❇️', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
@@ -41,13 +42,17 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('❇️ Add Me To Your Groups ❇️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/+ZeZNvt43B4o3ZmJl'),
+            InlineKeyboardButton('☎️CONTACT ME', url='https://t.me/sahid_malik'),
+            InlineKeyboardButton('💠 UPDATES 💠', url='https://t.me/m_house786')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('♻️ Help ♻️', callback_data='help'),
+            InlineKeyboardButton('🌷Join my group', url='https://t.me/+gXuMKXOWm1UyOTdl'),
+            InlineKeyboardButton('♻️ About ♻️', callback_data='about')
+            ],[
+            InlineKeyboardButton('✅ Subscribe my YouTube channel  ✅', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -75,28 +80,27 @@ async def start(client, message):
             try:
             	kk, file_id = message.command[1].split("_", 1)
             	pre = 'checksubp' if kk == 'filep' else 'checksub' 
-            	btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
+            	btn.append([InlineKeyboardButton(" ♻️ Try Again ♻️", callback_data=f"{pre}#{file_id}")])
             except IndexError:
-                btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
+                btn.append([InlineKeyboardButton(" ♻️ Try Again ♻️", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot movie lene ke liy hamare updatechannelko join kare agar app updatechannelko join nahi karenge bot Movie nahi dega !**",
+            text="**🙏 Please Join My Updates Channel to use this Bot...           😳 Hay bro hamare niche diye gaye updates channel ko join kare jab tap aap hamare update channel ko join nahi karenege tab tak bot Movie nahi dega is updates channel ko join kare 👇👇👇 **",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✳️ Add Me To Your Groups ✳️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/+ZeZNvt43B4o3ZmJl'),
+            InlineKeyboardButton('☎️ CONTACT ME', url='https://t.me/sahid_malik'),
             InlineKeyboardButton('💠 UPDATES 💠', url='https://t.me/m_house786')
             ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('CONTACT ME', url='https://t.me/sahid_malik'),
+            InlineKeyboardButton('🌷Join my group', url='https://t.me/+gXuMKXOWm1UyOTdl'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
-            ],[
-            InlineKeyboardButton('⚡️Join this channel to Use 🌷', url='https://t.me/+ZeZNvt43B4o3ZmJl')
             ],[
             InlineKeyboardButton('✅ Subscribe my YouTube channel  ✅', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
         ]]
@@ -225,20 +229,11 @@ async def start(client, message):
             if CUSTOM_FILE_CAPTION:
                 try:
                     f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='')
-                buttons = [[
+                buttons = [
                     [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
-                    ],
-                    [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('🎖 DEPLOY YOURS 🎖', url=f'{TUTORIAL}')
                     ]
                     ]
-                await bot.send_cached_media(
-                    chat_id=cmd.from_user.id,
-                    file_id=file_id,
-                    caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup(buttons)
-                    )
                 except:
                     return
             await msg.edit_caption(f_caption)
@@ -253,20 +248,11 @@ async def start(client, message):
     if CUSTOM_FILE_CAPTION:
         try:
             f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
-                buttons = [[
+                buttons = [
                     [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
-                    ],
-                    [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('🎖 DEPLOY YOURS 🎖', url=f'{TUTORIAL}')
                     ]
                     ]
-                await bot.send_cached_media(
-                    chat_id=cmd.from_user.id,
-                    file_id=file_id,
-                    caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup(buttons)
-                    )
         except Exception as e:
             logger.exception(e)
             f_caption=f_caption
