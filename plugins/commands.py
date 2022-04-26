@@ -225,7 +225,7 @@ async def start(client, message):
             if CUSTOM_FILE_CAPTION:
                 try:
                     f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='')
-                buttons = [
+                buttons = [[
                     [
                         InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
                     ],
@@ -253,7 +253,7 @@ async def start(client, message):
     if CUSTOM_FILE_CAPTION:
         try:
             f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
-                buttons = [
+                buttons = [[
                     [
                         InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
                     ],
