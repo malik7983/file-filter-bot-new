@@ -344,14 +344,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
                                                        file_size='' if size is None else size,
                                                        file_caption='' if f_caption is None else f_caption)
-                buttons = [
-                    [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
-                    ],
-                    [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
-                    ]
-                    ]
             except Exception as e:
                 logger.exception(e)
             f_caption = f_caption
@@ -396,14 +388,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
                                                        file_size='' if size is None else size,
                                                        file_caption='' if f_caption is None else f_caption)
-                buttons = [
-                    [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
-                    ],
-                    [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
-                    ]
-                    ]
             except Exception as e:
                 logger.exception(e)
                 f_caption = f_caption
@@ -666,14 +650,6 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
-                buttons = [
-                    [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
-                    ],
-                    [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
-                    ]
-                    ]
     else:
         btn = [
             [
@@ -688,14 +664,6 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
-                buttons = [
-                    [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
-                    ],
-                    [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
-                    ]
-                    ]
 
     if offset != "":
         key = f"{message.chat.id}-{message.message_id}"
