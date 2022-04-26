@@ -349,6 +349,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
+buttons = [ [ InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}') ], [ InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='') ] ] await bot.send_cached_media( chat_id=cmd.from_user.id, file_id=file_id, caption=f_caption, reply_markup=InlineKeyboardMarkup(buttons) )
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
