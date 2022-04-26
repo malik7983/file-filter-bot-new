@@ -225,6 +225,20 @@ async def start(client, message):
             if CUSTOM_FILE_CAPTION:
                 try:
                     f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='')
+                buttons = [
+                    [
+                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
+                    ],
+                    [
+                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                    ]
+                    ]
+                await bot.send_cached_media(
+                    chat_id=cmd.from_user.id,
+                    file_id=file_id,
+                    caption=f_caption,
+                    reply_markup=InlineKeyboardMarkup(buttons)
+                    )
                 except:
                     return
             await msg.edit_caption(f_caption)
@@ -239,6 +253,20 @@ async def start(client, message):
     if CUSTOM_FILE_CAPTION:
         try:
             f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
+                buttons = [
+                    [
+                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
+                    ],
+                    [
+                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                    ]
+                    ]
+                await bot.send_cached_media(
+                    chat_id=cmd.from_user.id,
+                    file_id=file_id,
+                    caption=f_caption,
+                    reply_markup=InlineKeyboardMarkup(buttons)
+                    )
         except Exception as e:
             logger.exception(e)
             f_caption=f_caption
