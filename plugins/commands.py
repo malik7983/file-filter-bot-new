@@ -71,7 +71,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "👉 Join Updates Channel 👈", url=invite_link.invite_link
+                    "👉malik 👈", url=https://t.me/sahid_malik)
                 )
             ]
         ]
@@ -227,6 +227,14 @@ async def start(client, message):
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
+        btn = [
+            [
+                InlineKeyboardButton(
+                    "👉 Join Updates Channel 👈", url=invite_link.invite_link
+                )
+            ]
+        ]
+
                 try:
                     f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='')
                 except:
