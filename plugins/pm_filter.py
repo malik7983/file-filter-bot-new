@@ -670,10 +670,10 @@ async def auto_filter(client, msg, spoll=False):
         search, files, offset, total_results = spoll
     pre = 'filep' if settings['file_secure'] else 'file'
     if settings["button"]:
-   buttons  = [[
+        btn = [
             [
                 InlineKeyboardButton('HOW TO DOWNLOAD', url='https://youtu.be/NoZOf8q0QzQ'),
-                ],[
+                )
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
@@ -681,10 +681,10 @@ async def auto_filter(client, msg, spoll=False):
             for file in files
         ]
     else:
-    buttons = [[
+        btn = [
             [
                 InlineKeyboardButton('HOW TO DOWNLOAD', url='https://youtu.be/NoZOf8q0QzQ'),
-                ],[
+                ),
                 InlineKeyboardButton(
                     text=f"{file.file_name}",
                     callback_data=f'{pre}#{file.file_id}',
