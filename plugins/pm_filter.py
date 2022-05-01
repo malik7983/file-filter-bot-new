@@ -71,7 +71,8 @@ async def next_page(bot, query):
         ]
         btn = [
             [
-                InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bot),
+                InlineKeyboardButton(
+                    "🌴 Bots Channel 🌴", url='https://t.me/malik_bot),
                 ),
             ]
     else:
