@@ -673,7 +673,6 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton('HOW TO DOWNLOAD', url='https://youtu.be/NoZOf8q0QzQ'),
-                )
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
@@ -684,7 +683,6 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton('HOW TO DOWNLOAD', url='https://youtu.be/NoZOf8q0QzQ'),
-                ),
                 InlineKeyboardButton(
                     text=f"{file.file_name}",
                     callback_data=f'{pre}#{file.file_id}',
