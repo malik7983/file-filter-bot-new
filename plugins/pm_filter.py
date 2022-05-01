@@ -697,12 +697,12 @@ async def auto_filter(client, msg, spoll=False):
         key = f"{message.chat.id}-{message.message_id}"
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
-        btn.append(
+      buttons.append(
             [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲 1/{round(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}"),
              ],
              [
-             InlineKeyboardButton('HOW TO DOWNLOAD', url='https://youtu.be/NoZOf8q0QzQ')
+             InlineKeyboardButton('HOW TO DOWNLOAD', url='https://youtu.be/NoZOf8q0QzQ')]
         )
     else:
         btn.append(
