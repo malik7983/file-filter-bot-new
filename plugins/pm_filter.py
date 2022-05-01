@@ -700,6 +700,8 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲 1/{round(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}"),
+             ],
+             [
              InlineKeyboardButton('HOW TO DOWNLOAD', url='https://youtu.be/NoZOf8q0QzQ')]
         )
     else:
