@@ -68,7 +68,7 @@ async def next_page(bot, query):
                 ),
                 [
                 InlineKeyboardButton(
-                   "👉malik 👈",url=https://t.me/sahid_malik)
+                   '👉malik 👈',url=https://t.me/sahid_malik)
                 ),
             ]
             for file in files
