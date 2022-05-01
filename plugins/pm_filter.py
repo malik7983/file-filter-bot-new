@@ -69,12 +69,6 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-        btn = [
-            [
-                InlineKeyboardButton(
-                    "🌴 Bots Channel 🌴", url='https://t.me/malik_bot),
-                ),
-            ]
     else:
         btn = [
             [
