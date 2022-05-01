@@ -240,6 +240,7 @@ async def start(client, message):
     files = files_[0]
     title = files.file_name
     size=get_size(files.file_size)
+            InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/+ZeZNvt43B4o3ZmJl'),
     f_caption=files.caption
     if CUSTOM_FILE_CAPTION:
         try:
