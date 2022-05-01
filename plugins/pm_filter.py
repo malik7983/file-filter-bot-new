@@ -61,16 +61,19 @@ async def next_page(bot, query):
         return
     settings = await get_settings(query.message.chat.id)
     if settings['button']:
-        btn = [[
+        btn = [
             [
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
-                InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots')
-                ),
             ]
             for file in files
         ]
+        btn = [
+            [
+                InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bot),
+                ),
+            ]
     else:
         btn = [
             [
