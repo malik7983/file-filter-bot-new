@@ -65,8 +65,7 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
-                ),
-                [
+                )
                 InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots'),
                 ),
             ]
