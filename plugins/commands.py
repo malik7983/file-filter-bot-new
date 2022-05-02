@@ -227,7 +227,6 @@ async def start(client, message):
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code"
             return
-        btn = [
             [
                 InlineKeyboardButton(
                     "👉 Join Updates Channel 👈", url=https:t.me/malik_bots),
