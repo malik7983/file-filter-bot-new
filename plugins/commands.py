@@ -226,12 +226,6 @@ async def start(client, message):
             title = file.file_name
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code"
-            return
-            [
-                InlineKeyboardButton("👉 Join Updates Channel 👈", url=https:t.me/malik_bots),
-                )
-            ]
-        ]   
             if CUSTOM_FILE_CAPTION:
                 try:
                     f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='')
