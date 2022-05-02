@@ -225,7 +225,8 @@ async def start(client, message):
             file = getattr(msg, filetype)
             title = file.file_name
             size=get_size(file.file_size)
-            f_caption = f"<code>{title}</code"),
+            f_caption = f"<code>{title}</code"
+            return
         btn = [
             [
                 InlineKeyboardButton(
