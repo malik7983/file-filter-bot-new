@@ -228,8 +228,7 @@ async def start(client, message):
             f_caption = f"<code>{title}</code"
             return
             [
-                InlineKeyboardButton(
-                    "👉 Join Updates Channel 👈", url=https:t.me/malik_bots),
+                InlineKeyboardButton("👉 Join Updates Channel 👈", url=https:t.me/malik_bots),
                 )
             ]
         ]   
