@@ -674,13 +674,7 @@ async def auto_filter(client, msg, spoll=False):
     pre = 'filep' if settings['file_secure'] else 'file'
     if settings["button"]:
         btn = [
-            [
-                InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/+ZeZNvt43B4o3ZmJl')
-            ]
-            for file in files
-        ]
-    else:
-        btn = [
+                InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/+ZeZNvt43B4o3ZmJl'),
             [
                 InlineKeyboardButton(
                     text=f"🖥 [{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
