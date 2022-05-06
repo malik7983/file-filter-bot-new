@@ -675,6 +675,14 @@ async def auto_filter(client, msg, spoll=False):
     if settings["button"]:
         btn = [
             [
+                InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/+ZeZNvt43B4o3ZmJl'),
+                ),
+            ]
+            for file in files
+        ]
+    else:
+        btn = [
+            [
                 InlineKeyboardButton(
                     text=f"🖥 [{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
