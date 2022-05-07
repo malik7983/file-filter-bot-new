@@ -85,7 +85,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" ♻️ Try Again ♻️", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**⚠️ Please Join My Updates Channel to use this Bot**",
+            text="**⚠️ Please Join My Updates Channel to use this Bot...   ━━━━━━━━━━━━━━━━━                     हमारे निचे दिए गये update चैनल को join करे जब तक आप हमारे update चैनल को join नहीं करेंगे तब तक bot आपको मूवी नहीं देगा. 👇👇👇 **",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
@@ -225,7 +225,7 @@ async def start(client, message):
             file = getattr(msg, filetype)
             title = file.file_name
             size=get_size(file.file_size)
-            f_caption = f"<code>{title}</code"
+            f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
                 try:
                     f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='')
@@ -528,18 +528,3 @@ async def save_template(client, message):
     template = message.text.split(" ", 1)[1]
     await save_group_settings(grp_id, 'template', template)
     await sts.edit(f"Successfully changed template for {title} to\n\n{template}")
-        if message.command[1] != "subscribe":
-            try:
-            	kk, file_id = message.command[1].split("_", 1)
-            	pre = 'checksubp' if kk == 'filep' else 'checksub' 
-            	btn.append([InlineKeyboardButton(" ♻️ Try Again ♻️", callback_data=f"{pre}#{file_id}")])
-            except IndexError:
-                btn.append([InlineKeyboardButton(" ♻️ Try Again ♻️", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
-        await client.send_message(
-            chat_id=message.from_user.id,
-            text="**हमारे निचे दिए गये update चैनल को join करे जब तक आप हमारे update चैनल को join नहीं करेंगे तब तक bot आपको मूवी नहीं देगा. 👇👇👇 **",
-            reply_markup=InlineKeyboardMarkup(btn),
-            parse_mode="markdown"
-            )
-        return
-
