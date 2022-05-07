@@ -257,12 +257,6 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton('⭕☞ 𝗝𝗢𝗜𝗡 𝗠𝗔𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⭕', url="https://t.me/tmmainchannel")
-                ],
-                [
-                    InlineKeyboardButton('⭕☞ 𝗝𝗢𝗜𝗡 𝗠𝗢𝗩𝗜𝗘𝗦 𝗚𝗥𝗢𝗨𝗣 ⭕', url="https://t.me/technomoviescollection")
-                ],
-                [
-                    InlineKeyboardButton('⭕☞ 𝗝𝗢𝗜𝗡 OTT 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⭕', url="https://t.me/+gZXJxBXRZnJjNDA1")
                 ]
             ]
         )
