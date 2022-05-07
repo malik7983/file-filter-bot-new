@@ -256,7 +256,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⭕☞ 𝗝𝗢𝗜𝗡 𝗠𝗔𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⭕', url="https://t.me/tmmainchannel")
+                    InlineKeyboardButton('♻️ 𝐉𝐨𝐢𝐧 ', url="https://t.me/tmmainchannel")
                 ]
             ]
         )
