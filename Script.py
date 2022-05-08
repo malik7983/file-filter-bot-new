@@ -118,14 +118,3 @@ Its Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provid
 ⚠️ More Help Check Help Button Below
 
 ©️Mantained Bʏ  @sahid_malik</b>"""
-
-    SPELL_CHECK[msg.message_id] = movielist
-    btn = [[
-                InlineKeyboardButton(
-                    text=movie.strip(),
-                    callback_data=f"spolling#{user}#{k}",
-                )
-            ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("📌 𝙲𝙷𝙴𝙲𝙺 𝙰𝙽𝙳 𝚂𝙴𝙻𝙴𝙲𝚃 𝚃𝙷𝙴 𝙼𝙾𝚅𝙸𝙴 𝙵𝚁𝙾𝙼 𝚃𝙷𝙴 𝙶𝙸𝚅𝙴𝙽 𝙻𝙸𝚂𝚃 📌", reply_markup=InlineKeyboardMarkup(btn))"""
-    
