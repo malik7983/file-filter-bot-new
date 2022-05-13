@@ -480,7 +480,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.malik_TXT.format(query.from_user.mention),
+            text=script.MALIK_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
         )
