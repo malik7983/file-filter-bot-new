@@ -116,7 +116,7 @@ Its Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provid
 
 ©️Mantained Bʏ  @sahid_malik</b>"""
 
-    SOURCE_TXT = """<b>Donation</b>
+     malik_TXT = """<b>Donation</b>
 
 ⪼ <b>𝐘𝐨𝐮 𝐂𝐚𝐧 𝐃𝐨𝐧𝐚𝐭𝐞 𝐀𝐧𝐲 𝐀𝐦𝐨𝐮𝐧𝐭 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 💳. 
 
