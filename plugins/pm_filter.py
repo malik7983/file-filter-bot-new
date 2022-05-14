@@ -472,6 +472,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚚ 𝗦𝘁𝗮𝘁𝘀 ⚚', callback_data='stats')
         ], [
             InlineKeyboardButton('♻️ Donation ♻️', callback_data='malik'),
+            InlineKeyboardButton('♻️ video  ♻️', callback_data='videos'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -531,6 +532,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.AUTOFILTER_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "videos":
+        buttons = [[
+            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.VIDEOS_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
