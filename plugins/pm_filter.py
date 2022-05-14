@@ -472,7 +472,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚚ 𝗦𝘁𝗮𝘁𝘀 ⚚', callback_data='stats')
         ], [
             InlineKeyboardButton('♻️ Donation ♻️', callback_data='malik'),
-            InlineKeyboardButton('♻️ video  ♻️', callback_data='videos'),
+            InlineKeyboardButton('♻️ video  ♻️', callback_data='videos')
+        ], [
+            InlineKeyboardButton('♻️ ytthumb' ♻️', callback_data='ytthumb'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -522,6 +524,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.BUTTON_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "ytthumb":
+        buttons = [[
+            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='manuelfilter')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.YTTHUMB_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
