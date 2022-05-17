@@ -110,7 +110,7 @@ async def next_page(bot, query):
                 InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
-    elif off_set is None
+        btn.append(
               [InlineKeyboardButton("❌CLOSE❌", callback_data="close_data")]
         )
     btn.insert(0, [
