@@ -686,14 +686,14 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.append(
-            [InlineKeyboardButton(text="💢 𝗖𝗹𝗼𝘀𝗲 💢", callback_data='close_data')]
+            [InlineKeyboardButton(text="💢 𝗖𝗹𝗼𝘀𝗲 💢", callback_data="close_data")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="🌹 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
         )
         btn.append(
-            [InlineKeyboardButton(text="💢 𝗖𝗹𝗼𝘀𝗲 💢", callback_data='close_data')]
+            [InlineKeyboardButton(text="💢 𝗖𝗹𝗼𝘀𝗲 💢", callback_data="close_data")]
         )
     btn.insert(0, [
         InlineKeyboardButton(text="⚠️ 𝐉𝐨𝐢𝐧 𝐌𝐨𝐯𝐢𝐞𝐬 𝙂𝙧𝙤𝙪𝙥 ⚠️", url="https://t.me/+gXuMKXOWm1UyOTdl")
@@ -800,7 +800,7 @@ async def advantage_spell_chok(msg):
             callback_data=f"spolling#{user}#{k}",
         )
     ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
+    btn.append([InlineKeyboardButton(text="🌱Close", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply("CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. ━━━━━━━━━━━━━━━━━       दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें 👇👇👇 ",
                     reply_markup=InlineKeyboardMarkup(btn))
 
