@@ -690,7 +690,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text"🌹 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="🌹 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
         )
         btn.append(
             [InlineKeyboardButton(f"💢 𝗖𝗹𝗼𝘀𝗲 💢", callback_data="close_data")]
