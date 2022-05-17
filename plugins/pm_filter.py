@@ -103,10 +103,6 @@ async def next_page(bot, query):
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
              InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")]
         )
-    elif off_set is None:
-        btn.append(
-            [InlineKeyboardButton("subscribe my YouTube channel", url="https://t.me/+gXuMKXOWm1UyOTdl")]
-      )
         btn.append(
             [
                 InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
@@ -114,7 +110,7 @@ async def next_page(bot, query):
                 InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
-        btn.append(
+    elif off_set is None
               [InlineKeyboardButton("❌CLOSE❌", callback_data="close_data")]
         )
     btn.insert(0, [
@@ -748,10 +744,6 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲 1/{round(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
-      )
-    elif off_set is None:
-        btn.append(
-            [InlineKeyboardButton("subscribe my YouTube channel", url="https://t.me/+gXuMKXOWm1UyOTdl")]
       )
     else:
         btn.append(
