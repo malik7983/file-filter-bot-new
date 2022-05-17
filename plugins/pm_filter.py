@@ -110,6 +110,7 @@ async def next_page(bot, query):
                 InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
+    elif off_set is None:
         btn.append(
             [InlineKeyboardButton("subscribe my YouTube channel", url="https://t.me/+gXuMKXOWm1UyOTdl")]
         )
@@ -749,6 +750,7 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text="🌹 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
         )
+    elif off_set is None:
         btn.append(
             [InlineKeyboardButton("subscribe my YouTube channel", url="https://t.me/+gXuMKXOWm1UyOTdl")]
         )
