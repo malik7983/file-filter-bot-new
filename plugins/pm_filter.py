@@ -111,7 +111,7 @@ async def next_page(bot, query):
             ],
         )
         btn.append(
-            [InlineKeyboardButton("❌CLOSE❌", callback_data="close_data")]
+            [InlineKeyboardButton("subscribe my YouTube channel", url="https://t.me/+gXuMKXOWm1UyOTdl")]
         )
     btn.insert(0, [
         InlineKeyboardButton(text="⚠️ 𝐉𝐨𝐢𝐧 𝐌𝐨𝐯𝐢𝐞𝐬 Group ⚠️", url="https://t.me/+gXuMKXOWm1UyOTdl")
@@ -748,6 +748,9 @@ async def auto_filter(client, msg, spoll=False):
     else:
         btn.append(
             [InlineKeyboardButton(text="🌹 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
+        )
+        btn.append(
+            [InlineKeyboardButton("subscribe my YouTube channel", url="https://t.me/+gXuMKXOWm1UyOTdl")]
         )
     btn.insert(0, [
         InlineKeyboardButton(text="⚠️ 𝐉𝐨𝐢𝐧 𝐌𝐨𝐯𝐢𝐞𝐬 Group ⚠️", url="https://t.me/+gXuMKXOWm1UyOTdl")
