@@ -102,10 +102,7 @@ async def next_page(bot, query):
         btn.append(
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
              InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")]
-    elif off_set is None:
-        btn.append(
-            [InlineKeyboardButton("subscribe my YouTube channel", url="https://t.me/+gXuMKXOWm1UyOTdl")]
-      )
+        )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton("subscribe my YouTube channel", url="https://t.me/+gXuMKXOWm1UyOTdl")]
