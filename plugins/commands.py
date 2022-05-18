@@ -55,7 +55,7 @@ async def start(client, message):
             InlineKeyboardButton('🌷Join my group', url='https://t.me/+gXuMKXOWm1UyOTdl'),
             InlineKeyboardButton('♻️ About ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('❤️ Donation ❤️', callback_data='malik'),
+            InlineKeyboardButton('❤️ Donation ❤️', callback_data='dinette'),
             ],[
             InlineKeyboardButton('✅ Subscribe my YouTube channel  ✅', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
         ]]
@@ -107,7 +107,7 @@ async def start(client, message):
             InlineKeyboardButton('🌷Join my group', url='https://t.me/+gXuMKXOWm1UyOTdl'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('❤️ Donation ❤️', callback_data='malik'),
+            InlineKeyboardButton('❤️ Donation ❤️', callback_data='dinette'),
             ],[
             InlineKeyboardButton('✅ Subscribe my YouTube channel  ✅', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
         ]]
