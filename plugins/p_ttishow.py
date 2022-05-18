@@ -56,7 +56,8 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply(f"<b>Hey 👋, {u.mention}, Welcome to Our Group {message.chat.title} You Can Find Movies / Series / Animes etc. From Here. Enjoy 😉.</b>")
-
+            await asyncio.sleep(10)
+            await k.delete()
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
