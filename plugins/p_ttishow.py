@@ -56,8 +56,10 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply(f"<b>Hey 👋, {u.mention}, Welcome to Our Group {message.chat.title}</b>")
-                await asyncio.sleep(10)
-                await k.delete()
+        btn = [
+            InlineKeyboardButton('♻️ HΞLᎮ ♻️', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                await asyncio.sleep(5)
+                await k.delete(5)
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
