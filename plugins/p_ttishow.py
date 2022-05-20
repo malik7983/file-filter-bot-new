@@ -55,11 +55,10 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete(1)
                     except:
                         pass
-        buttons = [[
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('💎 Updates 💎', url='https://t.me/m_house786')
-        ]]
                 temp.MELCOW['welcome'] = await message.reply(f"<b>Hey 👋, {u.mention}, Welcome to Our Group {message.chat.title}</b>")
+    btn.insert(0, [
+        InlineKeyboardButton('🙏 Subscribe my YouTube channel 🙏', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
+    ])
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
