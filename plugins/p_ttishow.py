@@ -55,7 +55,7 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete(1)
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply(f"<b>Hey 👋, {u.mention}, Welcome to Our Group {message.chat.title} You Can Find Movies / Series / Animes etc. From Here. Enjoy 😉https://t.me/Aadhi011.</b>")
+                temp.MELCOW['welcome'] = await message.reply(f"<b>Hey 👋, {u.mention}, Welcome to Our Group {message.chat.title}  <a href=https://t.me/Aadhi011>𝙰𝙰𝙳𝙷𝙸</a></b>")
                 await asyncio.sleep(10)
                 await k.delete()
 
