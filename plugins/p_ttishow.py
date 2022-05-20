@@ -59,7 +59,7 @@ async def save_group(bot, message):
         btn = [
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', url=f"https://t.me/{temp.U_NAME}?start=help"),
                 await asyncio.sleep(5)
-                await k.delete(5)
+                await k.delete()
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
