@@ -56,7 +56,6 @@ async def save_group(bot, message):
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', url=f"https://t.me/{temp.U_NAME}?start=help"),
             InlineKeyboardButton('💎 Updates 💎', url='https://t.me/m_house786')
         ]]
-
                         await (temp.MELCOW['welcome']).delete(1)
                     except:
                         pass
