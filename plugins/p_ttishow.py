@@ -52,7 +52,7 @@ async def save_group(bot, message):
             for u in message.new_chat_members:
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
-                        await (temp.MELCOW['welcome']).await asyncio.sleep(10)
+                        await (temp.MELCOW['welcome']).asyncio.sleep(10)
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply(f"<b>Hey 👋, {u.mention}, Welcome to Our Group {message.chat.title}</b>")
