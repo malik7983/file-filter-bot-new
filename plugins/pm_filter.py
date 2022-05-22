@@ -831,6 +831,7 @@ async def advantage_spell_chok(msg):
     await asyncio.sleep(20)
     await m.delete()
 
+
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
     name = text or message.text
