@@ -61,10 +61,10 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_text(
-                text=f"<b>Hey 👋 {u.mention}, Welcome to Our Group {message.chat.title} You Can Find Movies / Series / Animes etc. From Here. Enjoy 😉.</b> \n\n<b>If you have any question then contact us below 👇</b>",
+            m = text=f"<b>Hey 👋 {u.mention}, Welcome to Our Group {message.chat.title} You Can Find Movies / Series / Animes etc. From Here. Enjoy 😉.</b> \n\n<b>If you have any question then contact us below 👇</b>",
                 disable_web_page_preview = True,
-            m = reply_markup=InlineKeyboardMarkup(buttons))
-        await asyncio.sleep(20)
+                reply_markup=InlineKeyboardMarkup(buttons))
+        await asyncio.sleep(10)
         await m.delete()
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
