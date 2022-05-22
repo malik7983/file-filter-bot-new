@@ -818,6 +818,9 @@ async def advantage_spell_chok(msg):
             InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots'),
         ]]
         k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        buttons = [[
+            InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots'),
+        ]]
         await asyncio.sleep(8)
         await k.delete()
         return
