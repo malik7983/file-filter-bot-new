@@ -51,7 +51,7 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton('♻️ Owner ♻️', url="https://t.me/sahid_malik"),
+                InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik"),
                 ],[
                 InlineKeyboardButton('♻️ Join backup channel ♻️', url="https://t.me/m_house786")
             ]]
@@ -61,7 +61,7 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_text(
-                text=f"<b> Hey 👋 {u.mention},</b> Welcome to Our Group <b>{message.chat.title}</b>You Can Find Movies / Series / Animes etc. From Here. Enjoy 😉. \n\n<b>👇 Official Projects Channels 👇</b>",
+                text=f"<b> Hey 👋 {u.mention},</b> Welcome to Our Group <b>{message.chat.title}</b> You Can Find Movies / Series / Animes etc. From Here. Enjoy 😉.</b> \n\n<b>If you have any complaint then contact us below 👇</b>",
                 disable_web_page_preview = True,
                 reply_markup=InlineKeyboardMarkup(buttons))
 
