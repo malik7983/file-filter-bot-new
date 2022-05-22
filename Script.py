@@ -167,3 +167,9 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 • 𝘌𝘹𝘢𝘮𝘱𝘭𝘦
 /ytthumb https://youtu.be/yourlink"""
 
+    FORCESUB_TXT = """**♦️ READ THIS INSTRUCTION ♦️**
+
+__🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈__
+
+**👇 JOIN THIS CHANNEL & TRY AGAIN 👇**"""
+
