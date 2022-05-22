@@ -57,15 +57,15 @@ async def save_group(bot, message):
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
-                     m = await (temp.MELCOW['welcome']).delete()
+                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_text(
                 text=f"<b>Hey 👋 {u.mention}, Welcome to Our Group {message.chat.title} You Can Find Movies / Series / Animes etc. From Here. Enjoy 😉.</b> \n\n<b>If you have any question then contact us below 👇</b>",
                 disable_web_page_preview = True,
-                reply_markup=InlineKeyboardMarkup(buttons))
-                    await asyncio.sleep(20)
-                    await m.delete()
+            m = reply_markup=InlineKeyboardMarkup(buttons))
+        await asyncio.sleep(20)
+        await m.delete()
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
