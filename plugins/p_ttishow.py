@@ -57,10 +57,10 @@ async def save_group(bot, message):
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
-                         await (temp.MELCOW['welcome']).delete()
+                      b = await (temp.MELCOW['welcome']).await asyncio.sleep(16)
                     except:
                         pass
-            b = temp.MELCOW['welcome'] = await message.reply_text(
+                temp.MELCOW['welcome'] = await message.reply_text(
                 text=f"<b>Hey 👋 {u.mention}, Welcome to Our Group {message.chat.title} You Can Find Movies / Series / Animes etc. From Here. Enjoy 😉.</b> \n\n<b>If you have any question then contact us below 👇</b>",
                 disable_web_page_preview = True,
                 reply_markup=InlineKeyboardMarkup(buttons))
