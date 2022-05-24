@@ -785,8 +785,18 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
-        await asyncio.sleep(8)
+        hmm = InlineKeyboardMarkup(
+        [
+            [
+                 InlineKeyboardButton("🔍 search on Google 🔎", url=f"https://google.com/search?q={search}"),
+                 ],
+                 [
+                 InlineKeyboardButton("🔍 search on Google 🔎", url=f"https://google.com/release?q={search}")
+            ]
+        ]
+    )
+        k = await msg.reply(f"<b>Hey, {msg.from_user.mention}.. Your word {search} is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling</b> 🥺🙏", reply_markup=hmm)
+        await asyncio.sleep(120)
         await k.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
@@ -814,8 +824,18 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
-        await asyncio.sleep(8)
+        hmm = InlineKeyboardMarkup(
+        [
+            [
+                 InlineKeyboardButton("🔍 search on Google 🔎", url=f"https://google.com/search?q={search}"),
+                 ],
+                 [
+                 InlineKeyboardButton("🔍 search on Google 🔎", url=f"https://google.com/release?q={search}")
+            ]
+        ]
+    )
+        k = await msg.reply(f"<b>Hey, {msg.from_user.mention}.. Your word {search} is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling</b> 🥺🙏", reply_markup=hmm)
+        await asyncio.sleep(10)
         await k.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
