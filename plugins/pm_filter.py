@@ -814,6 +814,8 @@ async def advantage_spell_chok(msg):
         [
             [
                  InlineKeyboardButton("🔍 search on Google 🔎", url=f"https://google.com/search?q={search}")
+                 ],[
+                 InlineKeyboardButton("🔍 search on Google 🔎", url=f"https://google.com/search?q={Release Date}")
             ]
         ]
     )
