@@ -784,8 +784,18 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply(f"Hey, {msg.from_user.mention}! I couldn't find any movie in that name.")
-        await asyncio.sleep(8)
+        hmm = InlineKeyboardMarkup(
+        [
+            [
+                 InlineKeyboardButton("🔍 search on Google 🔎", url=f"https://google.com/search?q={search}"),
+                 ],
+                 [
+                 InlineKeyboardButton("🔍 search on Google 🔎", url=f"https://google.com/release?q={search}")
+            ]
+        ]
+    )
+        k = await msg.reply(f"<b>Hey, {msg.from_user.mention}.. Your word {search} is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling</b> 🥺🙏", reply_markup=hmm)
+        await asyncio.sleep(120)
         await k.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE) # look for imdb / wiki results
