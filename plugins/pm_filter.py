@@ -829,7 +829,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="🌱Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    m = await msg.reply("<b>Hey,</b> {msg.from_user.mention}! <b>CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. \n᚛━━━━━━━━━━━━━━━━━᚜\nदी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें 👇👇👇</b> ",
+    m = await msg.reply("<b>CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. \n᚛━━━━━━━━━━━━━━━━━᚜\nदी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें 👇👇👇</b> ",
                     reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(20)
     await m.delete()
