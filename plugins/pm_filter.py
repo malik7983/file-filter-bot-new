@@ -817,8 +817,8 @@ async def advantage_spell_chok(msg):
             ]
         ]
     )
-        k = await msg.reply(f"Hey, {msg.from_user.mention}.. Your word <b>{search}<\b> is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏", reply_markup=hmm)
-        await asyncio.sleep(60)
+        k = await msg.reply(f"<b>Hey, {msg.from_user.mention}.. Your word {search} is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling</b> 🥺🙏", reply_markup=hmm)
+        await asyncio.sleep(120)
         await k.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
@@ -829,7 +829,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="🌱Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    m = await msg.reply("<b>Hey, {msg.from_user.mention} CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. \n᚛━━━━━━━━━━━━━━━━━᚜\nदी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें 👇👇👇</b> ",
+    m = await msg.reply("<b>Hey,</b> {msg.from_user.mention}! <b>CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. \n᚛━━━━━━━━━━━━━━━━━᚜\nदी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें 👇👇👇</b> ",
                     reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(20)
     await m.delete()
