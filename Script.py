@@ -181,6 +181,4 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 
 👇 JOIN THIS CHANNEL & TRY AGAIN 👇"""
 
-   FORCESUAB_TXT = """ hy fresh bjfjb kvvb"""
-
-
+    FORCESUAB_TXT = """ hy fresh bjfjb kvvb"""
