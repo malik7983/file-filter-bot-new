@@ -41,10 +41,11 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-       chat_id=message.from_user.id,
-       text=script.FORCESUAB_TXT,
-       reply_markup=InlineKeyboardMarkup(btn),
-       parse_mode="markdown"
+        return await query.answer(
+        chat_id=message.from_user.id,
+        text=script.FORCESUAB_TXT,
+        reply_markup=InlineKeyboardMarkup(btn),
+        parse_mode="markdown"
             )
     try:
         offset = int(offset)
