@@ -819,7 +819,7 @@ async def advantage_spell_chok(msg):
         hmm = InlineKeyboardMarkup(
         [
             [
-                 InlineKeyboardButton("🔍 Search in Google 🔎", url=f"https://google.com/search?q=%20movie"),
+                 InlineKeyboardButton("🔍 Search in Google 🔎", url=f"https://google.com/search?q={frist}%20{search}%20movie"),
                  ],
                  [
                  InlineKeyboardButton(" Click Here To Check Release Date 📆", url=f"https://google.com/search?q={search}%20release%20date")
@@ -838,7 +838,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. ━━━━━━━━━━━━━━━━━       दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें 👇👇👇 ",
+    await msg.reply("CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE..\\n ━━━━━━━━━━━━━━━━━       दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें 👇👇👇 ",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
