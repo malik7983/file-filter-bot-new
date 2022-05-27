@@ -819,14 +819,14 @@ async def advantage_spell_chok(msg):
         hmm = InlineKeyboardMarkup(
         [
             [
-                 InlineKeyboardButton("🔍 Search in Google 🔎", url=f"https://google.com/search?q={search}%20movie"),
+                 InlineKeyboardButton("🔍 Click Here To Check Spilling 🔎", url=f"https://google.com/search?q={search}%20movie"),
                  ],
                  [
                  InlineKeyboardButton(" Click Here To Check Release Date 📆", url=f"https://google.com/search?q={search}%20release%20date")
             ]
         ]
     )
-        k = await msg.reply(f"Hey, {msg.from_user.mention}!.. Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=hmm)
+        k = await msg.reply(f"Hey, {msg.from_user.mention}!.. Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\nPlease Go to Google and Confirm the Correct Spelling 🥺🙏", reply_markup=hmm)
         await asyncio.sleep(60)
         await k.delete()
         return
