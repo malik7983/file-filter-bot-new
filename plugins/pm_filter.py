@@ -762,12 +762,12 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>🖥 Movie Name: {search}... \n📡 Group: {message.chat.title} \n🧑‍💼 Requested By: {msg.from_user.mention}</b>"
     if imdb and imdb.get('poster'):
         try:
-            await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1280×720],
+            await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1280],
                                       reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            await message.reply_photo(photo=poster, caption=cap[:1280×720], reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_photo(photo=poster, caption=cap[:1280], reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             logger.exception(e)
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
