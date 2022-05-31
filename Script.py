@@ -181,7 +181,7 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 
 👇 JOIN THIS CHANNEL & TRY AGAIN 👇"""
 
-    FORCESUAB_TXT = """ hy fresh bjfjb kvvb"""
+    YTTHUMB_TXT = """ hy fresh bjfjb kvvb"""
 
     URLSHORT_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖴𝗋𝗅 𝗌𝗁𝗈𝗋𝗍𝗇𝖾𝗋
 
