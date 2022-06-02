@@ -140,6 +140,7 @@ async def vsong(client, message: Message):
     capy = f"""
 **𝚃𝙸𝚃𝙻𝙴 :** [{thum}]({mo})
 **𝚁𝙴𝚀𝚄𝙴𝚂𝚃𝙴𝙳 𝙱𝚈 :** {message.from_user.mention}
+**CREDIT BY :** Sahid malik
 """
     await client.send_video(
         message.chat.id,
