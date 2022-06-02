@@ -58,7 +58,7 @@ async def start(client, message):
             InlineKeyboardButton('Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('❤️ Donation ❤️', callback_data='dinette'),
             ],[
-            InlineKeyboardButton('🚀 Download YouTube video 🛰', callback_data='video')
+            InlineKeyboardButton('🚀 Download YouTube video 🛰', callback_data='videos')
             ],[
             InlineKeyboardButton('🔗 Url Shorter 🔗', callback_data='urlshortn')
             ],[
@@ -112,7 +112,7 @@ async def start(client, message):
             InlineKeyboardButton('Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('❤️ Donation ❤️', callback_data='dinette'),
             ],[
-            InlineKeyboardButton('🚀 Download YouTube video 🛰', callback_data='video')
+            InlineKeyboardButton('🚀 Download YouTube video 🛰', callback_data='videos')
             ],[
             InlineKeyboardButton('🔗 Url Shorter 🔗', callback_data='urlshortn')
             ],[
