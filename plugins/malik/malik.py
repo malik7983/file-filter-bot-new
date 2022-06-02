@@ -100,7 +100,7 @@ async def vsong(client, message: Message):
     urlissed = get_text(message)
 
     pablo = await client.send_message(
-        message.chat.id, f"**𝙵𝙸𝙽𝙳𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝚅𝙸𝙳𝙴𝙾 plz wait** `{urlissed}`"
+        message.chat.id, f"**Finding Your Video plz wait** `{urlissed}`"
     )
     if not urlissed:
         await pablo.edit("Invalid Command Syntax Please Check help Menu To Know More!")
@@ -138,10 +138,10 @@ async def vsong(client, message: Message):
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
     capy = f"""
-** 𝚃𝙸𝚃𝙻𝙴 :** [{thum}]({mo})
-** 𝚁𝙴𝚀𝚄𝙴𝚂𝚃𝙴𝙳 𝙱𝚈 :** {message.from_user.mention}
+**𝚃𝙸𝚃𝙻𝙴 :** [{thum}]({mo})
+**𝚁𝙴𝚀𝚄𝙴𝚂𝚃𝙴𝙳 𝙱𝚈 :** {message.from_user.mention}
 
-** 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 ›› [Sahid malik](https://t.me/sahid_malik)
+**<b>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 ›› [Sahid malik](https://t.me/sahid_malik)</b>
 """
     await client.send_video(
         message.chat.id,
