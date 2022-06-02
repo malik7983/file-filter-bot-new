@@ -430,6 +430,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('❤️ Donation ❤️', callback_data='dinette')
             ],[
+            InlineKeyboardButton('Download YouTube video, callback_data='video')
+            ],[
             InlineKeyboardButton('✅ Subscribe my YouTube channel ✅', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
