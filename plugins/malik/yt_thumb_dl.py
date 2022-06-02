@@ -1,5 +1,6 @@
 import os
 import time
+import ytthumb
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
