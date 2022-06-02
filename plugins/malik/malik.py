@@ -60,7 +60,7 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit("**dσwnlσαdíng чσur ѕσng wait 3 minutes...!**")
+    m.edit("**<b>dσwnlσαdíng Your ѕσng plz wait 3 minutes</b>...!**")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -140,7 +140,7 @@ async def vsong(client, message: Message):
     capy = f"""
 **𝚃𝙸𝚃𝙻𝙴 :** [{thum}]({mo})
 **𝚁𝙴𝚀𝚄𝙴𝚂𝚃𝙴𝙳 𝙱𝚈 :** {message.from_user.mention}
-**CREDIT BY :** Sahid malik
+**<b>MANTAINED BY: Sahid malik 😎
 """
     await client.send_video(
         message.chat.id,
