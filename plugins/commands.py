@@ -60,7 +60,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🚀 Download YouTube video 🛰', callback_data='videos')
             ],[
-            InlineKeyboardButton('🔗 Url Shorter 🔗', callback_data='urlshortn')
+            InlineKeyboardButton('🔗 Url Shortner 🔗', callback_data='urlshortn')
             ],[
             InlineKeyboardButton('✅ Subscribe my YouTube channel  ✅', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
         ]]
@@ -114,7 +114,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🚀 Download YouTube video 🛰', callback_data='videos')
             ],[
-            InlineKeyboardButton('🔗 Url Shorter 🔗', callback_data='urlshortn')
+            InlineKeyboardButton('🔗 Url Shortner 🔗', callback_data='urlshortn')
             ],[
             InlineKeyboardButton('✅ Subscribe my YouTube channel  ✅', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
         ]]
