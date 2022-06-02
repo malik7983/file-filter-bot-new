@@ -60,6 +60,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🚀 Download YouTube video 🛰', callback_data='video')
             ],[
+            InlineKeyboardButton('🔗 Url Shorter 🔗', callback_data='urlshortn')
+            ],[
             InlineKeyboardButton('✅ Subscribe my YouTube channel  ✅', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -111,6 +113,8 @@ async def start(client, message):
             InlineKeyboardButton('❤️ Donation ❤️', callback_data='dinette'),
             ],[
             InlineKeyboardButton('🚀 Download YouTube video 🛰', callback_data='video')
+            ],[
+            InlineKeyboardButton('🔗 Url Shorter 🔗', callback_data='urlshortn')
             ],[
             InlineKeyboardButton('✅ Subscribe my YouTube channel  ✅', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
         ]]
