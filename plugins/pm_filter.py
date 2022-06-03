@@ -882,7 +882,7 @@ async def advantage_spell_chok(msg):
         hmm = InlineKeyboardMarkup(
         [
             [
-                 InlineKeyboardButton("🔍 Click Here To Check Spilling 🔎", url=f"https://google.com/search?q={search}{name}"),
+                 InlineKeyboardButton("🔍 Click Here To Check Spilling 🔎", url=f"https://google.com/search?q={msg.text}"),
                  ],
                  [
                  InlineKeyboardButton(" Click Here To Check Release Date 📆", url=f"https://google.com/search?q={search}%20release%20date")
