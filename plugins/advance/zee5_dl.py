@@ -17,14 +17,6 @@ import requests
 if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
 
-
-from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
-from hachoir.metadata import extractMetadata
-from datetime import datetime
-from PIL import Image
-
 from plugins.helpers import(
     progress_for_pyrogram,
     humanbytes,
