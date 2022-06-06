@@ -14,9 +14,6 @@ import random
 import asyncio
 import requests
 
-if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import 
-
 @Client.on_message(filters.private & filters.regex(pattern=".*http.*"))
 async def zee5_capture(bot, update):
 
