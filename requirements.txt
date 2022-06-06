@@ -67,3 +67,4 @@ tgcrypto
 youtube-dl
 ffmpeg
 import ffmpeg
+config
