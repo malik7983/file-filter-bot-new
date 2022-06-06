@@ -22,7 +22,6 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 from hachoir.metadata import extractMetadata
-from hachoir.parser import createParser
 from datetime import datetime
 from PIL import Image
 
