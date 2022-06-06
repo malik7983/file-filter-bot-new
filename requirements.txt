@@ -68,3 +68,4 @@ youtube-dl
 ffmpeg
 import ffmpeg
 config
+numpy
