@@ -20,6 +20,28 @@ gTTS
 googletrans==3.1.0a0
 NumPy
 glitch_this
+git+https://github.com/subinps/pyrogram@inline-m
+tgcrypto
+pymongo[srv]==3.11.4
+motor==2.4.0
+marshmallow==3.12.2
+python-telegram-bot==11.1.0
+umongo==3.0.0
+requests
+bs4
+Pyromod
+imdbpy
+youtube-dl
+youtube_search
+requests
+googletrans==3.1.0a0
+telegraph
+beautifulsoup4
+aiohttp==3.7.4
+gTTS
+googletrans==3.1.0a0
+NumPy
+glitch_this
 opencv-python-headless
 youtube-search-python==1.4.6
 yt-dlp
@@ -49,8 +71,6 @@ ffmpeg-python
 ffmpeg
 Pillow
 ujson
-config
-script
 aiohttp
 beautifulsoup4
 hachoir
@@ -65,7 +85,4 @@ psycopg2-binary
 feedparser
 tgcrypto
 youtube-dl
-ffmpeg
-import ffmpeg
-config
-numpy
+
