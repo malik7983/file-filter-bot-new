@@ -65,3 +65,4 @@ psycopg2-binary
 feedparser
 tgcrypto
 youtube-dl
+ffmpeg
