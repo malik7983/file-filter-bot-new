@@ -50,14 +50,9 @@ async def save_group(bot, message):
         settings = await get_settings(message.chat.id)
         if settings["welcome"]:
             for u in message.new_chat_members:
-                buttons = [[
-                InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik"),
-                ],[
-                InlineKeyboardButton('♻️ Join backup channel ♻️', url="https://t.me/m_house786")
-            ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
-                         await (temp.MELCOW['welcome']).delete()
+                        await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_video(
@@ -74,6 +69,7 @@ async def save_group(bot, message):
 )
                 
                
+
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
