@@ -66,6 +66,7 @@ async def save_group(bot, message):
                 reply_markup=InlineKeyboardMarkup(buttons))
                 await message.reply_photo(
                     photo=random.choice(PICS),
+             )
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
