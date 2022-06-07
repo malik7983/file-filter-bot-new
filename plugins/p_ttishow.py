@@ -60,13 +60,21 @@ async def save_group(bot, message):
                          await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply_text(
-                text=f"<b>Hey 👋 {u.mention}, Welcome to Our Group 👉 <s>{message.chat.title}</s>.. You Can Find Movies / Series / Animes etc. From Here. Enjoy 😉.</b> \n\n<b>If you have any question then contact us below 👇</b>",
-                disable_web_page_preview = True,
-                reply_markup=InlineKeyboardMarkup(buttons))
-                await message.reply_photo(
-                    photo=random.choice(PICS),
-             )
+                temp.MELCOW['welcome'] = await message.reply_video(
+                                                 video=(MELCOW_VID),
+                                                 caption=(MELCOW_ENG.format(u.mention, message.chat.title)),
+                                                 reply_markup=InlineKeyboardMarkup(
+                                                                         [[
+                                                                           InlineKeyboardButton("Support", url="https://t.me/+8i064A8O6zYzZWY1"),
+                                                                           InlineKeyboardButton("Main Channel", url="https://t.me/+LJRsBp82HiJhNDhl")
+                                                                         
+                                                                         ]]
+                                                 ),
+                                                 parse_mode='html'
+)
+                
+               
+
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
