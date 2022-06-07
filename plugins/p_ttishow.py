@@ -64,8 +64,8 @@ async def save_group(bot, message):
                 text=f"<b>Hey 👋 {u.mention}, Welcome to Our Group 👉 <s>{message.chat.title}</s>.. You Can Find Movies / Series / Animes etc. From Here. Enjoy 😉.</b> \n\n<b>If you have any question then contact us below 👇</b>",
                 disable_web_page_preview = True,
                 reply_markup=InlineKeyboardMarkup(buttons))
-        await asyncio.sleep(16)
-        await b.delete()
+                await message.reply_photo(
+                    photo=random.choice(PICS),
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
