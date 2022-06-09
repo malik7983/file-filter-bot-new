@@ -169,15 +169,15 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 • 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
 /𝘮𝘱4 https://youtu.be/Your Link<\b>"""
 
-    YTTHUMB_TXT = """𝙷𝙴𝙻𝙿𝚂 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝚅𝙸𝙳𝙴𝙾 𝚃𝙷𝚄𝙼𝙱𝙽𝙰𝙸𝙻
+    YTTHUMB_TXT = """<b>𝙷𝙴𝙻𝙿𝚂 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝚅𝙸𝙳𝙴𝙾 𝚃𝙷𝚄𝙼𝙱𝙽𝙰𝙸𝙻
     
 ⭕𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
 𝘛𝘺𝘱𝘦 /ytthumb 𝘈𝘯𝘥 𝘝𝘪𝘥𝘦𝘰 𝘓𝘪𝘯𝘬
 
 • 𝘌𝘹𝘢𝘮𝘱𝘭𝘦
-/ytthumb https://youtu.be/yourlink"""
+/ytthumb https://youtu.be/yourlink</b>"""
 
-    FORCESUB_TXT = """⚠️ Please Join My Updates Channel to use this Bot.. 
+    FORCESUB_TXT = """⚠️ <b>Please Join My Updates Channel to use this Bot.. 
 
  ⚠️ இந்த பாட்டைப் பயன்படுத்த, எனது புதுப்பிப்புகள் சேனலில் சேரவும்...
 
@@ -189,7 +189,7 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 जब तक आप हमारे update चैनल को join नहीं करेंगे.
 तब तक bot आपको मूवी नहीं देगा...
 
-👇 JOIN THIS CHANNEL & TRY AGAIN 👇"""
+👇 JOIN THIS CHANNEL & TRY AGAIN 👇</b>"""
 
     URLSHORT_TXT = """<b>➤ 𝐇𝐞𝐥𝐩: 𝖴𝗋𝗅 𝗌𝗁𝗈𝗋𝗍𝗇𝖾𝗋
 
@@ -200,7 +200,7 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 ➪ /short: 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌
 
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
-/short https://t.me/+veUIdIW2CQ5GU5<\b>"""
+/short https://t.me/+veUIdIW2CQ5GU5</b>"""
 
 
     URLSHORTN_TXT = """<b>➤ 𝐇𝐞𝐥𝐩: 𝖴𝗋𝗅 𝗌𝗁𝗈𝗋𝗍𝗇𝖾𝗋
@@ -212,7 +212,7 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 ➪ /short: 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌
 
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
-/short https://t.me/+veUIdIW25mOGU5<\b>"""
+/short https://t.me/+veUIdIW25mOGU5</b>"""
 
 MELCOW_ENG = """<b>Hay 👋 {}.... welcome to Our Group <s>{}</s>...
 
@@ -220,5 +220,5 @@ For admin support type @admins with your message and the bot will forward the me
 
 You Can Find Movies / Series / Animes etc. From Here. Enjoy 😉...
 
-If you have any question then contact us below 👇<\b>"""
+If you have any question then contact us below 👇</b>"""
 
