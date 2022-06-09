@@ -214,7 +214,7 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
 /short https://t.me/+veUIdIW25mOGU5</b>"""
 
-MELCOW_ENG = """<b>Hay 👋 {}.... welcome to Our Group <s>{}</s>...
+MELCOW_ENG = """<b>Hay 👋 {}.... welcome to Our Group 👉 <s>{}</s>... 🌷 ❤️
 
 For admin support type @admins with your message and the bot will forward the message to the admin...
 
