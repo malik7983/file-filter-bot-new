@@ -93,8 +93,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(btn)
         await message.reply_photo(
             photo=(MELCOW_VID),
-            chat_id=message.from_user.id,
-            caption=text=script.FORCESUB_TXT.
+            caption=script.FORCESUB_TXT.format(message.from_user.mention, chat_id=message.from_user.id,
             parse_mode="markdown"
             )
         return
