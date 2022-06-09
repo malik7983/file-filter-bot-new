@@ -60,7 +60,7 @@ async def save_group(bot, message):
                                                                          [[
                                                                            InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
                                                                            ],[
-                                                                           InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots')
+                                                                           InlineKeyboardButton('⭕️ Subscribe my YouTube channel ⭕️', url="https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A")
                                                                          
                                                                          ]]
                                                  ),
