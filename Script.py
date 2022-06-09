@@ -214,25 +214,11 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
 /short https://t.me/+veUIdIW25mOGU5<\b>"""
 
-MELCOW_ENG = """<b>Hello {}😍, and welcome to {} Group.❤️
+MELCOW_ENG = """<b>Hay 👋 {}.... welcome to Our Group <s>{}</s>...
 
-Join our <a href='https://t.me/+LJRsBp82HiJhNDhl'>main channel</a> below to get access to the movies. Before requesting the movies, Must join our main channel. Only by joining will you get access to all the movies...
+For admin support type @admins with your message and the bot will forward the message to the admin...
 
-NB: You can only get the movie by typing in the correct spelling...
+You Can Find Movies / Series / Animes etc. From Here. Enjoy 😉...
 
-If you do not get the Movie / Series, mention the admin in the following format 👇
-
-🤷 Example: @admin Avengers
-
-Wᴇ Dᴏ Nᴏᴛ Oᴡɴ Aɴʏ Cᴏɴᴛᴇɴᴛ Pᴏsᴛᴇᴅ Hᴇʀᴇ. Wᴇ Oɴʟʏ Sʜᴀʀᴇ Tʜᴏsᴇ Fɪʟᴇs Wʜɪᴄʜ Aʀᴇ Aʟʀᴇᴀᴅʏ Sʜᴀʀᴇᴅ Bʏ Sᴏᴍᴇʙᴏᴅʏ Eʟsᴇ Oɴ Tʜᴇ Iɴᴛᴇʀɴᴇᴛ
-
-⚠️ Iꜰ Yᴏᴜ Oᴡɴ Tʜᴇ Cᴏᴘʏʀɪɢʜᴛs Oꜰ Aɴʏ Sᴛᴜꜰꜰ, Iɴᴛɪᴍᴀᴛᴇ Us Wɪᴛʜ Pʀᴏᴏꜰ Wᴇ Wɪʟʟ Rᴇᴍᴏᴠᴇ
-
-Do not contact Admin directly...
-
-If you want to contact Admin, Please send the message to @assistant_m4_bot and the bot will deliver the message to the group Admin...
-
-<a href='https://t.me/filmy_harbour_support'>If you are facing any problems with our movie files, bots or groups, report it in our support group @filmy_harbour_support</a>
-
-For admin support type @admins with your message and the bot will forward the message to the admin...</b>"""
+If you have any question then contact us below 👇<\b>"""
 
