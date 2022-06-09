@@ -92,7 +92,7 @@ async def start(client, message):
             btn.append([InlineKeyboardButton("♻️ Try Again ♻️", callback_data=f"{pre}#{file_id}")])
         reply_markup=InlineKeyboardMarkup(btn)
         await message.reply_photo(
-            photo=random.choice(PICS),
+            photo=(MELCOW_VID),
             chat_id=message.from_user.id,
             text=script.FORCESUB_TXT.
             parse_mode="markdown"
