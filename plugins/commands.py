@@ -94,7 +94,7 @@ async def start(client, message):
         await message.reply_photo(
             photo=(MELCOW_VID),
             chat_id=message.from_user.id,
-            text=script.FORCESUB_TXT.
+            caption=text=script.FORCESUB_TXT.
             parse_mode="markdown"
             )
         return
