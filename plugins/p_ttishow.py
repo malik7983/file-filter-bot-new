@@ -37,12 +37,12 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('🤴ʙᴏᴛ ᴏᴡɴᴇʀ🤴', url=f'https://t.me/creatorbeatz'),
-            InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🍿', url='https://t.me/+wHX4yUfmj91iNmJl')
-        ],[InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/+8i064A8O6zYzZWY1')]]
+            InlineKeyboardButton('♻️ HΞLᎮ ♻️', url=f"https://t.me/{temp.U_NAME}?start=help"),
+            InlineKeyboardButton('💎 Updates 💎', url='https://t.me/m_house786')
+        ],[InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots')]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
+            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me..\n\n Contact my Owner >> @sahid_malik</b>",
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
@@ -58,8 +58,8 @@ async def save_group(bot, message):
                                                  caption=(MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton("Support", url="https://t.me/+8i064A8O6zYzZWY1"),
-                                                                           InlineKeyboardButton("Main Channel", url="https://t.me/+LJRsBp82HiJhNDhl")
+                                                                           InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik"),
+                                                                           InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots')
                                                                          
                                                                          ]]
                                                  ),
