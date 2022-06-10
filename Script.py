@@ -2,7 +2,7 @@ class script(object):
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """<b>✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}</b>
-✯ <b>𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/sahid_nalik>Sahid malik</a>
+✯ <b>𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/sahid_malik>Sahid malik</a>
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
@@ -210,11 +210,11 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
 /short https://t.me/+veUIdIW25mOGU5</b>"""
 
-    OWNER_TXT = """<b>>━━━━━━━━━᚜ Owner Details ᚛━━━━━━━━━
+    OWNER_TXT = """<b>>━━━━᚜ Owner Details ᚛━━━━<
     
 ⭕️ FULL NAME : Sahid malik
 ⭕️ USERNAME: @sahid_malik
-⭕️PERMANENT DM LINK : <a href=https://t.me/sahid_nalik>CLICK Here</a></b>"""
+⭕️PERMANENT DM LINK : <a href=https://t.me/sahid_malik>CLICK Here</a></b>"""
 
 MELCOW_ENG = """<b>Hay 👋 {}.... 🌷 ❤️
 
