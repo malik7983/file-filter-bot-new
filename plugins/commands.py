@@ -48,7 +48,7 @@ async def start(client, message):
             InlineKeyboardButton('❇️ Add Me To Your Groups ❇️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🖥 CHANNEL 🖥', url='https://t.me/+ZeZNvt43B4o3ZmJl'),
-            InlineKeyboardButton('☎️CONTACT ME', url='https://t.me/sahid_malik'),
+            InlineKeyboardButton('❗️Bot Owner❗️', callback_data='owner),
             InlineKeyboardButton('🖥 UPDATES 🖥', url='https://t.me/m_house786')
             ],[
             InlineKeyboardButton('♻️ Help ♻️', callback_data='help'),
@@ -102,7 +102,7 @@ async def start(client, message):
             InlineKeyboardButton('✳️ Add Me To Your Groups ✳️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🖥 CHANNEL 🖥', url='https://t.me/+ZeZNvt43B4o3ZmJl'),
-            InlineKeyboardButton('☎️ CONTACT ME', url='https://t.me/sahid_malik'),
+            InlineKeyboardButton('❗️Bot Owner❗️', callback_data='owner),
             InlineKeyboardButton('🖥 UPDATES 🖥', url='https://t.me/m_house786')
             ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
