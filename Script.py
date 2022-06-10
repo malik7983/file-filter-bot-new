@@ -210,15 +210,19 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
 /short https://t.me/+veUIdIW25mOGU5</b>"""
 
-MELCOW_ENG = """<b>Hay 👋 {}.... 😎
+MELCOW_ENG = """<b>Hay 👋 {}.... 🌷 ❤️
 
 😎 welcome to Our Group...
   
-         👉 <s>{}</s> 👈 🌷 ❤️
+        😎 👉 <s>{}</s> 👈 😎
 
 For admin support type @admins with your message and the bot will forward the message to the admin...
 
-You Can Find Movies / Series / Animes etc. From Here. Enjoy 😉...
+😎 You Can Find 🔍 Movies / Series / Animes etc. From Here. Enjoy 😉...
 
-If you have any question then contact us below 👇</b>"""
+🙏 Plz do not request the owner for the movie.. or else you will be blocked...
+
+If there is any problem with the bot then contact the owner
+
+If you have any question then contact us below  👇</b>"""
 
