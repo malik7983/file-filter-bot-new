@@ -216,13 +216,11 @@ MELCOW_ENG = """<b>Hay 👋 {}.... 🌷 ❤️
   
         😎 👉 <s>{}</s> 👈 😎
 
-For admin support type @admins with your message and the bot will forward the message to the admin...
-
 😎 You Can Find 🔍 Movies / Series / Animes etc. From Here. Enjoy 😉...
 
 🙏 Plz do not request the owner for the movie.. or else you will be blocked...
 
-If there is any problem with the bot then contact the owner
+⚙ If there is any problem with the bot then contact the owner..
 
 If you have any question then contact us below  👇</b>"""
 
