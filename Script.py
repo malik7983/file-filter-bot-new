@@ -224,7 +224,7 @@ MELCOW_ENG = """<b>Hay 👋 {}.... 🌷 ❤️
 
 If you have any question then contact us below  👇</b>"""
 
-    OWNER_TXT = """<b>⍟───[ Owner Details]───⍟
+    OWNER_TXT = """<b>>━━━━━━━━━᚜ Owner Details ᚛━━━━━━━━━
     
 ⭕️ FULL NAME : Sahid malik
 ⭕️ USERNAME: @sahid_malik
