@@ -228,4 +228,4 @@ If you have any question then contact us below  👇</b>"""
     
 ⭕️ FULL NAME : Sahid malik
 ⭕️ USERNAME: @sahid_malik
-⭕️PERMANENT DM LINK : <a href=https://t.me/sahid_nalik>CLICK Here</a></b>
+⭕️PERMANENT DM LINK : <a href=https://t.me/sahid_nalik>CLICK Here</a></b>"""
