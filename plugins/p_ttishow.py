@@ -55,7 +55,7 @@ async def save_group(bot, message):
                         pass
                 temp.MELCOW['welcome'] = await message.reply_photo(
                                                  photo=(PICTURES),
-                                                 caption=(MELCOW_ENG.format(u.mention, message.chat.title)),
+                                                 caption=(MMMB_MB.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
                                                                            InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
