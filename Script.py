@@ -218,7 +218,7 @@ MELCOW_ENG = """<b>Hay 👋 {}.... 🌷 ❤️
 
 😎 You Can Find 🔍 Movies / Series / Animes etc. From Here. Enjoy 😉...
 
-🙏 Plz do You not request the owner for the movie.. or else you will be blocked directly...
+🙏 Plz do You not request the owner for the movie.. or else you will be blocked directly...⚠️
 
 ⚙ If there is any problem with the bot then contact the owner..
 
