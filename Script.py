@@ -210,6 +210,12 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
 /short https://t.me/+veUIdIW25mOGU5</b>"""
 
+    OWNER_TXT = """<b>>━━━━━━━━━᚜ Owner Details ᚛━━━━━━━━━
+    
+⭕️ FULL NAME : Sahid malik
+⭕️ USERNAME: @sahid_malik
+⭕️PERMANENT DM LINK : <a href=https://t.me/sahid_nalik>CLICK Here</a></b>"""
+
 MELCOW_ENG = """<b>Hay 👋 {}.... 🌷 ❤️
 
 😎 welcome to Our Group...
@@ -224,8 +230,3 @@ MELCOW_ENG = """<b>Hay 👋 {}.... 🌷 ❤️
 
 If you have any question then contact us below  👇</b>"""
 
-    OWNER_TXT = """<b>>━━━━━━━━━᚜ Owner Details ᚛━━━━━━━━━
-    
-⭕️ FULL NAME : Sahid malik
-⭕️ USERNAME: @sahid_malik
-⭕️PERMANENT DM LINK : <a href=https://t.me/sahid_nalik>CLICK Here</a></b>"""
