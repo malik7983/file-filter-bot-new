@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
-from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS, MELCOW_VID
+from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS, MALIK_PH
 from database.users_chats_db import db
 from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
@@ -54,8 +54,8 @@ async def save_group(bot, message):
                     except:
                         pass
             p = temp.MELCOW['welcome'] = await message.reply_photo(
-                                                 photo=(MELCOW_VID),
-                                                 caption=(MELCOW_ENG.format(u.mention, message.chat.title)),
+                                                 photo=(MALIK_PH),
+                                                 caption=(MALIK_PHH.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
                                                                            InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
