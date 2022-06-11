@@ -39,6 +39,11 @@ async def give_filter(client, message):
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
+                buttons = [[
+                InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik"),
+                ],[
+                InlineKeyboardButton('⭕️ Subscribe my YouTube channel ⭕️', url="https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A")
+            ]]
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
         return await query.answer(ALRT_TXT.format(query.from_user.first_name), show_alert=True)
