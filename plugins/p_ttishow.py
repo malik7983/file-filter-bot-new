@@ -53,23 +53,23 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] p = await message.reply_photo(
-                                                   photo=(MELCOW_VID),
-                                                   caption=(MELCOW_ENG.format(u.mention, message.chat.title)),
-                                                   reply_markup=InlineKeyboardMarkup(
-                                                                           [[
-                                                                             InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
-                                                                             ],[
-                                                                             InlineKeyboardButton('⭕️ Subscribe my YouTube channel ⭕️', url="https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A")
+            p = temp.MELCOW['welcome'] = await message.reply_photo(
+                                                 photo=(MELCOW_VID),
+                                                 caption=(MELCOW_ENG.format(u.mention, message.chat.title)),
+                                                 reply_markup=InlineKeyboardMarkup(
+                                                                         [[
+                                                                           InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
+                                                                           ],[
+                                                                           InlineKeyboardButton('⭕️ Subscribe my YouTube channel ⭕️', url="https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A")
                                                                          
-                                                                           ]]
-                                                   ),
-                                                   parse_mode='html'
+                                                                         ]]
+                                                 ),
+                                                 parse_mode='html'
 )
                 
-               
-                                        await asyncio.sleep(10)
-                                        await p.delete()
+          
+            await asyncio.sleep(10)
+            await p.delete()
 
 
 
