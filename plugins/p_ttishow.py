@@ -50,7 +50,7 @@ async def save_group(bot, message):
             for u in message.new_chat_members:
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
-                        await (temp.MELCOW['welcome']).delete()
+                    p = await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_photo(
@@ -68,8 +68,8 @@ async def save_group(bot, message):
 )
                 
                
-                        await asyncio.sleep(10)
-                        await p.delete()
+                     await asyncio.sleep(10)
+                     await p.delete()
 
 
 
