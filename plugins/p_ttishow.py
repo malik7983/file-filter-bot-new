@@ -53,7 +53,7 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-            p = temp.MELCOW['welcome'] = await message.reply_photo(
+                temp.MELCOW['welcome'] = await message.reply_photo(
                                                  photo=(MALIK_PH),
                                                  caption=(MALIK_PHH.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
@@ -66,10 +66,6 @@ async def save_group(bot, message):
                                                  ),
                                                  parse_mode='html'
 )
-                
-          
-            await asyncio.sleep(10)
-            await p.delete()
 
 
 
