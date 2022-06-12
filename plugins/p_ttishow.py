@@ -60,7 +60,7 @@ async def save_group(bot, message):
                                                                          [[
                                                                            InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
                                                                            ],[
-                                                                           InlineKeyboardButton('♻️ GROUP RULES ♻️', callback_data='group_rules")
+                                                                           InlineKeyboardButton('♻️ GROUP RULES ♻️', callback_data='group_rules')
                                                                          
                                                                          ]]
                                                  ),
