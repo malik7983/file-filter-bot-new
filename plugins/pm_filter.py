@@ -528,7 +528,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.reply_photo(
             photo=(MALIK_PM),
-            caption=(GROUP_R.format(u.mention, message.chat.title)),
+            caption =(OWNER_R),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
