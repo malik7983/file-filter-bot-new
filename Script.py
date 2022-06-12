@@ -255,8 +255,6 @@ If you have any question then contact us below  👇</b>"""
 
 ALURT_FND = """<b>Hey, {}...😎
 
-  Your Query: 👉 {} Check your spelling 
-
 CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. 
 
 दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें</b> 👇👇👇"""
