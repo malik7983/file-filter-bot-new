@@ -216,6 +216,29 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 ⭕️ USERNAME: @sahid_malik
 ⭕️PERMANENT DM LINK : <a href=https://t.me/sahid_malik>CLICK Here</a></b>"""
 
+    GROUP_R_TXT = """<b>GROUP RULES
+
+☀️  Search With Correct Spelling..
+
+☀️ Try to Search movie With  Year If The bot is Not Sending You Accurate Result..
+
+☀️ Search Series In The Given From Example : Gotham S03E01 And S03E10..
+
+☀️ Search Movies  in The Given From Example:    
+(1) Avengers.. ✅
+(2) Avengers Hindi. ✅
+(3) Don't Tipe Avengers Hindi Dubbed..❌
+
+☀️Don't Do Any Self Promotion.
+
+☀️ Don't Send Any Kind Of Photo Video Documents URL ETC.
+
+☀️ Sending The Above  Mantained Things Will Lead To Permanent Ban.
+
+☀️Don't Request Any Things Other Than Movie Series Animes.
+
+☀️ Give and Tak Respect</b>.."""
+
 MALIK_PHH = """<b>Hay 👋 {}.... 🌷 ❤️
 
 😎 welcome to Our Group...
