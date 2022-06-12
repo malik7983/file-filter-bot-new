@@ -4,7 +4,7 @@ import re
 import ast
 
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
-from Script import script, GROUP_R
+from Script import script
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
@@ -528,7 +528,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.reply_photo(
             photo=(MALIK_PM),
-            caption =(OWNER_R),
+            text=script.GROUP_R_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
