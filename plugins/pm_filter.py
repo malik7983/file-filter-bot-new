@@ -526,7 +526,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='close')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.reply_photo(
+        await query.message.edit_text(
             photo=(MALIK_PM),
             text=script.GROUP_R_TXT,
             disable_web_page_preview=True,
