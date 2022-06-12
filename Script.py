@@ -255,6 +255,6 @@ If you have any question then contact us below  👇</b>"""
 
 ALURT_FND = """<b>Hey, {}...😎
 
- CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. 
+CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. 
 
- दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें</b> 👇👇👇"""
+दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें</b> 👇👇👇"""
