@@ -253,7 +253,7 @@ MALIK_PHH = """<b>Hay 👋 {}.... 🌷 ❤️
 
 If you have any question then contact us below  👇</b>"""
 
-ALURT_FND = """<b>Hey, {}...😎
+ALURT_FND = """<b>Hey, {message.from_user.mention}...😎
 
 CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. 
 
