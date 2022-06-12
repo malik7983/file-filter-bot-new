@@ -253,3 +253,4 @@ MALIK_PHH = """<b>Hay 👋 {}.... 🌷 ❤️
 
 If you have any question then contact us below  👇</b>"""
 
+ALURT_FND = """ malik text"""
