@@ -523,7 +523,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "group_rules":
         buttons = [[
-            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='close')
+            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
