@@ -210,6 +210,23 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
 /short https://t.me/+veUIdIW25mOGU5</b>"""
 
+    GHHM_TXT = """ 7k Users🤩🍿 Thanks For Your Support
+
+𝖩𝗎𝗌𝗍 𝖠𝖽𝖽 𝖮𝗎𝗋 𝖡𝗈𝗍 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 𝖠𝗌 𝖠𝖽𝗆𝗂𝗇, 𝖨𝗍 𝖶𝗂𝗅𝗅 𝖯𝗋𝗈𝗏𝗂𝖽𝖾 𝖬𝗈𝗏𝗂𝖾𝗌 𝖳𝗁𝖾𝗋𝖾...😜
+
+
+🔆 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀 🔆
+
+✪ AutoFilter, Manual Filter
+✪ IMDb HD Posters
+✪ IMDb Real Details
+✪ Two Buttons Mode
+✪ No Force Subscribe
+✪ No Watermark in Files
+✪ Extra Features : Covid Information, Song, Fun Module
+
+♀️More Features Adding Soon🤩🍿"""
+
     OWNER_TXT = """<b>>━━━━᚜ Owner Details ᚛━━━━<
     
 ⭕️ FULL NAME : Sahid malik
