@@ -477,6 +477,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "GHHM":
+        buttons = [[
+            InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots'),
+            InlineKeyboardButton('♥️ Source', callback_data='source')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GHHM_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
     elif query.data == "urlshort":
         buttons = [[
             InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='help')
