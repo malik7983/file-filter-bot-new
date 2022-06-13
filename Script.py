@@ -253,6 +253,8 @@ MALIK_PHH = """<b>Hay 👋 {}.... 🌷 ❤️
 
 If you have any question then contact us below  👇</b>"""
 
-ALURT_FND = """<b>CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. 
+ALURT_FND = """<b>Hay, Your {} Spilling not credit plz choice give the list 👇
+
+CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. 
 
 दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें</b> 👇👇👇"""
