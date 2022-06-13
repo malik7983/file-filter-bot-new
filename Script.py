@@ -226,6 +226,8 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 
 ⚙ More Features Adding Soon 😎"""
 
+    GHHN_TXT = """Extra features"""
+
     OWNER_TXT = """<b>>━━━━᚜ Owner Details ᚛━━━━<
     
 ⭕️ FULL NAME : Sahid malik
