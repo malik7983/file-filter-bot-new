@@ -253,7 +253,7 @@ MALIK_PHH = """<b>Hay 👋 {}.... 🌷 ❤️
 
 If you have any question then contact us below  👇</b>"""
 
-ALURT_FND = """<b>Your 👉 {} 👈 spelling is not correct, please choose from the list given 👇
+ALURT_FND = """<b>Your 👉 {}❗️ spelling is not correct, please choose from the list given 👇
 >━━━━━━━━━━━━━━━━<
 CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. 
 
