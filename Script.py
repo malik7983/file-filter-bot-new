@@ -210,7 +210,7 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
 /short https://t.me/+veUIdIW25mOGU5</b>"""
 
-    GHHM_TXT = """ 7k User 💖 Thanks For Your Support...
+    GHHM_TXT = """<b>7k User 💖 Thanks For Your Support...
 
 𝖩𝗎𝗌𝗍 𝖠𝖽𝖽 𝖮𝗎𝗋 𝖡𝗈𝗍 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 𝖠𝗌 𝖠𝖽𝗆𝗂𝗇, 𝖨𝗍 𝖶𝗂𝗅𝗅 𝖯𝗋𝗈𝗏𝗂𝖽𝖾 𝖬𝗈𝗏𝗂𝖾𝗌 𝖳𝗁𝖾𝗋𝖾... 😎
 
@@ -224,7 +224,7 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 ✪ Force Subscribe
 ✪ Extra Features: download songs, download you tube video, URL Shortner,  
 
-⚙ More Features Adding Soon 😎"""
+⚙ More Features Adding Soon</b> 😎"""
 
     GHHN_TXT = """Extra features"""
 
