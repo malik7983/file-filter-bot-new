@@ -8,7 +8,7 @@ from Script import script, ALURT_FND, M_NT_FND
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
-from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, VIDEO_VD, SMART_PIC, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, \
+from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, M_N_F, VIDEO_VD, SMART_PIC, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, \
     SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
@@ -138,14 +138,21 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit(M_NT_FND)
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton('♻️ 𝐉𝐨𝐢𝐧 𝙂𝙧𝙤𝙪𝙥 ', url="https://t.me/+gXuMKXOWm1UyOTdl")
-                    ]
-                ]
-            )
+            k = await message.reply_photo(
+                        photo=(M_N_F),
+                        caption=(M_NT_FND.format(u.mention, message.chat.title)),
+                        reply_markup=InlineKeyboardMarkup(
+                                                    [[
+                                                      InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
+                                                      ],[
+                                                      InlineKeyboardButton('♻️ GROUP RULES ♻️', callback_data='group_rules')
+                                                                         
+                                                    ]]
+                        ),
+                        parse_mode='html'
+)
+
+
             await asyncio.sleep(15)
             await k.delete()
 
