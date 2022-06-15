@@ -138,8 +138,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await message.reply_photo(
-                        photo=(M_N_F),
+            k = await query.message.edit(
                         caption=(M_NT_FND.format(u.mention, message.chat.title)),
                         reply_markup=InlineKeyboardMarkup(
                                                     [[
