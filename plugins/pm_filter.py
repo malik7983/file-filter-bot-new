@@ -4,7 +4,7 @@ import re
 import ast
 
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
-from Script import script, ALURT_FND
+from Script import script, ALURT_FND, M_NT_FND
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
@@ -138,7 +138,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('<b>♻️ This Movie Not Found my Database \n\n♻️ Request to admin 👉 @m_admins</b>')
+            k = await query.message.edit(M_NT_FND)
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
