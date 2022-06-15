@@ -139,11 +139,14 @@ async def advantage_spoll_choker(bot, query):
             await auto_filter(bot, query, k)
         else:
             k = await query.message.edit('<b>♻️ This Movie Not Found my Database \n\n♻️ Request to admin 👉 @m_admins</b>')
-                buttons = [[
-                InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik"),
-                ],[
-                InlineKeyboardButton('⭕️ Subscribe my YouTube channel ⭕️', url="https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A")
-            ]]
+           reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('♻️ 𝐉𝐨𝐢𝐧 𝙂𝙧𝙤𝙪𝙥 ', url="https://t.me/+gXuMKXOWm1UyOTdl")
+                ]
+            ]
+        )
+    )
             await asyncio.sleep(15)
             await k.delete()
 
