@@ -276,3 +276,5 @@ ALURT_FND = """<b>Your 👉 {}❗️ spelling is not correct, please choose from
 CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. 
 
 दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें</b> 👇👇👇"""
+
+M_NT_FND = """malik"""
