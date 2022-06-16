@@ -139,9 +139,9 @@ async def advantage_spoll_choker(bot, query):
             await auto_filter(bot, query, k)
         else:
             k = await query.message.edit(M_NT_FND)
-            btn = [
+        btn.append(
                 InlineKeyboardButton('🙏 Subscribe my YouTube channel 🙏', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
-             ],
+            ],
         )
 
 
