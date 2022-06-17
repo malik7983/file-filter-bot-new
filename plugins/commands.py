@@ -90,9 +90,9 @@ async def start(client, message):
             kk, file_id = message.command[1].split("_", 1)
             pre = 'checksubp' if kk == 'filep' else 'checksub' 
             btn.append([InlineKeyboardButton("♻️ Try Again ♻️", callback_data=f"{pre}#{file_id}")])
-        await client.send_message(
-            chat_id=message.from_user.id,
-            text=script.FORCESUB_TXT,
+        await client.send_message.reply_photo(
+            photo=(MALIK_P),
+            caption.FORCESUB,chat_id=message.from_user.id,
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
