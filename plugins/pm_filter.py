@@ -138,6 +138,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
+            await query.message.edit(
         hmm = InlineKeyboardMarkup(
         [
             [
