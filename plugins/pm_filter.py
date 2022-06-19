@@ -137,6 +137,7 @@ async def advantage_spoll_choker(bot, query):
         if files:
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
+        else:
         hmm = InlineKeyboardMarkup(
         [
             [
@@ -144,8 +145,9 @@ async def advantage_spoll_choker(bot, query):
             ]
         ]
     )
-        else:
-            k = await query.message.edit(M_NT_FND)
+            k = await msg.reply(f"Hey, {msg.from_user.mention}!.. Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=hmm)
+            await asyncio.sleep(60)
+            await k.delete()         
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
