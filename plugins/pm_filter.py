@@ -145,7 +145,6 @@ async def advantage_spoll_choker(bot, query):
         ]
     )
         else:
-
             k = await query.message.edit(M_NT_FND)
 
 @Client.on_callback_query()
