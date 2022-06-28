@@ -41,8 +41,7 @@ async def save_group(bot, message):
             InlineKeyboardButton('💎 Updates 💎', url='https://t.me/m_house786')
         ],[InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots')]]
         reply_markup=InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=(PHT),
+        await message.reply_text(
             text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me..\n\n Contact my Owner >> @sahid_malik</b>",
             reply_markup=reply_markup)
     else:
