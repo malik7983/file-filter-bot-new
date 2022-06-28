@@ -281,7 +281,7 @@ ALURT_FND = """<b>Your 👉 {}❗️ spelling is not correct, please choose from
 
 M_NT_FND = """<b>♻️ This Movie Not Found my Database \n\n♻️ Request to admin 👉 @m_admins</b>"""
 
-ADG = """<b>Thankyou For Adding Me In {} ❣️\n\nIf you have any questions & doubts about using me..\n\n Contact my Owner >> @sahid_malik</b>"""
+ADG = """<b>Thankyou For Adding Me.. ❣️\n\nIf you have any questions & doubts about using me..\n\n Contact my Owner >> @sahid_malik</b>"""
 
 ADDG = """<b>Hay {},
 
