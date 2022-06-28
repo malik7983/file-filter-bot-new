@@ -1,11 +1,11 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
-from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS, MALIK_PH
+from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, PHT, MELCOW_NEW_USERS, MALIK_PH
 from database.users_chats_db import db
 from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
-from Script import script, MALIK_PHH
+from Script import script, MALIK_PHH, ADG
 from pyrogram.errors import ChatAdminRequired
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
@@ -41,8 +41,9 @@ async def save_group(bot, message):
             InlineKeyboardButton('💎 Updates 💎', url='https://t.me/m_house786')
         ],[InlineKeyboardButton('🌴 Bots Channel 🌴', url='https://t.me/malik_bots')]]
         reply_markup=InlineKeyboardMarkup(buttons)
-        await message.reply_text(
-            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me..\n\n Contact my Owner >> @sahid_malik</b>",
+        await message.reply_photo(
+            photo=(PHT),
+            caption=(ADG.format(message.from_user.mention,
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
