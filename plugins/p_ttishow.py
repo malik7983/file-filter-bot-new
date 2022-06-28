@@ -43,7 +43,7 @@ async def save_group(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=(PHT),
-            caption=(ADG.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME)),
+            caption=(ADG.format(u.mention, message.chat.title)),
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
