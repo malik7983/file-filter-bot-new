@@ -25,7 +25,7 @@ MALIK_PH = environ.get("MALIK_PH", "https://telegra.ph/file/0547d69b90b596ad6bae
 SMART_PIC = environ.get("SMART_PIC", "https://telegra.ph/file/7cf564b255461abfc75fe.jpg")
 VIDEO_VD = environ.get("VIDEO_VD", "https://telegra.ph/file/566ff238e36d9f2425568.mp4")
 M_N_F = environ.get("M_N_F", "https://telegra.ph/file/7cf564b255461abfc75fe.jpg")
-PHT = environ.get("PHT", "https://telegra.ph/file/7cf564b255461abfc75fe.jpg")
+PHT = environ.get("PHT", "https://telegra.ph/file/9b77b96a9d2f5dda7764b.jpg")
 PHTT = environ.get("PHTT", "https://telegra.ph/file/7cf564b255461abfc75fe.jpg")
 
 # Admins, Channels & Users
