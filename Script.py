@@ -281,7 +281,14 @@ ALURT_FND = """<b>Your 👉 {}❗️ spelling is not correct, please choose from
 
 M_NT_FND = """<b>♻️ This Movie Not Found my Database \n\n♻️ Request to admin 👉 @m_admins</b>"""
 
-ADG = """malik"""
+ADG = """<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me..\n\n Contact my Owner >> @sahid_malik</b>"""
 
-ADDG = """malik"""
+ADDG = """<b>Hay {},
+
+I'm ⚡️ Powerful Auto-Filter Bot...
+😎 You Can Use Me As A Auto-filter in Your Group ....
+Its Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provide Movies There...😎
+⚠️ More Help Check Help Button Below
+
+©️Mantained Bʏ  @sahid_malik</b>"""
 
