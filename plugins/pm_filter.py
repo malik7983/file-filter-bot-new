@@ -146,7 +146,6 @@ async def advantage_spoll_choker(bot, query):
                                           InlineKeyboardButton('♻️ Request to admin ♻️', url="https://t.me/m_admins")                             
                                         ]]
                 ),
-                parse_mode='html'
 )
             await asyncio.sleep(20)
             await k.delete()
