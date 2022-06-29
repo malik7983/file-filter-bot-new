@@ -140,17 +140,16 @@ async def advantage_spoll_choker(bot, query):
         else:
             b = await query.message.reply_photo(
                 photo=(M_NT_F),
-                caption=(M_NT_FND),
-                reply_markup=InlineKeyboardMarkup(
-                                        [[
-                                          InlineKeyboardButton('♻️ Request to admin ♻️', url="https://t.me/m_admins")                             
-                                        ]]
-                ),
-                parse_mode='html'
-)
-            await asyncio.sleep(20)
-            await b.delete()
-
+        GOOGLE = InlineKeyboardMarkup(
+        [
+            [
+                 InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url="https://t.me/m_admins")
+            ]
+        ]
+    )
+        k = await msg.reply(f"Hey, {msg.from_user.mention}!.. Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=GOOGLE)
+        await asyncio.sleep(60)
+        await k.delete()
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
