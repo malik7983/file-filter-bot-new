@@ -142,13 +142,16 @@ async def advantage_spoll_choker(bot, query):
                 photo=(M_NT_F),
                 caption=(M_NT_FND),
                 reply_markup=InlineKeyboardMarkup(
-                btn = [[
-       .         InlineKeyboardButton('♻️ Request to admin ♻️', url="https://t.me/m_admins")                             
-                ]]
+                                        [[
+                                          InlineKeyboardButton('♻️ Request to admin ♻️', url="https://t.me/m_admins")                             
+                                        ]]
                 ),
-            await asyncio.sleep(20)
-            await k.delete()
-                
+                parse_mode='html'
+)
+           await asyncio.sleep(20)
+           await k.delete()
+
+
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.data == "close_data":
