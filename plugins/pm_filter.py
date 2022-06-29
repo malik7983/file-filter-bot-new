@@ -138,20 +138,21 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            await query.message.reply_photo(
+        m = await query.message.reply_photo(
                 photo=(M_NT_F),
                 caption=(M_NT_FND),
                 reply_markup=InlineKeyboardMarkup(
                                         [[
                                           InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
                                           ],[
-                                          InlineKeyboardButton('♻️ GROUP RULES ♻️', callback_data='group_rules')
+                                          InlineKeyboardButton('♻️ GROUP RULES ♻️', url=f"https://google.com/search?q={search}")
                                                                          
                                         ]]
                 ),
                 parse_mode='html'
 )
-
+        await asyncio.sleep(15)
+        await k.delete()
         
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
