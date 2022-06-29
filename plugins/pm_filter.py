@@ -139,16 +139,11 @@ async def advantage_spoll_choker(bot, query):
             k = await auto_filter(bot, query, k)
         else:
             b = await query.message.edit(M_NT_FND)
-            GOOGLE = InlineKeyboardMarkup(
-            [
-                [
-                     InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url="https://t.me/m_admins")
-                ]
-            ]
-        )
-            k = await msg.reply(f"Hey, {msg.from_user.mention}!.. Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=GOOGLE)
-            await asyncio.sleep(60)
-            await k.delete()
+                buttons = [[
+                InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik"),
+                ],[
+                InlineKeyboardButton('⭕️ Subscribe my YouTube channel ⭕️', url="https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A")
+            ]]
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
