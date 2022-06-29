@@ -143,10 +143,7 @@ async def advantage_spoll_choker(bot, query):
                 caption=(M_NT_FND),
                 reply_markup=InlineKeyboardMarkup(
                                         [[
-                                          InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
-                                          ],[
-                                          InlineKeyboardButton('♻️ GROUP RULES ♻️', url=f"https://google.com/search?q={search}")
-                                                                         
+                                          InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")                             
                                         ]]
                 ),
                 parse_mode='html'
