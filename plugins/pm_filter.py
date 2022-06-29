@@ -918,7 +918,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        Google = InlineKeyboardMarkup(
+        GOOGLE = InlineKeyboardMarkup(
         [
             [
                  InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url="https://google.com/search?q={search}")
@@ -951,7 +951,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist)) # removing duplicates
     if not movielist:
-        Google = InlineKeyboardMarkup(
+        GOOGLE = InlineKeyboardMarkup(
         [
             [
                  InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url="https://google.com/search?q={search}")
