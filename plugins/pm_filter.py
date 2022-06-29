@@ -139,7 +139,6 @@ async def advantage_spoll_choker(bot, query):
             k = await auto_filter(bot, query, k)
         else:
             b = await query.message.reply_photo(btn),
-                photo=(M_NT_F),
         GOOGLE = InlineKeyboardMarkup(
         [
             [
