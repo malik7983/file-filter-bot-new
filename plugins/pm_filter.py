@@ -138,7 +138,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             k = await auto_filter(bot, query, k)
         else:
-            b = await query.message.reply_photo(
+            b = await query.message.reply_photo(btn),
                 photo=(M_NT_F),
         GOOGLE = InlineKeyboardMarkup(
         [
