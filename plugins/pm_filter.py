@@ -8,7 +8,7 @@ from Script import script, ALURT_FND, M_NT_FND
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
-from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, M_N_F, VIDEO_VD, SMART_PIC, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, \
+from info import ADMINS, AUTH_CHANNEL, M_NT_F, AUTH_USERS, M_N_F, VIDEO_VD, SMART_PIC, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, \
     SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
@@ -138,7 +138,20 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            await query.message.edit(M_NT_FND)
+            await query.message.reply_photo(
+                photo=(M_NT_F),
+                caption=(M_NT_FND.format(message.from_user.mention, temp.U_NAME, temp.B_NAME)),
+                reply_markup=InlineKeyboardMarkup(
+                                        [[
+                                          InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
+                                          ],[
+                                          InlineKeyboardButton('♻️ GROUP RULES ♻️', callback_data='group_rules')
+                                                                         
+                                        ]]
+                ),
+                parse_mode='html'
+)
+
         
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
