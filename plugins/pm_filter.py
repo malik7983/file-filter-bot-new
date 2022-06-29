@@ -972,7 +972,7 @@ async def advantage_spell_chok(msg):
     m = await msg.reply_video(video=(VIDEO_VD),
                             caption=(ALURT_FND.format(query)),
                     reply_markup=InlineKeyboardMarkup(btn))
-    await asyncio.sleep(600)
+    await asyncio.sleep(60)
     await m.delete()
 
 
