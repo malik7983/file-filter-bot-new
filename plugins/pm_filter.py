@@ -141,7 +141,7 @@ async def advantage_spoll_choker(bot, query):
             k = await query.message.reply_photo(
                 photo=(M_NT_F),
                 caption=(M_NT_FND),
-                reply_markup=InlineKeyboardMarkup(
+                reply_markup=InlineKeyboardMarkup(btn))
                                         [[
                                           InlineKeyboardButton('♻️ Request to admin ♻️', url="https://t.me/m_admins")                             
                                         ]]
