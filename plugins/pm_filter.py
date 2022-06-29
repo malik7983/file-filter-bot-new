@@ -135,14 +135,14 @@ async def advantage_spoll_choker(bot, query):
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
         if files:
-            k = (movie, files, offset, total_results)
-            k = await auto_filter(bot, query, k)
-        else:
             buttons = [[
             InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik"),
             ],[
             InlineKeyboardButton('⭕️ Subscribe my YouTube channel ⭕️', url="https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A")
         ]]
+            k = (movie, files, offset, total_results)
+            k = await auto_filter(bot, query, k)
+        else:
             b = await query.message.edit(M_NT_FND)
 
 
