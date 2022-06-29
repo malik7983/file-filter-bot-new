@@ -148,8 +148,8 @@ async def advantage_spoll_choker(bot, query):
                 ),
                 parse_mode='html'
 )
-           await asyncio.sleep(20)
-           await k.delete()
+            await asyncio.sleep(20)
+            await k.delete()
         
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
