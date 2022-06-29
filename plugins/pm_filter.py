@@ -138,12 +138,13 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             k = await auto_filter(bot, query, k)
         else:
-            b = await query.message.edit(M_NT_FND)
             buttons = [[
             InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik"),
             ],[
             InlineKeyboardButton('⭕️ Subscribe my YouTube channel ⭕️', url="https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A")
         ]]
+            b = await query.message.edit(M_NT_FND)
+
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
