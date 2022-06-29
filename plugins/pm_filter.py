@@ -140,7 +140,7 @@ async def advantage_spoll_choker(bot, query):
         else:
             await query.message.reply_photo(
                 photo=(M_NT_F),
-                caption=(M_NT_FND.format(u.from_user.mention, temp.U_NAME, temp.B_NAME)),
+                caption=(M_NT_FND.format(u.mention, message.chat.title)),
                 reply_markup=InlineKeyboardMarkup(
                                         [[
                                           InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
