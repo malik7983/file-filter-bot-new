@@ -139,14 +139,14 @@ async def advantage_spoll_choker(bot, query):
             await auto_filter(bot, query, k)
         else:
             k = await query.message.reply_photo(
-                photo=(M_NT_F),
-                caption=(M_NT_FND),
-                reply_markup=InlineKeyboardMarkup(
-                                        [[
-                                          InlineKeyboardButton('♻️ Request to admin ♻️', url="https://t.me/m_admins")                             
-                                        ]]
-                ),
-                parse_mode='html'
+                              photo=(M_NT_F),
+                              caption=(M_NT_FND),
+                              reply_markup=InlineKeyboardMarkup(
+                                                      [[
+                                                        InlineKeyboardButton('♻️ Request to admin ♻️', url="https://t.me/m_admins")                             
+                                                      ]]
+                              ),
+                              parse_mode='html'
 )
             await asyncio.sleep(20)
             await k.delete()
