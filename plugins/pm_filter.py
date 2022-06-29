@@ -142,9 +142,9 @@ async def advantage_spoll_choker(bot, query):
                 photo=(M_NT_F),
                 caption=(M_NT_FND),
                 reply_markup=InlineKeyboardMarkup(
-                                        [
-                                         InlineKeyboardButton('♻️ Request to admin ♻️', url="https://t.me/m_admins")                             
-                                        ]
+                                  btn = [[
+                                          InlineKeyboardButton('♻️ Request to admin ♻️', url="https://t.me/m_admins")                             
+                                        ]]
                 ),
             await asyncio.sleep(20)
             await k.delete()
