@@ -138,17 +138,19 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('<b>♻️ This Movie Not Found my Database \n᚛━━━━━━━━━━━━━━━━᚜\n ♻️ Request to admin 👉 @m_admins</b>'),
-                              reply_markup=InlineKeyboardMarkup(
-                                                      [[
-                                                        InlineKeyboardButton('♻️ Request to admin ♻️', url="https://t.me/m_admins")                             
-                                                      ]]
-                              ),
-                              parse_mode='html'
+           k = await query.message.reply_photo(
+                photo=(M_NT_F),
+                caption=(M_NT_FND),
+                reply_markup=InlineKeyboardMarkup(
+                                        [[
+                                          InlineKeyboardButton('♻️ Request to admin ♻️', url="https://t.me/m_admins")                             
+                                        ]]
+                ),
+                parse_mode='html'
 )
-            await asyncio.sleep(20)
-            await k.delete()
-        
+           await asyncio.sleep(20)
+           await k.delete()
+                
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.data == "close_data":
