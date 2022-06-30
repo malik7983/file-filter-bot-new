@@ -141,6 +141,7 @@ async def advantage_spoll_choker(bot, query):
            k = await query.message.reply_photo(
                 photo=(M_NT_F),
                 caption=(M_NT_FND),
+)
            await asyncio.sleep(20)
            await k.delete()
         
