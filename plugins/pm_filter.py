@@ -138,7 +138,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             k = await auto_filter(bot, query, k)
         else:
-           k = await query.message.edit(M_NT_FND)
+           k = await query.message.edit(M_NT_FND.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME)),
                reply_markup=InlineKeyboardMarkup(
                                       [[
                                         InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
