@@ -142,16 +142,14 @@ async def advantage_spoll_choker(bot, query):
                text = (M_NT_FND),
                reply_markup=InlineKeyboardMarkup(
                                       [[
-                                        InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
-                                        ],[
-                                        InlineKeyboardButton('♻️ GROUP RULES ♻️', callback_data='group_rules')
+                                        InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/m_admins"),
                                                                          
                                       ]]
                ),
                parse_mode='html'
 )
 
-           await asyncio.sleep(20)
+           await asyncio.sleep(15)
            await k.delete()
         
 
@@ -977,7 +975,7 @@ async def advantage_spell_chok(msg):
     m = await msg.reply_video(video=(VIDEO_VD),
                             caption=(ALURT_FND.format(query)),
                     reply_markup=InlineKeyboardMarkup(btn))
-    await asyncio.sleep(60)
+    await asyncio.sleep(600)
     await m.delete()
 
 
