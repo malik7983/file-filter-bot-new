@@ -138,9 +138,18 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             k = await auto_filter(bot, query, k)
         else:
-           k = await query.message.reply_photo(
-                photo=(M_NT_FND),
+           k = await query.message.edit(M_NT_FND)
+               reply_markup=InlineKeyboardMarkup(
+                                      [[
+                                        InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
+                                        ],[
+                                        InlineKeyboardButton('♻️ GROUP RULES ♻️', callback_data='group_rules')
+                                                                         
+                                      ]]
+               ),
+               parse_mode='html'
 )
+
            await asyncio.sleep(20)
            await k.delete()
         
