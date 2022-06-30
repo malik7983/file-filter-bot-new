@@ -139,7 +139,7 @@ async def advantage_spoll_choker(bot, query):
             k = await auto_filter(bot, query, k)
         else:
            k = await query.message.edit( 
-               reply = (M_NT_FND),
+               text = (M_NT_FND),
                reply_markup=InlineKeyboardMarkup(
                                       [[
                                         InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
