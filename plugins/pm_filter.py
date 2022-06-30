@@ -138,8 +138,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             k = await auto_filter(bot, query, k)
         else:
-           k = await query.message.reply_photo(
-                photo=(M_NT_F),
+           k = await query.message.edit(
                 caption=(M_NT_FND),
 )
            await asyncio.sleep(20)
