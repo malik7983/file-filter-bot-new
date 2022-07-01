@@ -564,11 +564,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.reply_photo(
-            photo = (M_N_F),
-            caption=script.GROUP_R_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
+            photo=(M_N_F),
+            caption=(GROUP_R),
         )
     elif query.data == "owner":
         buttons = [[
