@@ -284,7 +284,7 @@ M_NT_FND = """<b>⭕️ This Movie Not Found my Database. Request to admin..\n\n
 
 ADG = """<b>Hay. {}..\n\nThankyou For Adding Me In.. ❣️
 
-          👉 <s>{}</s> 👈 
+             👉 <s>{}</s> 👈 
 
 If you have any questions & doubts about using me..\n\n Contact my Owner >> @sahid_malik</b>"""
 
