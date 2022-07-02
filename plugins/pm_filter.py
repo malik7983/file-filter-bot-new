@@ -920,7 +920,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        await bot.send_message(
+        await query.message.edit_text(
         chat_id = update.chat.id,
         text=Text.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
         parse_mode="html",
@@ -950,7 +950,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist)) # removing duplicates
     if not movielist:
-        await bot.send_message(
+        await query.message.edit_text(
         chat_id = update.chat.id,
         text=Text.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
         parse_mode="html",
