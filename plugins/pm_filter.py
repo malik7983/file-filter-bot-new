@@ -953,13 +953,13 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist)) # removing duplicates
     if not movielist:
-            await bot.send_message(
-            chat_id = update.chat.id,
-            text=Text.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
-            parse_mode="html",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Search Google 🔎", url="https://google.com/")]]),
-            reply_to_message_id=update.message_id
-        )
+        await bot.send_message(
+        chat_id = update.chat.id,
+        text=Text.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
+        parse_mode="html",
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Search Google 🔎", url="https://google.com/")]]),
+        reply_to_message_id=update.message_id
+    )
         return
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
