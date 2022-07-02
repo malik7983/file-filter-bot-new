@@ -921,7 +921,6 @@ async def advantage_spell_chok(msg):
     gs_parsed = []
     if not g_s:
         await query.message.edit_text(
-        chat_id = update.chat.id,
         text=script.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
         parse_mode="html",
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Search Google 🔎", url="https://google.com/")]]),
@@ -951,7 +950,6 @@ async def advantage_spell_chok(msg):
     movielist = list(dict.fromkeys(movielist)) # removing duplicates
     if not movielist:
         await query.message.edit_text(
-        chat_id = update.chat.id,
         text=script.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
         parse_mode="html",
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Search Google 🔎", url="https://google.com/")]]),
