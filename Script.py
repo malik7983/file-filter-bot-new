@@ -300,3 +300,5 @@ Its Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provid
 
 ©️Mantained Bʏ  @sahid_malik</b>"""
 
+M_NNT_FND = """malik"""
+
