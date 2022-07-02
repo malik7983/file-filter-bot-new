@@ -921,10 +921,10 @@ async def advantage_spell_chok(msg):
     gs_parsed = []
     if not g_s:
         await query.message.edit_text(
-        text=script.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
-        parse_mode="html",
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Search Google 🔎", url="https://google.com/")]]),
-        reply_to_message_id=update.message_id
+            text=script.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
+            parse_mode="html",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Search Google 🔎", url="https://google.com/")]]),
+            reply_to_message_id=update.message_id
     )
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE) # look for imdb / wiki results
@@ -950,10 +950,10 @@ async def advantage_spell_chok(msg):
     movielist = list(dict.fromkeys(movielist)) # removing duplicates
     if not movielist:
         await query.message.edit_text(
-        text=script.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
-        parse_mode="html",
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Search Google 🔎", url="https://google.com/")]]),
-        reply_to_message_id=update.message_id
+            text=script.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
+            parse_mode="html",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Search Google 🔎", url="https://google.com/")]]),
+            reply_to_message_id=update.message_id
     )
         return
     SPELL_CHECK[msg.message_id] = movielist
