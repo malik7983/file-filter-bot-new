@@ -923,7 +923,7 @@ async def advantage_spell_chok(msg):
         hmm = InlineKeyboardMarkup(
         [
             [
-                 InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url="https://google.com/"),
+                 InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/"),
             ]
         ]
     )
@@ -956,7 +956,7 @@ async def advantage_spell_chok(msg):
         hmm = InlineKeyboardMarkup(
         [
             [
-                 InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url="https://google.com/"),
+                 InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/"),
             ]
         ]
     )
