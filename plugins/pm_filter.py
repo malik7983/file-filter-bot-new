@@ -4,7 +4,7 @@ import re
 import ast
 
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
-from Script import script, ALURT_FND, M_NT_FND, M_NNT_FND
+from Script import script, ALURT_FND, M_NT_FND, M_NNT_FND, M_NNT_FNDD
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
@@ -922,7 +922,7 @@ async def advantage_spell_chok(msg):
     if not g_s:
         Auto_Delete=query.message.edit_text(
             chat_id = update.chat.id,
-            text=scrip.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
+            text=(M_NNT_FNDD.format(update.from_user.mention, the_query, the_query),
             parse_mode="html",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Search Google 🔎", url="https://google.com/")]]),
             reply_to_message_id=update.message_id
