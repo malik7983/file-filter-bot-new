@@ -925,7 +925,7 @@ async def advantage_spell_chok(msg):
             InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 𝚃𝙾 𝙶𝙾𝙾𝙶𝙻𝙴 🔎", url=f"https://www.google.com/search?q={reply}") 
             ],[ 
             InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]]
-        k = await msg.reply_text(text=script.ASDF_TXT.format.query=search, from_user.mention).
+        k = await msg.reply_text(text=script.ASDF_TXT.format(query=search, from_user.mention).
         reply_markup=InlineKeyboardMarkup(buttons)         
         await asyncio.sleep(60)
         await k.delete()
