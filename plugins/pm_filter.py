@@ -921,7 +921,7 @@ async def advantage_spell_chok(msg):
     gs_parsed = []
     if not g_s:
         pmm = InlineKeyboardMarkup(
-        search.replace(" ", '+')
+        pmm = search.replace(" ", '+',
         [
             [
                  InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={search}")
