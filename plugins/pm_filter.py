@@ -921,15 +921,14 @@ async def advantage_spell_chok(msg):
     gs_parsed = []
     if not g_s:
         reply = search.replace(" ", '+')  
-        buttons = [[ 
-              InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 𝚃𝙾 𝙶𝙾𝙾𝙶𝙻𝙴 🔎", url=f"https://www.google.com/search?q={reply}") 
-              ],[ 
-              InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]]
-           k = await msg.reply_text(
-           text=script.ASDF_TXT.format.query=search, from_user.mention).
-           reply_markup=InlineKeyboardMarkup(buttons)  
-           parse_mode='html'
-        )       
+        hmm = InlineKeyboardMarkup(
+        [
+            [
+                 InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={search}")
+            ]
+        ]
+    )
+        k = await msg.reply(f"Hey, {msg.from_user.mention}!.. Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=hmm)
         await asyncio.sleep(60)
         await k.delete()
         return
