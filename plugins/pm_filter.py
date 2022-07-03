@@ -920,7 +920,6 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        pmm = InlineKeyboardMarkup(
         pmm = search.replace(" ", '+',
         [
             [
