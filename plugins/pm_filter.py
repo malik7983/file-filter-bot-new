@@ -929,7 +929,7 @@ async def advantage_spell_chok(msg):
         text=script.ASDF_TXT.format.query=search, from_user.mention).
         reply_markup=InlineKeyboardMarkup(buttons)  
         parse_mode='html'
-    )       
+)       
         await asyncio.sleep(60)
         await k.delete()
         return
