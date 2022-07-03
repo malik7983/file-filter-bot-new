@@ -926,7 +926,7 @@ async def advantage_spell_chok(msg):
             ],[ 
             InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]]
         k = await msg.reply_text(text=script.ASDF_TXT.format.query=search, from_user.mention).
-        reply_markup=InlineKeyboardMarkup(buttons)),           
+        reply_markup=InlineKeyboardMarkup(buttons)         
         await asyncio.sleep(60)
         await k.delete()
         return
