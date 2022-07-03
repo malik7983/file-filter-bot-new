@@ -922,7 +922,7 @@ async def advantage_spell_chok(msg):
     if not g_s:
         Auto_Delete=await bot.send_message(
             chat_id = update.chat.id,
-            text=Text.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
+            text=scrip.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
             parse_mode="html",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Search Google 🔎", url="https://google.com/")]]),
             reply_to_message_id=update.message_id
