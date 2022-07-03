@@ -2,7 +2,6 @@ import re, random, asyncio
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from info import PICS, MOVIE_TEXT as REQUEST_TEXT, FILTER_DEL_SECOND
-import get_size, split_list, get_settings
 from database.autofilter_mdb import get_filter_results
 
 async def group_filters(client, update):
