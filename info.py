@@ -29,9 +29,6 @@ PHT = environ.get("PHT", "https://telegra.ph/file/9b77b96a9d2f5dda7764b.jpg")
 PHTT = environ.get("PHTT", "https://telegra.ph/file/7dc82878492b8f64bb7eb.jpg")
 M_NT_F = environ.get("M_NT_F", "https://telegra.ph/file/617049055ac50169d7e2f.jpg")
 
-FILTER_DEL_SECOND = FILTER_DEL_SECOND
-MOVIE_TEXT = environ.get("REQUEST_MESSAGE", REQUEST_MESSAGE)
-
 
 
 # Admins, Channels & Users
