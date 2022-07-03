@@ -234,7 +234,7 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛�
 ⭕️ USERNAME: @sahid_malik
 ⭕️PERMANENT DM LINK : <a href=https://t.me/sahid_malik>CLICK Here</a></b>"""
 
-    SPELLING_TEXT = """<u><b> Malik name test</b></u>"""
+    ASDF_TXT = """<u><b> Malik name test</b></u>"""
 
 
     GROUP_R_TXT = """<b>GROUP RULES
