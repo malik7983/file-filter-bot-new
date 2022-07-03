@@ -930,7 +930,7 @@ async def advantage_spell_chok(msg):
         reply_markup=InlineKeyboardMarkup(buttons)         
         await asyncio.sleep(60)
         await k.delete()
-)
+        )
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE) # look for imdb / wiki results
     gs = list(filter(regex.match, g_s))
