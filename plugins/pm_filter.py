@@ -920,7 +920,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        reply = search.replace(" ", '+')
+        pmm = search.replace(" ", '+')
         InlineKeyboardMarkup(
         [
             [
@@ -928,7 +928,7 @@ async def advantage_spell_chok(msg):
             ]
         ]
     )
-        k = await msg.reply(f"Hey, {msg.from_user.mention}!.. Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=reply)
+        k = await msg.reply(f"Hey, {msg.from_user.mention}!.. Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=pmm)
         await asyncio.sleep(60)
         await k.delete()
         return
