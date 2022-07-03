@@ -920,7 +920,6 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-    else: #return if no files found for that query
         Auto_Delete=await bot.send_message(
             chat_id = update.chat.id,
             text=Text.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
