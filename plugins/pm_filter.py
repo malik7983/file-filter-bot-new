@@ -920,7 +920,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        Auto_Delete=await bot.send_message(
+        Auto_Delete=query.message.edit_text(
             chat_id = update.chat.id,
             text=scrip.SPELLING_TEXT.format(update.from_user.mention, the_query, the_query),
             parse_mode="html",
