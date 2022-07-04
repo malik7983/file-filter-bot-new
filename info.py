@@ -26,7 +26,7 @@ SMART_PIC = environ.get("SMART_PIC", "https://telegra.ph/file/7cf564b255461abfc7
 VIDEO_VD = environ.get("VIDEO_VD", "https://telegra.ph/file/566ff238e36d9f2425568.mp4")
 M_N_F = environ.get("M_N_F", "https://telegra.ph/file/7cf564b255461abfc75fe.jpg")
 PHT = environ.get("PHT", "https://telegra.ph/file/9b77b96a9d2f5dda7764b.jpg")
-PHTT = environ.get("PHTT", "https://telegra.ph/file/7dc82878492b8f64bb7eb.jpg")
+PHTT = environ.get("PHTT", "https://youtu.be/UeW7K_yZHYA")
 M_NT_F = environ.get("M_NT_F", "https://telegra.ph/file/617049055ac50169d7e2f.jpg")
 
 
