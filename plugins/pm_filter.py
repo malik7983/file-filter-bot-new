@@ -920,7 +920,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        hmm = InlineKeyboardMarkup(group_id, reply_text,
+        hmm = InlineKeyboardMarkup(reply_text,
         [
             [
                  InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={search}")
