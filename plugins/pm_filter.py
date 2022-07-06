@@ -921,10 +921,10 @@ async def advantage_spell_chok(msg):
     gs_parsed = []
     if not g_s:
         hmm = InlineKeyboardMarkup(
-              query = query.strip()" ", '+'"movie"
+              query = query.strip() + " movie"
         [
             [
-                 InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={search}")
+                 InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={search}+ " movie")
             ]
         ]
     )
