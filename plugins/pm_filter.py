@@ -921,6 +921,7 @@ async def advantage_spell_chok(msg):
     gs_parsed = []
     if not g_s:
         hmm = InlineKeyboardMarkup(
+        )
               query = query.strip()" ", '+'"
         [
             [
