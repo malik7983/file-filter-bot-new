@@ -914,7 +914,7 @@ async def auto_filter(client, msg, spoll=False):
             await message.delete()     
     else:
             mcb = await message.reply_photo(photo=SMART_PIC, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(600)
+            await asyncio.sleep(20)
             await mcb.delete()
             await message.delete()
     if spoll:
