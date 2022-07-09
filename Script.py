@@ -282,7 +282,7 @@ ALURT_FND = """<b>Your 👉 {}❗️ spelling is not correct, please choose from
  ┗━━━━•❅•°•❈•°•❅•━ ━━┛
 """
 
-M_NT_FND = """<b>⭕️ This Movie Not Found my Database. Request to admin..\n\n⭕️ Ye movie Hamare database me nahi hai Niche admin se request kare... \n\n⭕️ Request to admin. 👇</b>"""
+M_NT_FND = """<u>⭕️ This Movie Not Found my Database. Request to admin..\n\n⭕️ Ye movie Hamare database me nahi hai Niche admin se request kare... \n\n⭕️ Request to admin. 👇</u>"""
 
 
 ADG = """<b>Hay. {}..\n\nThankyou For Adding Me In.. ❣️
