@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 async def group_filters(movielist):
     if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", update.text):
         return
-    if 2 < len(update.text) < 100:    
+    if 2 < len(MOVIETEK) < 100:    
         btn = []
         search = update.text
         settings = await get_settings(update.chat.id)
