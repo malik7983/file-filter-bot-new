@@ -1,12 +1,9 @@
-
-import re, random, asyncio 
+import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-from LuciferMoringstar_Robot import temp, PICS, MOVIE_TEXT as REQUEST_TEXT, FILTER_DEL_SECOND
-from LuciferMoringstar_Robot.functions import get_size, split_list, get_settings
-from database.autofilter_mdb import get_filter_results
+from import get_size, split_list, get_settings
 
-async def group_filters(client, update):
+async def group_filters(movielist):
     if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", update.text):
         return
     if 2 < len(update.text) < 100:    
