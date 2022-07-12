@@ -10,7 +10,7 @@ async def group_filters(movielist):
         btn = []
         search = update.text
         settings = await get_settings(update.chat.id)
-        MOVIE_TEXT = settings["template"]
+        MOVIETEK = settings["template"]
         files = await get_filter_results(query=search)
         if not files:
             if settings["spellmode"]:
