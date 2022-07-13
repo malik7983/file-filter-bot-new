@@ -936,8 +936,7 @@ async def advantage_spell_chok(msg):
           btn = [[    
                  InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 𝚃𝙾 𝙶𝙾𝙾𝙶𝙻𝙴 🔎", url=f"https://www.google.com/search?q={reply}"),
                  InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close")
-                 ]
-              )
+                ]
           )
       )
  ) 
