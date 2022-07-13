@@ -932,12 +932,11 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-          reply = search.replace(" ", '+')  
-          btn = [   
-                  InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 𝚃𝙾 𝙶𝙾𝙾𝙶𝙻𝙴 🔎", url=f"https://www.google.com/search?q={reply}"),
-                  InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close")
-                ]
-            )
+        reply = search.replace(" ", '+')  
+            [   
+               InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 𝚃𝙾 𝙶𝙾𝙾𝙶𝙻𝙴 🔎", url=f"https://www.google.com/search?q={reply}"),
+               InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close")
+            ]
         )
     )
                   sp = await update.reply_text(text=settings["spelltext"].format(query=search, first_name=update.from_user.first_name, last_name=update.from_user.last_name, title=update.chat.title, mention=update.from_user.mention), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))           
