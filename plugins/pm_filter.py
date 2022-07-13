@@ -938,7 +938,7 @@ async def advantage_spell_chok(msg):
                      ],[ 
                      InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close")
                     ]]
-                ]
+                )
             )
         )
     ) 
