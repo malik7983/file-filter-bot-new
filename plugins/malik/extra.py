@@ -1,4 +1,6 @@
 #malik
+import os
+import logging
 import asyncio
 from Script import script, ADDG
 from info import PHTT 
