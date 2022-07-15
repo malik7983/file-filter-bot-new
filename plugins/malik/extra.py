@@ -1,11 +1,9 @@
 #malik
 import os
 from plugins.malik.extraa import GHHMT
-from database.users_chats_db import db
-from database.ia_filterdb import Media
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from utils import temp, get_size
+from utils import temp
 
 @Client.on_message(filters.command("star") & filters.incoming & ~filters.edited)
 async def star(client, message):
@@ -15,7 +13,7 @@ async def star(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=(GHHMT.format(total_users, totl_chats, size, free)),
+            text=(GHHMT),
             reply_markup=reply_markup,
             parse_mode='html'
         )
