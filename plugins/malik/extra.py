@@ -1,5 +1,7 @@
-@Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
-async def start(client, message):
+#malik
+import asyncio
+@Client.on_message(filters.command("star") & filters.incoming & ~filters.edited)
+async def star(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
