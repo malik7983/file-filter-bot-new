@@ -13,7 +13,7 @@ async def star(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=script.GHHM_TXT,
+            text=script.GHHMT_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
