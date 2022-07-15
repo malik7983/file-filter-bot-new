@@ -1,3 +1,3 @@
-class ext(object):
+class extraa(object):
 
     GHHMT_TXT = """MALIK"""
