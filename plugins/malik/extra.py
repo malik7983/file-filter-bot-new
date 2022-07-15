@@ -5,6 +5,7 @@ import asyncio
 from Script import script, ADDG
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from utils import temp
 
 @Client.on_message(filters.command("star") & filters.incoming & ~filters.edited)
 async def star(client, message):
