@@ -19,4 +19,3 @@ async def star(client, message):
         video=(PHTT),
         caption=(ADDG.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME)),
         reply_markup=reply_markup)
-)
