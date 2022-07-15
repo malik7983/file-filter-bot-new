@@ -1,6 +1,6 @@
 #malik
 import os
-from Script import script, ADDG
+from plugins.ext.py import admin_check
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from utils import temp
