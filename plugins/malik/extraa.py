@@ -1,3 +1,3 @@
 class extraa(object):
 
-    GHHMT_TXT = """MALIK"""
+GHHMT = """MALIK"""
