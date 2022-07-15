@@ -22,9 +22,8 @@ async def star(client, message):
             InlineKeyboardButton('❇️ Add Me To Your Groups ❇️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=(PHTT),
-            caption=script.GHHM_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await query.message.edit_text(
+            text=script.GHHM_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
         )
