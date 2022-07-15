@@ -13,7 +13,7 @@ from utils import get_file_id, parser, split_quotes
 from info import ADMINS
 
 
-@Client.on_message(filters.command(['filter', 'add']) & filters.pm)
+@Client.on_message(filters.command(['filter', 'add']) & filters.incoming)
 async def addfilter(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
@@ -35,7 +35,7 @@ async def addfilter(client, message):
             await message.reply_text("I'm not connected to any groups!", quote=True)
             return
 
-    elif chat_type in ["group", "supergroup"]:
+    elif chat_type in ["group", "pm, "supergroup"]:
         grp_id = message.chat.id
         title = message.chat.title
 
