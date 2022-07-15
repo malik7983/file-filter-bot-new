@@ -1,7 +1,5 @@
 #malik
 import os
-import logging
-import asyncio
 from Script import script, ADDG
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
