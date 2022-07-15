@@ -1,6 +1,6 @@
 #malik
 import os
-from plugins.malik.ext import GHHMT
+from plugins.malik.extraa import GHHMT
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from utils import temp
@@ -13,7 +13,7 @@ async def star(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=script.GHHMT_TXT,
+            text=extraa(GHHMT)
             reply_markup=reply_markup,
             parse_mode='html'
         )
