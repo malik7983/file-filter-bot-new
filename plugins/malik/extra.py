@@ -1,6 +1,6 @@
 #malik
 import os
-from plugins.malik.GHHMT import GHHMT
+from plugins.malik.ext import GHHMT
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from utils import temp
