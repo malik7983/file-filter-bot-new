@@ -5,7 +5,6 @@ import random
 import asyncio
 from Script import script, ADDG
 from pyrogram import Client, filters
-from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from utils import get_settings, get_size, is_subscribed, save_group_settings, temp
 
