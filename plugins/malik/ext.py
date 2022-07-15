@@ -1,3 +1,3 @@
 class ext(object):
 
-    GHHMT_TXT"""MALIK"""
+    GHHMT_TXT """MALIK"""
