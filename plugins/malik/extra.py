@@ -1,5 +1,6 @@
 #malik
 import asyncio
+from Script import script, ADDG
 @Client.on_message(filters.command("star") & filters.incoming & ~filters.edited)
 async def star(client, message):
     if message.chat.type in ['group', 'supergroup']:
