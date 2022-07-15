@@ -35,7 +35,7 @@ async def addfilter(client, message):
             await message.reply_text("I'm not connected to any groups!", quote=True)
             return
 
-    elif chat_type in ["group", "pm, "supergroup"]:
+    elif chat_type in ["group", "pm", "supergroup"]:
         grp_id = message.chat.id
         title = message.chat.title
 
