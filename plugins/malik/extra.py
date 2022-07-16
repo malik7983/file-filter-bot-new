@@ -32,6 +32,8 @@ async def get_ststs(bot, message):
     size = get_size(size)
     free = get_size(free)
     await rju.edit(script.STATUS_TXT.format(files, total_users, totl_chats, size, free))
+        )
+        return
 
     elif query.data == "malik":
         buttons = [[
