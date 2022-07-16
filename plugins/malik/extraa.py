@@ -1,6 +1,6 @@
 #sahid malik
 
-GHHMT = """<b>{}.User 💖 
+GHHMT = """<b>Thank For {}.User... 💖 
 
 Thanks For Your Support...
 
