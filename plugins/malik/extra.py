@@ -1,6 +1,8 @@
 #malik
 import os
 from plugins.malik.extraa import GHHMT
+from database.users_chats_db import db
+from database.ia_filterdb import Media
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from utils import temp
