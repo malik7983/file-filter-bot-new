@@ -33,7 +33,7 @@ async def get_ststs(bot, message):
     size = get_size(size)
     free = get_size(free)
     await rju.edit(
-               msg=(GHHMT.format(files, total_users, totl_chats, size, free)) 
+               msg=(GHHMT.format(files, total_users, totl_chats, size, free)),
                reply_markup=InlineKeyboardMarkup(
                                       [[
                                         InlineKeyboardButton('💢 Request to admin 💢', url="https://t.me/m_admins"),
