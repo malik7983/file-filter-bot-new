@@ -21,18 +21,6 @@ async def star(client, message):
             parse_mode='html'
         )
         return
-@Client.on_message(filters.command('malik') & filters.incoming)
-async def get_ststs(bot, message):
-    rju = await message.reply('Fetching stats..')
-    total_users = await db.total_users_count()
-    totl_chats = await db.total_chat_count()
-    files = await Media.count_documents()
-    size = await db.get_db_size()
-    free = 536870912 - size
-    size = get_size(size)
-    free = get_size(free)
-    await rju.edit(script.STATUS_TXT.format(files, total_users, totl_chats, size, free))
-    return
 
     elif query.data == "malik":
         buttons = [[
@@ -52,3 +40,16 @@ async def get_ststs(bot, message):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+
+@Client.on_message(filters.command('malik') & filters.incoming)
+async def get_ststs(bot, message):
+    rju = await message.reply('Fetching stats..')
+    total_users = await db.total_users_count()
+    totl_chats = await db.total_chat_count()
+    files = await Media.count_documents()
+    size = await db.get_db_size()
+    free = 536870912 - size
+    size = get_size(size)
+    free = get_size(free)
+    await rju.edit(script.STATUS_TXT.format(files, total_users, totl_chats, size, free))
+   
