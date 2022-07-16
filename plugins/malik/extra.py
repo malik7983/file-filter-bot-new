@@ -36,8 +36,6 @@ async def get_ststs(bot, message):
                text=(GHHMT.format(total_users)),
                reply_markup=InlineKeyboardMarkup(
                                       [[
-                                        InlineKeyboardButton('❇️ Add Me To Your Groups ❇️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                                        ],[
                                         InlineKeyboardButton('💢 Request to admin 💢', url="https://t.me/m_admins"),
                                         InlineKeyboardButton('💢 Request to admin 💢', url="https://t.me/m_admins")
                                                                          
