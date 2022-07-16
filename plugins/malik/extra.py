@@ -5,7 +5,7 @@ from database.users_chats_db import db
 from database.ia_filterdb import Media
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from utils import temp
+from utils import temp, get_size
 
 @Client.on_message(filters.command("star") & filters.incoming & ~filters.edited)
 async def star(client, message):
