@@ -162,7 +162,7 @@ async def get_ststs(bot, message):
     size = get_size(size)
     free = get_size(free)
     await rju.edit(
-               text=.script.STATUS_TXT.format(files, total_users, totl_chats, size, free)),
+               text=(GHHMT.format(total_users)),
                reply_markup=InlineKeyboardMarkup(
                                       [[
                                         InlineKeyboardButton('❇️ Add Me To Your Groups ❇️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
@@ -173,9 +173,7 @@ async def get_ststs(bot, message):
                                       ]]
                ),
                parse_mode='html'
-    )
-    return 
-
+)
 
 
 # a function for trespassing into others groups, Inspired by a Vazha
