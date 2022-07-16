@@ -33,7 +33,7 @@ async def get_ststs(bot, message):
     free = 536870912 - size
     size = get_size(size)
     free = get_size(free)
-    await rju.edit(
+    await rju.massage.reply_photo(
                photo=(PHT),
                caption=(GHHMT.format(total_users)),
                reply_markup=InlineKeyboardMarkup(
