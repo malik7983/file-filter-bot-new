@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from plugins.malik.extraa import GHHMT
+from plugins.malik.extraa import GHHMT, STTS
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
 from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, PHT, MELCOW_NEW_USERS, MALIK_PH
@@ -163,7 +163,7 @@ async def get_ststs(bot, message):
     size = get_size(size)
     free = get_size(free)
     await rju.edit(
-               text=(GHHMT.format(total_users)),
+               text=(STTS.format(files, total_users, totl_chats, size, free)),
                reply_markup=InlineKeyboardMarkup(
                                       [[
                                         InlineKeyboardButton('❇️ Add Me To Your Groups ❇️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
