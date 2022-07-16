@@ -1,5 +1,6 @@
 #malik
 import os
+from info import PHT
 from plugins.malik.extraa import GHHMT
 from Script import script
 from database.users_chats_db import db
@@ -33,8 +34,8 @@ async def get_ststs(bot, message):
     size = get_size(size)
     free = get_size(free)
     await rju.edit.reply_photo(
-               photo=
-               text=(GHHMT.format(total_users)),
+               photo=(PHT),
+               caption=(GHHMT.format(total_users)),
                reply_markup=InlineKeyboardMarkup(
                                       [[
                                         InlineKeyboardButton('💢 Request to admin 💢', url="https://t.me/m_admins"),
