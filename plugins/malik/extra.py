@@ -34,8 +34,7 @@ async def get_ststs(bot, message):
     size = get_size(size)
     free = get_size(free)
     await rju.edit(
-               photo=(PHT),
-               caption=(GHHMT.format(total_users)),
+               text=(GHHMT.format(total_users)),
                reply_markup=InlineKeyboardMarkup(
                                       [[
                                         InlineKeyboardButton('💢 Request to admin 💢', url="https://t.me/m_admins"),
