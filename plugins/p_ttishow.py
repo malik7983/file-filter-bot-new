@@ -173,7 +173,7 @@ async def get_ststs(bot, message):
                                       ]]
                ),
                parse_mode='html'
-)
+    )
 
 
 
