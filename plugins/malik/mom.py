@@ -5,7 +5,6 @@ from pyrogram import Client, filters, idle
 API_ID = int(environ.get("API_ID"))
 API_HASH = environ.get("API_HASH")
 BOT_TOKEN = environ.get("BOT_TOKEN")
-SESSION = environ.get("BOT_LINK")
 TIME = int(environ.get("TIME"))
 GROUPS = []
 for grp in environ.get("GROUPS").split():
@@ -15,13 +14,6 @@ for usr in environ.get("ADMINS").split():
     ADMINS.append(int(usr))
 
 START_MSG = "<b>Hai {},\nI'm a simple bot to delete group messages after a specific time</b>"
-
-
-User = Client(session_name=BOT_LINK,
-              api_id=API_ID,
-              api_hash=API_HASH,
-              workers=300
-              )
 
 
 Bot = Client(session_name="auto-delete",
