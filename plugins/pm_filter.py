@@ -461,6 +461,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('video', callback_data='video'),
             InlineKeyboardButton('File-Store', callback_data='malikk')
         ], [
+            InlineKeyboardButton(' SONGS ', callback_data='restric'),
+            InlineKeyboardButton('𝚁𝙴𝙿𝙾𝚁𝚃', callback_data='report'),
+        ], [
             InlineKeyboardButton('🚶‍♀ 𝙱𝙰𝙲𝙺 🚶‍♀', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
