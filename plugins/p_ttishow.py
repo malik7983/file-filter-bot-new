@@ -166,11 +166,9 @@ async def get_ststs(bot, message):
                text=(STTS.format(files, total_users, totl_chats, size, free)),
                reply_markup=InlineKeyboardMarkup(
                                       [[
-                                        InlineKeyboardButton('❇️ Add Me To Your Groups ❇️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                                        InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='close'), 
                                         ],[
-                                        InlineKeyboardButton('💢 Request to admin 💢', url="https://t.me/m_admins"),
-                                        InlineKeyboardButton('💢 Request to admin 💢', url="https://t.me/m_admins")
-                                                                         
+                                        InlineKeyboardButton('♻️ Refresh ♻️', callback_data='rfrsh')
                                       ]]
                ),
                parse_mode='html'
