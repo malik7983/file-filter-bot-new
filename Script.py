@@ -122,20 +122,7 @@ Delete A Lot Of Messages From Groups!
  <b>ADMIN</b> 
 
 ◉ /purge :- Delete All Messages From The Replied To Message, To The Current Message"""
-    BUTTON_TXT = """Help: <b>Buttons</b>
 
-- Eva Maria Supports both url and alert inline buttons.
-
-<b>NOTE:</b>
-1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Eva Maria supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format
-
-<b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/+veUIdIW2CQ5mOGU5)</code>
-
-<b>Alert buttons:</b>
-<code>[Button Text](buttonalert:This is an alert message)</code>"""
     START_TXT = """<b>Hay {},
 
 I'm ⚡️ Powerful Auto-Filter Bot...
