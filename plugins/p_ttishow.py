@@ -166,8 +166,7 @@ async def get_ststs(bot, message):
                text=(STTS.format(files, total_users, totl_chats, size, free)),
                reply_markup=InlineKeyboardMarkup(
                                       [[
-                                        InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='close'), 
-                                        ],[
+                                        InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='close'),
                                         InlineKeyboardButton('♻️ Refresh ♻️', callback_data='rfrsh')
                                       ]]
                ),
