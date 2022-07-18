@@ -28,7 +28,8 @@ M_N_F = environ.get("M_N_F", "https://telegra.ph/file/7cf564b255461abfc75fe.jpg"
 PHT = environ.get("PHT", "https://telegra.ph/file/9b77b96a9d2f5dda7764b.jpg")
 PHTT = environ.get("PHTT", "https://telegra.ph/file/1ddc551c64a4afd5a660e.mp4")
 M_NT_F = environ.get("M_NT_F", "https://telegra.ph/file/617049055ac50169d7e2f.jpg")
-
+# Command
+COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 
 # Admins, Channels & Users
