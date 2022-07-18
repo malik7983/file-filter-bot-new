@@ -1,7 +1,7 @@
 #malik
 import os
 from info import PHT
-from plugins.malik.extraa import GHHMT
+from plugins.malik.extra import GHHMT
 from Script import script
 from database.users_chats_db import db
 from database.ia_filterdb import Media
