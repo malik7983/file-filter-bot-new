@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from plugins.malik.extra import GHHMT, STTS, PPC
+from plugins.malik.extra import GHHMT, STTS, PPC, SST
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
 from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, PHT, MELCOW_NEW_USERS, MALIK_PH
@@ -154,7 +154,7 @@ async def re_enable_chat(bot, message):
 
 @Client.on_message(filters.command('stats') & filters.incoming)
 async def get_ststs(bot, message):
-    malik = await message.reply('My Stats')
+    malik = await message.reply('SST')
     total_users = await db.total_users_count()
     totl_chats = await db.total_chat_count()
     files = await Media.count_documents()
