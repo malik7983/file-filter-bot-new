@@ -1,6 +1,8 @@
 #malik
 import re
 import os
+import pyrogram
+import asyncio
 from os import environ
 from info import PHT
 from Script import script
