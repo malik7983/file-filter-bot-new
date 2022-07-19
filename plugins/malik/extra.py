@@ -41,6 +41,7 @@ async def get_ststs(bot, message):
                ),
                parse_mode='html'
 )
+# Ban py
 
 @Client.on_message(filters.command("ban"))
 async def ban_user(_, message):
@@ -73,7 +74,6 @@ async def ban_user(_, message):
                 "</a>"
                 " Is forbidden."
             )
-# ban py
 
 @Client.on_message(filters.command("tban"))
 async def temp_ban_user(_, message):
