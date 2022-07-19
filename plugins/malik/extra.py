@@ -25,9 +25,9 @@ async def star(client, message):
 
 @Client.on_message(filters.command('malik') & filters.incoming)
 async def get_ststs(bot, message):
-    rju = await message.reply('Wait..')
+    malik = await message.reply('Wait..')
     total_users = await db.total_users_count()
-    await rju.edit(
+    await malik.edit(
                text=(GHHMT.format(total_users)),
                reply_markup=InlineKeyboardMarkup(
                                       [[
