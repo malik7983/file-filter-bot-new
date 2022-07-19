@@ -3,7 +3,7 @@ import asyncio
 import re
 import ast
 
-from plugins.malik.extra import GHHMT, STTS
+from plugins.malik.extra import GHHMT, STTS, PPC
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script, ALURT_FND, M_NT_FND, M_NNT_FND, M_NNT_FNDD
 import pyrogram
@@ -758,7 +758,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         monsize = get_size(monsize)
         free = get_size(free)
         await query.message.reply_photo(
-            photo=(SMART_PIC),
+            photo=(PPC),
             caption=(STTS.format(total, users, chats, monsize, free)),
             reply_markup=reply_markup,
             parse_mode='html'
@@ -778,7 +778,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         monsize = get_size(monsize)
         free = get_size(free)
         await query.message.reply_photo(
-            photo=(SMART_PIC),
+            photo=(PPC),
             caption=(STTS.format(total, users, chats, monsize, free)),
             reply_markup=reply_markup,
             parse_mode='html'
