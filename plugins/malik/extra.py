@@ -6,7 +6,7 @@ from info import PHT
 from Script import script
 import time
 from typing import List
-from pyrogram.types import Message, InlineKeyboardButton
+from pyrogram.types import Message, ChatPermissions, InlineKeyboardButton
 from plugins.malik.admin_check import admin_check
 from database.users_chats_db import db
 from database.ia_filterdb import Media
