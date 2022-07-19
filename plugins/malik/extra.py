@@ -452,7 +452,7 @@ async def report_user(bot, message):
 
 @Client.on_message(
     filters.command("purge", COMMAND_HAND_LER) &
-    f_onw_fliter
+    F_ONW_FLITER
 )
 async def purge(client, message):
     """ purge upto the replied message """
