@@ -7,7 +7,7 @@ from pyrogram.types import (
 )
 from plugins.malik.admin_check import admin_check
 from plugins.malik.extra import extract_user
-from plugins.malik.string_handling import extract_time
+from plugins.malik.extra import extract_time
 
 
 @Client.on_message(filters.command("mute"))
