@@ -66,3 +66,6 @@ Thanks For Your Support...
 
 ⚙ More Features Adding Soon</b> 😎"""
 
+
+PPC = environ.get("PPC", "https://telegra.ph/file/3b6afd6c6fcd09606ea9f.jpg")
+
