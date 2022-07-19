@@ -1,5 +1,6 @@
 #malik
 import os
+from os import environ
 from info import PHT
 from Script import script
 from database.users_chats_db import db
