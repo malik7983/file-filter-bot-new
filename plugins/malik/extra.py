@@ -6,7 +6,6 @@ from Script import script
 import time
 from typing import List
 from pyrogram.types import Message, InlineKeyboardButton
-from plugins.malik.extract_user import extract_user
 from plugins.malik.admin_check import admin_check
 from database.users_chats_db import db
 from database.ia_filterdb import Media
