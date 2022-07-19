@@ -154,7 +154,7 @@ async def re_enable_chat(bot, message):
 
 @Client.on_message(filters.command('stats') & filters.incoming)
 async def get_ststs(bot, message):
-    malik = await message.reply('Fetching stats..')
+    malik = await message.reply('😎😎😎')
     total_users = await db.total_users_count()
     totl_chats = await db.total_chat_count()
     files = await Media.count_documents()
@@ -167,7 +167,7 @@ async def get_ststs(bot, message):
                caption=(STTS.format(files, total_users, totl_chats, size, free)),
                reply_markup=InlineKeyboardMarkup(
                                       [[
-                                        InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='close'),
+                                        InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='close_data'),
                                         InlineKeyboardButton('♻️ Refresh ♻️', callback_data='rfrsh')
                                       ]]
                ),
