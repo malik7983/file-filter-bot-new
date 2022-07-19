@@ -3,6 +3,9 @@ import os
 from os import environ
 from info import PHT
 from Script import script
+import time
+from typing import List
+from pyrogram.types import Message, InlineKeyboardButton
 from plugins.malik.extract_user import extract_user
 from plugins.malik.string_handling import extract_time
 from plugins.malik.admin_check import admin_check
