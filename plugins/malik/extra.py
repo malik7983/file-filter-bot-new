@@ -4,7 +4,7 @@ import os
 import pyrogram
 import asyncio
 from os import environ
-from info import PHT
+from info import PHT, ADMINS, AUTH_USERS
 from Script import script
 import time
 from typing import List
