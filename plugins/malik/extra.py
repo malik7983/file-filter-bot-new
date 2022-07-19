@@ -39,9 +39,6 @@ async def get_ststs(bot, message):
                parse_mode='html'
 )
 
-
-SST = """<img src="https://readme-typing-svg.herokuapp.com?font=Kaushan+Script&size=40&duration=3500&color=447FF7&background=FFFFFF00&center=true&vCenter=true&width=650&height=55&lines=Hey!+It's+sahid+%F0%9F%91%8B%F0%9F%8F%BB;I+am+a+Deploma+Student+%F0%9F%A7%91%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB;I+am+from+India+%F0%9F%87%AE%F0%9F%87%B3;I+am+a+small+Youtube+come+developer+%F0%9F%93%88;Please+Support+Subscribe+and+Follow+%E2%9A%99%EF%B8%8F" alt="Sahid" width="650" height="55">"""
-
 STTS = """<b>🗂𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
 👨‍👩‍👧‍👧 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
 🤿 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
