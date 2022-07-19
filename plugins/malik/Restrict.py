@@ -6,7 +6,7 @@ from pyrogram.types import (
     ChatPermissions
 )
 from plugins.malik.admin_check import admin_check
-from plugins.malik.extract_user import extract_user
+from plugins.malik.extra import extract_user
 from plugins.malik.string_handling import extract_time
 
 
