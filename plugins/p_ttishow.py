@@ -162,8 +162,9 @@ async def get_ststs(bot, message):
     free = 536870912 - size
     size = get_size(size)
     free = get_size(free)
-    await rju.edit(
-               text=(STTS.format(files, total_users, totl_chats, size, free)),
+    await rju.reply_photo(
+               photo=(PHT),
+               caption=(STTS.format(files, total_users, totl_chats, size, free)),
                reply_markup=InlineKeyboardMarkup(
                                       [[
                                         InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='close'),
