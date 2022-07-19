@@ -3,6 +3,7 @@ import os
 from os import environ
 from info import PHT
 from Script import script
+from plugins.malik.admin_check import admin_check
 from database.users_chats_db import db
 from database.ia_filterdb import Media
 from pyrogram import Client, filters
