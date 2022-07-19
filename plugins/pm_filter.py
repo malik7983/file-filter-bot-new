@@ -757,7 +757,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         free = 536870912 - monsize
         monsize = get_size(monsize)
         free = get_size(free)
-        await query.message.reply:_photo(
+        await query.message.edit.reply_photo(
             photo=(SMART_PIC),
             caption=(STTS.format(total, users, chats, monsize, free)),
             reply_markup=reply_markup,
@@ -777,7 +777,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         free = 536870912 - monsize
         monsize = get_size(monsize)
         free = get_size(free)
-        await query.message.reply_photo(
+        await query.message.edit.reply_photo(
             photo=(SMART_PIC),
             caption=(STTS.format(total, users, chats, monsize, free)),
             reply_markup=reply_markup,
