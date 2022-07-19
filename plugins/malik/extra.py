@@ -449,12 +449,10 @@ async def report_user(bot, message):
             await message.reply_text("𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝗍𝗈 𝖠𝖽𝗆𝗂𝗇𝗌!")
 
 
-# purg py
-
-TG_MAX_SELECT_LEN = 100
+# purge py
 
 @Client.on_message(
-    filters.command("purge") &
+    filters.command("purge", COMMAND_HAND_LER) &
     f_onw_fliter
 )
 async def purge(client, message):
@@ -501,7 +499,8 @@ async def purge(client, message):
     await asyncio.sleep(5)
     await status_message.delete()
 
-# pg help py
+#purge helper py
+
 USE_AS_BOT = os.environ.get("USE_AS_BOT", True)
 
 def f_sudo_filter(filt, client, message):
@@ -542,7 +541,6 @@ admin_fliter = filters.create(
     func=admin_filter_f,
     name="AdminFilter"
 )
-
 
 
 
