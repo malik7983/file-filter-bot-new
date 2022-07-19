@@ -526,7 +526,7 @@ def onw_filter(filt, client, message):
         )
 
 
-f_onw_fliter = filters.create(
+F_ONW_FLITER = filters.create(
     func=onw_filter,
     name="OnwFilter"
 )
