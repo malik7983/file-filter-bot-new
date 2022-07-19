@@ -4,7 +4,7 @@ import os
 import pyrogram
 import asyncio
 from os import environ
-from info import PHT, ADMINS, AUTH_USERS
+from info import PHT, ADMINS, AUTH_USERS, COMMAND_HAND_LER
 from Script import script
 import time
 from typing import List
@@ -571,6 +571,5 @@ Thanks For Your Support...
 
 
 PPC = environ.get("PPC", "https://telegra.ph/file/3b6afd6c6fcd09606ea9f.jpg")
-COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 TG_MAX_SELECT_LEN = environ.get("TG_MAX_SELECT_LEN", "100")
 
