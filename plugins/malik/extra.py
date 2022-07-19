@@ -572,6 +572,8 @@ Thanks For Your Support...
 
 
 PPC = environ.get("PPC", "https://telegra.ph/file/3b6afd6c6fcd09606ea9f.jpg")
+
+# Command
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 TG_MAX_SELECT_LEN = environ.get("TG_MAX_SELECT_LEN", "100")
 
