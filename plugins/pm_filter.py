@@ -972,18 +972,8 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        hmm = InlineKeyboardMarkup(
-        [
-            [
-                 InlineKeyboardButton("🔍 search on Google 🔎", url=f"https://google.com/search?q={search}"),
-                 ],
-                 [
-                 InlineKeyboardButton("🔍 search on Google 🔎", url=f"https://google.com/release?q={search}")
-            ]
-        ]
-    )
-        k = await msg.reply(f"<b>Hey, {msg.from_user.mention}.. Your word {search} is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling</b> 🥺🙏", reply_markup=hmm)
-        await asyncio.sleep(120)
+        k = await msg.reply("I couldn't find any movie in that name.")
+        await asyncio.sleep(8)
         await k.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
@@ -995,34 +985,24 @@ async def advantage_spell_chok(msg):
         reg = re.compile(r"watch(\s[a-zA-Z0-9_\s\-\(\)]*)*\|.*",
                          re.IGNORECASE)  # match something like Watch Niram | Amazon Prime
         for mv in g_s:
-            match  = reg.match(mv)
+            match = reg.match(mv)
             if match:
                 gs_parsed.append(match.group(1))
     user = msg.from_user.id if msg.from_user else 0
     movielist = []
-    gs_parsed = list(dict.fromkeys(gs_parsed)) # removing duplicates https://stackoverflow.com/a/7961425
+    gs_parsed = list(dict.fromkeys(gs_parsed))  # removing duplicates https://stackoverflow.com/a/7961425
     if len(gs_parsed) > 3:
         gs_parsed = gs_parsed[:3]
     if gs_parsed:
         for mov in gs_parsed:
-            imdb_s = await get_poster(mov.strip(), bulk=True) # searching each keyword in imdb
+            imdb_s = await get_poster(mov.strip(), bulk=True)  # searching each keyword in imdb
             if imdb_s:
                 movielist += [movie.get('title') for movie in imdb_s]
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
-    movielist = list(dict.fromkeys(movielist)) # removing duplicates
+    movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        hmm = InlineKeyboardMarkup(
-        [
-            [
-                 InlineKeyboardButton("🔍 search on Google 🔎", url=f"https://google.com/search?q={search}"),
-                 ],
-                 [
-                 InlineKeyboardButton("🔍 search on Google 🔎", url=f"https://google.com/release?q={search}")
-            ]
-        ]
-    )
-        k = await msg.reply(f"<b>Hey, {msg.from_user.mention}.. Your word {search} is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling</b> 🥺🙏", reply_markup=hmm)
-        await asyncio.sleep(120)
+        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        await asyncio.sleep(8)
         await k.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
