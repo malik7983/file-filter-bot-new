@@ -4,7 +4,7 @@ import re
 import ast
 
 from plugins.malik.googl import MOVIETET
-from plugins.malik.extra import GHHMT, STTS, PPC
+from plugins.malik.extra import GHHMT, STTS, PPC, REPORT, PURGE, MUTE
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script, ALURT_FND, M_NT_FND, M_NNT_FND, M_NNT_FNDD
 import pyrogram
@@ -537,7 +537,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.REPORT_TXT,
+            text=(REPORT),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
@@ -548,7 +548,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.MUTE_TXT,
+            text=(MUTE),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
@@ -559,7 +559,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.PURGE_TXT,
+            text=(PURGE),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
