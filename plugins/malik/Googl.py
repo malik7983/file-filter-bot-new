@@ -1,4 +1,3 @@
-
-          
+       
 MOVIETET = """malik"""
      
