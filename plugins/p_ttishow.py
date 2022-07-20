@@ -70,8 +70,9 @@ async def save_group(bot, message):
                                                  ),
                                                  parse_mode='html'
 )
-                     await asyncio.sleep(10)
-                     await b.delete()
+                   
+                await asyncio.sleep(10)
+                await b.delete()
 
 
 
