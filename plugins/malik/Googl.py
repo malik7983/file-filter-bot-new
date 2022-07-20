@@ -1,6 +1,6 @@
 
 #malik
-
+from pyrogram import Client, filters
 import re, random, asyncio 
 async def group_filters(client, update):
     if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", update.text):
