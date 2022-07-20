@@ -1,5 +1,5 @@
         await get_settings(update.chat.id)
-        MOVIE_TEXT = settings["template"]
+        MOVIETET = settings["template"]
         files = await get_filter_results(query=search)
         if not files:
             if settings["spellmode"]:
