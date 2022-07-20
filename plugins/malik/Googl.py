@@ -1,3 +1,13 @@
+
+#malik
+
+import re, random, asyncio 
+async def group_filters(client, update):
+    if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", update.text):
+        return
+    if 2 < len(update.text) < 100:    
+        btn = []
+        search = update.text
         await get_settings(update.chat.id)
         MOVIETET = settings["template"]
         files = await get_filter_results(query=search)
