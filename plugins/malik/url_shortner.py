@@ -6,10 +6,10 @@ from pyrogram.handlers import MessageHandler
 from pyshorteners import Shortener
 
 BITLY_API = os.environ.get("BITLY_API", "8df1df8c23f719e5cf97788cc2d40321ea30092b")
-SHAREUS_API = os.environ.get("SHAREUS_API", "JpGXQftImASQY61nnRJThoHvZ153")
 CUTTLY_API = os.environ.get("CUTTLY_API", "f64dffbde033b6c307387dd50b7c76e505f1c")
 SHORTCM_API = os.environ.get("SHORTCM_API", "pk_...NIZv")
 GPLINKS_API = os.environ.get("GPLINKS_API", "008ccaedd6061ad1948838f410947603de9007a7")
+SHAREUS_API = os.environ.get("SHAREUS_API", "JpGXQftImASQY61nnRJThoHvZ153")
 
 reply_markup = InlineKeyboardMarkup(
         [[
@@ -198,6 +198,26 @@ async def short(link):
                 shorten_urls += f"\n**GPLinks.in :-** {url}"
     except Exception as error:
         print(f"GPLink error :- {error}")
+    
+    # NullPointer shorten
+    try:
+        s = Shortener(domain='https://0x0.st')
+        url = s.nullpointer.short(link)
+        shorten_urls += f"\n**0x0.st :-** {url}"
+    except Exception as error:
+        print(f"NullPointer error :- {error}")
+    
+    #  shorten
+    try:
+        api_url = "https://shareus.in.in/api"
+        params = {'api': SHAREUS_API, 'url': link}
+        async with aiohttp.ClientSession() as session:
+            async with session.get(api_url, params=params, raise_for_status=True) as response:
+                data = await response.json()
+                url = data["shortenedUrl"]
+                shorten_urls += f"\n**SHLinks.in :-** {url}"
+    except Exception as error:
+        print(f"SHLink error :- {error}")
     
     # Send the text
     try:
