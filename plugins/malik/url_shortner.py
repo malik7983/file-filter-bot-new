@@ -173,13 +173,13 @@ async def short(link):
                 shorten_urls += f"\n**GPLinks.in :-** {url}"
     # SHareus shorten
     try:
-        api_url = "https:http://shareus.in/api"
-        params = {'api':SHAREUS_API, 'url': link}
+        api_url = "http://shareus.in/api"
+        params = {'api': SHAREUS_API, 'url': link}
         async with aiohttp.ClientSession() as session:
             async with session.get(api_url, params=params, raise_for_status=True) as response:
                 data = await response.json()
                 url = data["shortenedUrl"]
-                shorten_urls += f"\n**shareus.in :-** {url}"
+                shorten_urls += f"\n**SHareus.in :-** {url}"
     except Exception as error:
         print(f"GPLink error :- {error}")
     
