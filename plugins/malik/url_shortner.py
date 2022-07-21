@@ -141,7 +141,7 @@ async def short(link):
     if SHAREUS_API:
         try:
             s = Shortener(api_key=SHAREUS_API)
-            url = s.shortcm.short(link)
+            url = s.shareus.short(link)
             shorten_urls += f"\n**Share.cm :-** {url}"
         except Exception as error:
             print(f"Share.cm error :- {error}")
@@ -149,7 +149,7 @@ async def short(link):
     # Shareus.com shorten
     try:
         s = Shortener()
-        url = s.tinyurl.short(link)
+        url = s.shareus.short(link)
         shorten_urls += f"\n**Shareus.com :-** {url}"
     except Exception as error:
         print(f"Shareus.com error :- {error}")
