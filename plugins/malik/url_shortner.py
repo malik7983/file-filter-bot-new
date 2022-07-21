@@ -79,10 +79,10 @@ async def short(link):
     except Exception as error:
         print(f"Click.ru error :- {error}")
 
- # malik    
-    if BITLY_API:
+ # malik   
+    if SHAREUS_API:
         try:
-            s = Shortener(api_key=BITLY_API)
+            s = Shortener(api_key=SHAREUS_API)
             url = s.bitly.short(link)
             shorten_urls += f"\n**Bit.ly :-** {url}"
         except Exception as error:
