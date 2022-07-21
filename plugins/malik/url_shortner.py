@@ -77,7 +77,33 @@ async def short(link):
         shorten_urls += f"\n**Clck.ru :-** {url}"
     except Exception as error:
         print(f"Click.ru error :- {error}")
+
+ # malik    
+    if BITLY_API:
+        try:
+            s = Shortener(api_key=BITLY_API)
+            url = s.bitly.short(link)
+            shorten_urls += f"\n**Bit.ly :-** {url}"
+        except Exception as error:
+            print(f"Bit.ly error :- {error}")
     
+    # Chilp.it shorten
+    try:
+        s = Shortener()
+        url = s.chilpit.short(link)
+        shorten_urls += f"\n**Chilp.it :-** {url}"
+    except Exception as error:
+        print(f"Chilp.it error :- {error}")
+    
+    # Clck.ru shorten
+    try:
+        s = Shortener()
+        url = s.clckru.short(link)
+        shorten_urls += f"\n**Clck.ru :-** {url}"
+    except Exception as error:
+        print(f"Click.ru error :- {error}")
+    
+
     # Cutt.ly shorten
     if CUTTLY_API:
         try:
