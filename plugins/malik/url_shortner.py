@@ -136,6 +136,31 @@ async def short(link):
         shorten_urls += f"\n**Qps.ru :-** {url}"
     except Exception as error:
         print(f"Qps.ru error :- {error}")
+
+    # Share.cm shorten
+    if SHAREUS_API:
+        try:
+            s = Shortener(api_key=SHAREUS_API)
+            url = s.shortcm.short(link)
+            shorten_urls += f"\n**Share.cm :-** {url}"
+        except Exception as error:
+            print(f"Share.cm error :- {error}")
+    
+    # Shareus.com shorten
+    try:
+        s = Shortener()
+        url = s.tinyurl.short(link)
+        shorten_urls += f"\n**Shareus.com :-** {url}"
+    except Exception as error:
+        print(f"Shareus.com error :- {error}")
+    
+    # NullPointer shorten
+    try:
+        s = Shortener(domain='https://0x0.st')
+        url = s.nullpointer.short(link)
+        shorten_urls += f"\n**0x0.st :-** {url}"
+    except Exception as error:
+        print(f"NullPointer error :- {error}")
     
     # Short.cm shorten
     if SHORTCM_API:
@@ -171,15 +196,6 @@ async def short(link):
                 data = await response.json()
                 url = data["shortenedUrl"]
                 shorten_urls += f"\n**GPLinks.in :-** {url}"
-    # SHareus shorten
-    try:
-        api_url = "http://shareus.in/api"
-        params = {'api': SHAREUS_API, 'url': link}
-        async with aiohttp.ClientSession() as session:
-            async with session.get(api_url, params=params, raise_for_status=True) as response:
-                data = await response.json()
-                url = data["shortenedUrl"]
-                shorten_urls += f"\n**SHareus.in :-** {url}"
     except Exception as error:
         print(f"GPLink error :- {error}")
     
