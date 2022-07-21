@@ -79,31 +79,6 @@ async def short(link):
     except Exception as error:
         print(f"Click.ru error :- {error}")
 
- # malik   
-    if SHAREUS_API:
-        try:
-            s = Shortener(api_key=SHAREUS_API)
-            url = s.bitly.short(link)
-            shorten_urls += f"\n**shareus.in :-** {url}"
-        except Exception as error:
-            print(f"Bit.ly error :- {error}")
-    
-    # Chilp.it shorten
-    try:
-        s = Shortener()
-        url = s.chilpit.short(link)
-        shorten_urls += f"\n**Chilp.it :-** {url}"
-    except Exception as error:
-        print(f"Chilp.it error :- {error}")
-    
-    # Clck.ru shorten
-    try:
-        s = Shortener()
-        url = s.clckru.short(link)
-        shorten_urls += f"\n**Clck.ru :-** {url}"
-    except Exception as error:
-        print(f"Click.ru error :- {error}")
-    
 
     # Cutt.ly shorten
     if CUTTLY_API:
@@ -196,6 +171,15 @@ async def short(link):
                 data = await response.json()
                 url = data["shortenedUrl"]
                 shorten_urls += f"\n**GPLinks.in :-** {url}"
+    # SHareus shorten
+    try:
+        api_url = "https:http://shareus.in/api"
+        params = {'api':SHAREUS_API, 'url': link}
+        async with aiohttp.ClientSession() as session:
+            async with session.get(api_url, params=params, raise_for_status=True) as response:
+                data = await response.json()
+                url = data["shortenedUrl"]
+                shorten_urls += f"\n**shareus.in :-** {url}"
     except Exception as error:
         print(f"GPLink error :- {error}")
     
