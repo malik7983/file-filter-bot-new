@@ -448,6 +448,58 @@ async def report_user(bot, message):
         if success:
             await message.reply_text("𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝗍𝗈 𝖠𝖽𝗆𝗂𝗇𝗌!")
 
+#telegra.ph 
+
+import os
+import shutil
+from pyrogram import Client, filters
+from telegraph import upload_file
+from info import TMP_DOWNLOAD_DIRECTORY
+from plugins.helper_functions.cust_p_filters import f_onw_fliter
+from plugins.helper_functions.get_file_id import get_file_id
+
+
+@Client.on_message(
+    filters.command("telegraph") &
+    f_onw_fliter
+)
+async def telegraph(client, message):
+    replied = message.reply_to_message
+    if not replied:
+        await message.reply_text("𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙰 𝙿𝙷𝙾𝚃𝙾 𝙾𝚁 𝚅𝙸𝙳𝙴𝙾 𝚄𝙽𝙳𝙴𝚁 𝟻𝙼𝙱.")
+        return
+    file_info = get_file_id(replied)
+    if not file_info:
+        await message.reply_text("Not supported!")
+        return
+    _t = os.path.join(
+        TMP_DOWNLOAD_DIRECTORY,
+        str(replied.message_id)
+    )
+    if not os.path.isdir(_t):
+        os.makedirs(_t)
+    _t += "/"
+    download_location = await replied.download(
+        _t
+    )
+    try:
+        response = upload_file(download_location)
+    except Exception as document:
+        await message.reply_text(message, text=document)
+    else:
+        await message.reply(
+            f"Link :- <code>https://telegra.ph{response[0]}</code>",
+            disable_web_page_preview=True
+        )
+    finally:
+        shutil.rmtree(
+            _t,
+            ignore_errors=True
+        )
+
+
+
+
 REPORT = """➤ 𝐇𝐞𝐥𝐩: Report ⚠️
 
 𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚛𝚎𝚙𝚘𝚛𝚝 𝚊 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚘𝚛 𝚊 𝚞𝚜𝚎𝚛 𝚝𝚘 𝚝𝚑𝚎 𝚊𝚍𝚖𝚒𝚗𝚜 𝚘𝚏 𝚝𝚑𝚎 𝚛𝚎𝚜𝚙𝚎𝚌𝚝𝚒𝚟𝚎 𝚐𝚛𝚘𝚞𝚙. 𝙳𝚘𝚗'𝚝 𝚖𝚒𝚜𝚞𝚜𝚎 𝚝𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍.
