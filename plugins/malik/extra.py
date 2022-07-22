@@ -4,7 +4,7 @@ import os
 import shutil
 import pyrogram
 import asyncio
-from plugins.malik.extra.cpp import f_onw_fliter
+from plugins.malik.cpp import f_onw_fliter
 from telegraph import upload_file
 from os import environ
 from info import PHT, ADMINS, AUTH_USERS
