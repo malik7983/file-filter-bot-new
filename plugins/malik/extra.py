@@ -1,13 +1,16 @@
 #malik
 import re
 import os
+import shutil
 import pyrogram
 import asyncio
+from telegraph import upload_file
 from os import environ
 from info import PHT, ADMINS, AUTH_USERS
 from Script import script
 import time
 from typing import List
+from pyrogram.types.messages_and_media import message
 from pyrogram.types import Message, ChatPermissions, InlineKeyboardButton
 from database.users_chats_db import db
 from database.ia_filterdb import Media
@@ -450,15 +453,6 @@ async def report_user(bot, message):
 
 #telegra.ph 
 
-import os
-import shutil
-from pyrogram import Client, filters
-from telegraph import upload_file
-from info import TMP_DOWNLOAD_DIRECTORY
-from plugins.helper_functions.cust_p_filters import f_onw_fliter
-from plugins.helper_functions.get_file_id import get_file_id
-
-
 @Client.on_message(
     filters.command("telegraph") &
     f_onw_fliter
@@ -497,6 +491,72 @@ async def telegraph(client, message):
             ignore_errors=True
         )
 
+#cust filter py
+
+USE_AS_BOT = os.environ.get("USE_AS_BOT", True)
+
+def f_sudo_filter(filt, client, message):
+    return bool(
+        message.from_user.id in AUTH_USERS
+    )
+
+
+sudo_filter = filters.create(
+    func=f_sudo_filter,
+    name="SudoFilter"
+)
+
+
+def onw_filter(filt, client, message):
+    if USE_AS_BOT:
+        return bool(
+            True # message.from_user.id in ADMINS
+        )
+    else:
+        return bool(
+            message.from_user and
+            message.from_user.is_self
+        )
+
+
+f_onw_fliter = filters.create(
+    func=onw_filter,
+    name="OnwFilter"
+)
+
+
+async def admin_filter_f(filt, client, message):
+    return await admin_check(message)
+
+
+admin_fliter = filters.create(
+    func=admin_filter_f,
+    name="AdminFilter"
+)
+
+#get file id py
+
+def get_file_id(msg: Message):
+    if msg.media:
+        for message_type in (
+            "photo",
+            "animation",
+            "audio",
+            "document",
+            "video",
+            "video_note",
+            "voice",
+            # "contact",
+            # "dice",
+            # "poll",
+            # "location",
+            # "venue",
+            "sticker"
+        ):
+            obj = getattr(msg, message_type)
+            if obj:
+                setattr(obj, "message_type", message_type)
+                return obj
 
 
 
@@ -565,7 +625,7 @@ Thanks For Your Support...
 
 ⚙ More Features Adding Soon</b> 😎"""
 
-
+TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 PPC = environ.get("PPC", "https://telegra.ph/file/3b6afd6c6fcd09606ea9f.jpg")
 TG_MAX_SELECT_LEN = environ.get("TG_MAX_SELECT_LEN", "100")
 
