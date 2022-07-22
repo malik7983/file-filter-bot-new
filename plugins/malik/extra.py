@@ -480,7 +480,7 @@ async def report_user(bot, message):
 
 @Client.on_message(
     filters.command("telegraph") &
-    F_ONW_FLITER
+F_ONW_FLITER
 )
 async def telegraph(client, message):
     replied = message.reply_to_message
