@@ -1005,8 +1005,7 @@ async def advantage_spell_chok(msg):
         reply_markup = InlineKeyboardMarkup([[
         InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}")
         ],[
-        InlineKeyboardButton("🔍IMDB", url=f"https://www.imdb.com/find?q={reply}"),
-        InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search={reply}")
+        InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}release+date")
         ]]  
         )    
         a = await msg.reply_text(
