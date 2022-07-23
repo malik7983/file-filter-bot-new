@@ -1002,7 +1002,6 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'/', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-            if SPELL_MODE:
                 reply = search.replace(" ", '+')  
                 reply_markup = InlineKeyboardMarkup([[
                  InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}")
