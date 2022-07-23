@@ -974,12 +974,13 @@ async def advantage_spell_chok(msg):
     if not g_s:
         reply = query.replace(" ", '+')  
         reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🔍 Click Check Spilling ✅", url=f"https://www.google.com/search?q={reply}")
+        InlineKeyboardButton("🔍 Click To Check Spilling ✅", url=f"https://www.google.com/search?q={reply}")
         ],[
         InlineKeyboardButton("🔍 Click To Check Release Date 📅", url=f"https://www.google.com/search?q={reply}+release+date")
         ]]  
         )    
-        a = await msg.reply_text(
+        a = await msg.reply_photo(
+            photo=(SMART_PIC),
             text=(f"Hey, {msg.from_user.mention}!.. Your word <b>{query}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>"),
             reply_markup=reply_markup                 
         )
@@ -1013,12 +1014,13 @@ async def advantage_spell_chok(msg):
     if not movielist:
         reply = query.replace(" ", '+')  
         reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🔍 Click Check Spilling ✅", url=f"https://www.google.com/search?q={reply}")
+        InlineKeyboardButton("🔍 Click To Check Spilling ✅", url=f"https://www.google.com/search?q={reply}")
         ],[
         InlineKeyboardButton("🔍 Click To Check Release Date 📅", url=f"https://www.google.com/search?q={reply}+release+date")
         ]]  
         )    
-        a = await msg.reply_text(
+        a = await msg.reply_photo(
+            photo=(SMART_PIC),
             text=(f"Hey, {msg.from_user.mention}!.. Your word <b>{query}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>"),
             reply_markup=reply_markup                 
         )
