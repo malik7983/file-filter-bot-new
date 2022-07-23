@@ -974,9 +974,9 @@ async def advantage_spell_chok(msg):
     if not g_s:
         reply = query.replace(" ", '+')  
         reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}")
+        InlineKeyboardButton("🔍 Click Check Spilling ✅", url=f"https://www.google.com/search?q={reply}")
         ],[
-        InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}+release+date")
+        InlineKeyboardButton("🔍 Click To Check Release Date 📅", url=f"https://www.google.com/search?q={reply}+release+date")
         ]]  
         )    
         a = await msg.reply_text(
@@ -1013,13 +1013,13 @@ async def advantage_spell_chok(msg):
     if not movielist:
         reply = query.replace(" ", '+')  
         reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}")
+        InlineKeyboardButton("🔍 Click Check Spilling ✅", url=f"https://www.google.com/search?q={reply}")
         ],[
-        InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}+release+date")
+        InlineKeyboardButton("🔍 Click To Check Release Date 📅", url=f"https://www.google.com/search?q={reply}+release+date")
         ]]  
         )    
         a = await msg.reply_text(
-            text=(MOVIETET),
+            text=(f"Hey, {msg.from_user.mention}!.. Your word <b>{query}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>"),
             reply_markup=reply_markup                 
         )
         await asyncio.sleep(60) 
