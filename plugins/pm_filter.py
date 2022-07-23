@@ -1009,12 +1009,12 @@ async def advantage_spell_chok(msg):
         InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search={reply}")
         ]]  
         )    
-        atwfiltDl=await message.reply_text(
+        a = await msg.reply_text(
             text=MOVIETET.format(query=search, mention=message.from_user.mention),
             reply_markup=reply_markup                 
         )
         await asyncio.sleep(60) 
-        await atwfiltDl.delete()
+        await a.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
