@@ -1010,7 +1010,7 @@ async def advantage_spell_chok(msg):
         ]]  
         )    
         a = await msg.reply_text(
-            text=MOVIETET.format(query=search, mention=message.from_user.mention),
+            text=MOVIETET.format(query=query, mention=message.from_user.mention),
             reply_markup=reply_markup                 
         )
         await asyncio.sleep(60) 
