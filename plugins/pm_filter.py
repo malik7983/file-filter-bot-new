@@ -1002,20 +1002,20 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'/', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-                reply = search.replace(" ", '+')  
-                reply_markup = InlineKeyboardMarkup([[
-                 InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}")
-                 ],[
-                 InlineKeyboardButton("🔍IMDB", url=f"https://www.imdb.com/find?q={reply}"),
-                 InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search={reply}")
-                 ]]  
-                )    
-                atwfiltDl=await message.reply_text(
-                    text=SET_SPEL_M.format(query=search, mention=message.from_user.mention),
-                    reply_markup=reply_markup                 
-                )
-                await asyncio.sleep(60) 
-                await atwfiltDl.delete()
+        reply = search.replace(" ", '+')  
+        reply_markup = InlineKeyboardMarkup([[
+        InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}")
+        ],[
+        InlineKeyboardButton("🔍IMDB", url=f"https://www.imdb.com/find?q={reply}"),
+        InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search={reply}")
+        ]]  
+        )    
+        atwfiltDl=await message.reply_text(
+            text=MOVIETET.format(query=search, mention=message.from_user.mention),
+            reply_markup=reply_markup                 
+        )
+        await asyncio.sleep(60) 
+        await atwfiltDl.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
