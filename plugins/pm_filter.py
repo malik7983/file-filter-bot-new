@@ -980,7 +980,7 @@ async def advantage_spell_chok(msg):
         ]]  
         )    
         a = await msg.reply_text(
-            text=(MOVIETET),
+            text=(f"Hey, {msg.from_user.mention}!.. Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>",
             reply_markup=reply_markup                 
         )
         await asyncio.sleep(60) 
