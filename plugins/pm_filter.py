@@ -972,9 +972,19 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
-        await asyncio.sleep(8)
-        await k.delete()
+        reply = query.replace(" ", '+')  
+        reply_markup = InlineKeyboardMarkup([[
+        InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}")
+        ],[
+        InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}release+date")
+        ]]  
+        )    
+        a = await msg.reply_text(
+            text=(MOVIETET),
+            reply_markup=reply_markup                 
+        )
+        await asyncio.sleep(60) 
+        await a.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
     gs = list(filter(regex.match, g_s))
