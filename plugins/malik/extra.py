@@ -518,12 +518,12 @@ MQTT = """<b>⚠️ Hey, {}!.. Your word</b> 👉 <s>{}</S>... \n\n<b>is No Movi
 
 WCM = """<b>Hey {} .!   
 
-Welcome to 👉 <s>{}</s>
+🔹 Welcome to Our Group.. <s>{}</s>
 
 🔹 This is a Movie Group
 
 🔹 All Categories Of Movies
-   Available Here. .
+     Available Here. .
 
 🔹 Just Tipe The Movie Name
 
