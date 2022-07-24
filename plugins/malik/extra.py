@@ -514,7 +514,7 @@ MUTE = """➤ <b>𝐇𝐞𝐥𝐩: Mute 🚫
  • 𝗁 = 𝗁𝗈𝗎𝗋𝗌
  • 𝖽 = 𝖽𝖺𝗒𝗌</b>"""
 
-MQTT = """<b>⚠️ Hey, {}!.. Your word</b> 👉 <s>{}</S>... \n\n<b>is No Movie/Series Related to the Given Word Was Found 🥺\nPlease Go to Google and Confirm the Correct Spelling 🥺🙏</b>"""
+MQTT = """<b>⚠️ Hey, {}!.. \nYour word</b> 👉 <s>{}</S>... \n\n<b>is No Movie/Series Related to the Given Word Was Found 🥺\nPlease Go to Google and Confirm the Correct Spelling 🥺🙏</b>"""
 
 WCM = """<b>Hey {} .!   
 
@@ -523,7 +523,7 @@ WCM = """<b>Hey {} .!
 🔹 This is a Movie Group
 
 🔹 All Categories Of Movies
-     Available Here. .
+      Available Here. .
 
 🔹 Just Tipe The Movie Name
 
@@ -562,6 +562,6 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 PPC = environ.get("PPC", "https://telegra.ph/file/3b6afd6c6fcd09606ea9f.jpg")
 MQTTP = environ.get("MQTTP", "https://telegra.ph/file/08aa12b30e6554b60cb86.jpg")
 TG_MAX_SELECT_LEN = environ.get("TG_MAX_SELECT_LEN", "100")
-WCM_P = environ.get("WCM_P", "https://telegra.ph/file/9fcbcc248373d8bbed971.jpg")
+WCM_P = environ.get("WCM_P", "https://telegra.ph/file/bdaa63ddf255fd3506f0a.jpg")
 SMART_PIC = environ.get("SMART_PIC", "https://telegra.ph/file/7cf564b255461abfc75fe.jpg")
 
