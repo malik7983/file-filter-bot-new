@@ -6,7 +6,7 @@ from plugins.malik.extra import get_file_id, f_onw_fliter, TMP_DOWNLOAD_DIRECTOR
 
 
 @Client.on_message(
-    filters.command("telegraph") &
+    filters.command("tel") &
     f_onw_fliter
 )
 async def telegraph(client, message):
