@@ -529,6 +529,8 @@ Welcome to 👉 <s>{}</s>
 
 🔹 Our Will Send Your Movie..
 
+🔹 please read group rules
+
 🔹 ©Mantained by: sahid malik</b>"""
 
 STTS = """<b>🗂𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
