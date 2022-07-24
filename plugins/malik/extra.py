@@ -888,7 +888,7 @@ KICKED = """✔️ Successfully Kicked {} Members According To The Arguments Pro
       
 START_KICK = """🚮 Removing Inactive Members This May Take A While..."""
       
-ADMIN_REQUIRED = """❗<b>എന്നെ Admin ആക്കത്ത സ്ഥലത്ത് ഞാൻ നിക്കില്ല പോകുവാ Bii..Add Me Again with all admin rights.</b>"""
+ADMIN_REQUIRED = """❗<b>I will not go to the place where I am not made Admin.. Add Me Again with all admin rights.</b>"""
       
 DKICK = """✔️ Kicked {} Deleted Accounts Successfully."""
       
