@@ -1034,6 +1034,8 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
+    await msg.reply(f"<b>Hey, {msg.from_user.mention}...😎\n\nCHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. \n\n दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें 👇👇👇</b>",
+                    reply_markup=InlineKeyboardMarkup(btn))
     reply = query.replace(" ", '+')  
     reply_markup = InlineKeyboardMarkup([[
     InlineKeyboardButton("🔍 Click To Check Spilling ✅", url=f"https://www.google.com/search?q={reply}")
@@ -1048,8 +1050,7 @@ async def advantage_spell_chok(msg):
     )    
     await asyncio.sleep(100) 
     await a.delete()
-    return 
-        reply_markup=InlineKeyboardMarkup(btn))
+        
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
