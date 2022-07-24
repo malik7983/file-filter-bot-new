@@ -2,9 +2,8 @@ import os
 import shutil
 from pyrogram import Client, filters
 from telegraph import upload_file
-from info import TMP_DOWNLOAD_DIRECTORY
 from plugins.malik.cust_p_filters import f_onw_fliter
-from plugins.malik.extra import get_file_id
+from plugins.malik.extra import get_file_id, TMP_DOWNLOAD_DIRECTORY
 
 
 @Client.on_message(
