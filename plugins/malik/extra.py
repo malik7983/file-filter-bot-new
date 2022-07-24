@@ -524,13 +524,14 @@ Welcome to 👉 <s>{}</s>
 
 🔹 This is a Movie Group
 
-🔹 All Categories Of Movies    Available Here. .
+🔹 All Categories Of Movies
+   Available Here. .
 
 🔹 Just Tipe The Movie Name
 
 🔹 Our Will Send Your Movie..
 
- ©Mantained by: sahid malik</b>"""
+🔹 ©Mantained by: sahid malik</b>"""
 
 STTS = """<b>🗂𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
 👨‍👩‍👧‍👧 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
