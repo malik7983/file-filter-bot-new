@@ -724,10 +724,16 @@ def inkick(client, message):
             sleep(e.x)
       try:
         sent_message.edit(KICKED.format(count))
+        sleep(15)
+        sent_message.delete()
+        message.delete()
       except ChatWriteForbidden:
         pass
     else:
-      message.reply_text(INPUT_REQUIRED)
+    sent_message = message.reply_text(INPUT_REQUIRED)
+    sleep(15)
+    sent_message.delete()
+    message.delete()
   else:
     sent_message = message.reply_text(CREATOR_REQUIRED)
     sleep(5)
@@ -794,7 +800,7 @@ def instatus(client, message):
       else:
         uncached += 1
     sent_message.edit(STATUS.format(message.chat.title, recently, within_week, within_month, long_time_ago, deleted_acc, bot, uncached))
-    sleep(20)
+    sleep(60)
     sent_message.delete()
     message.delete()
 
