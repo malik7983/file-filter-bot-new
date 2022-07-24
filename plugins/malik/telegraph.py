@@ -9,7 +9,7 @@ from plugins.malik.extra import get_file_id, f_onw_fliter, TMP_DOWNLOAD_DIRECTOR
     filters.command("telegraph", "tel") &
     f_onw_fliter
 )
-async def teltelegraph(client, message):
+async def telegraph(client, message):
     replied = message.reply_to_message
     if not replied:
         await message.reply_text("𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙰 𝙿𝙷𝙾𝚃𝙾 𝙾𝚁 𝚅𝙸𝙳𝙴𝙾 𝚄𝙽𝙳𝙴𝚁 𝟻𝙼𝙱.")
