@@ -1,14 +1,14 @@
 # sahid malik
 import asyncio
 from pyrogram import Client, filters
-from plugins.malik.extra import GHHMT, STTS, PPC
+from plugins.malik.extra import GHHMT, STTS, PPC, WCM
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
 from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, PHT, MELCOW_NEW_USERS, MALIK_PH
 from database.users_chats_db import db
 from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
-from Script import script, MALIK_PHH, ADG
+from Script import script, ADG
 from pyrogram.errors import ChatAdminRequired
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
@@ -59,7 +59,7 @@ async def save_group(bot, message):
                         pass
                 temp.MELCOW['welcome'] = await message.reply_photo(
                                                  photo=(MALIK_PH),
-                                                 caption=(MALIK_PHH.format(u.mention, message.chat.title)),
+                                                 caption=(WCM.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
                                                                            InlineKeyboardButton('♻️ Contact Owner ♻️', url="https://t.me/sahid_malik")
