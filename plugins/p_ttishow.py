@@ -1,7 +1,7 @@
 # sahid malik
 import asyncio
 from pyrogram import Client, filters
-from plugins.malik.extra import GHHMT, STTS, PPC, WCM
+from plugins.malik.extra import GHHMT, STTS, PPC, WCM, WCM_P
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
 from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, PHT, MELCOW_NEW_USERS, MALIK_PH
@@ -58,7 +58,7 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_photo(
-                                                 photo=(MALIK_PH),
+                                                 photo=(WCM_P),
                                                  caption=(WCM.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
