@@ -1,4 +1,6 @@
 #malik
+from __future__ import unicode_literals
+
 import requests
 import aiohttp
 import yt_dlp
@@ -22,7 +24,6 @@ import os
 import pyrogram
 import asyncio
 from os import environ
-from __future__ import unicode_literals
 from info import PHT, ADMINS, AUTH_USERS
 from Script import script
 import time
