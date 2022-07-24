@@ -737,9 +737,9 @@ def inkick(client, message):
       except ChatWriteForbidden:
         pass
     else:
-      message.reply_text(INPUT_REQUIRED),
+      message.reply_text(INPUT_REQUIRED)
   else:
-    sent_message = message.reply_text(CREATOR_REQUIRED),
+    sent_message = message.reply_text(CREATOR_REQUIRED)
     sleep(5)
     sent_message.delete()
     message.delete()
@@ -748,7 +748,7 @@ def inkick(client, message):
 def dkick(client, message):
   user = client.get_chat_member(message.chat.id, message.from_user.id)
   if user.status == ("creator"):
-    sent_message = message.reply_text(START_KICK),
+    sent_message = message.reply_text(START_KICK)
     sleep(20)
     sent_message.delete()
     message.delete()
@@ -779,7 +779,7 @@ def dkick(client, message):
 def instatus(client, message):
   user = client.get_chat_member(message.chat.id, message.from_user.id)
   if user.status in ('administrator', 'creator', 'ADMINS'):
-    sent_message = message.reply_text(FETCHING_INFO),
+    sent_message = message.reply_text(FETCHING_INFO)
     recently = 0
     within_week = 0
     within_month = 0
@@ -803,7 +803,7 @@ def instatus(client, message):
         long_time_ago += 1
       else:
         uncached += 1
-    sent_message.tuple(STATUS.format(message.chat.title, recently, within_week, within_month, long_time_ago, deleted_acc, bot, uncached))
+    sent_message.edit(STATUS.format(message.chat.title, recently, within_week, within_month, long_time_ago, deleted_acc, bot, uncached))
 
 
 
