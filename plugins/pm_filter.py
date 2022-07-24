@@ -981,7 +981,7 @@ async def advantage_spell_chok(msg):
         )    
         a = await msg.reply_photo(
             photo=(SMART_PIC),
-            caption=(f"Hey, {msg.from_user.mention}!.. Your word <b>{query}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>"),
+            caption=(MOVIETET.format(u.mention, query)),
             reply_markup=reply_markup                 
         )
         await asyncio.sleep(60) 
