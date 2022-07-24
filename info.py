@@ -1,10 +1,6 @@
 import re
 from os import environ
 import asyncio
-import json
-from collections import defaultdict
-from typing import Dict, List, Union
-from pyrogram import Client
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
@@ -15,25 +11,6 @@ def is_enabled(value, default):
     else:
         return default
 
-class evamaria(Client):
-    filterstore: Dict[str, Dict[str, str]] = defaultdict(dict)
-    warndatastore: Dict[
-        str, Dict[str, Union[str, int, List[str]]]
-    ] = defaultdict(dict)
-    warnsettingsstore: Dict[str, str] = defaultdict(dict)
-
-    def __init__(self):
-        name = self.__class__.__name__.lower()
-        super().__init__(
-            ":memory:",
-            plugins=dict(root=f"{name}/plugins"),
-            workdir=TMP_DOWNLOAD_DIRECTORY,
-            api_id=APP_ID,
-            api_hash=API_HASH,
-            bot_token=BOT_TOKEN,
-            parse_mode="html",
-            sleep_threshold=60
-        )
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
@@ -51,7 +28,6 @@ M_N_F = environ.get("M_N_F", "https://telegra.ph/file/7cf564b255461abfc75fe.jpg"
 PHT = environ.get("PHT", "https://telegra.ph/file/9b77b96a9d2f5dda7764b.jpg")
 PHTT = environ.get("PHTT", "https://telegra.ph/file/1ddc551c64a4afd5a660e.mp4")
 M_NT_F = environ.get("M_NT_F", "https://telegra.ph/file/617049055ac50169d7e2f.jpg")
-TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
