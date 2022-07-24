@@ -981,7 +981,7 @@ async def advantage_spell_chok(msg):
         )    
         a = await msg.reply_photo(
             photo=(SMART_PIC),
-            caption=(MOVIETET.format(u.mention, query)),
+            caption=(MOVIETET.format(msg.from_user.mention, query)),
             reply_markup=reply_markup                 
         )
         await asyncio.sleep(60) 
@@ -1021,7 +1021,7 @@ async def advantage_spell_chok(msg):
         )    
         a = await msg.reply_photo(
             photo=(SMART_PIC),
-            caption=(MOVIETET.format(u.mention, query)),
+            caption=(MOVIETET.format(msg.from_user.mention, query)),
             reply_markup=reply_markup                 
         )
         await asyncio.sleep(60) 
