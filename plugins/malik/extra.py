@@ -28,6 +28,7 @@ from info import PHT, ADMINS, AUTH_USERS
 from Script import script
 import time
 from time import time, sleep
+from pyrogram.errors import FloodWait
 from typing import List
 from pyrogram.types.messages_and_media import message
 from pyrogram.types import Message, ChatPermissions, InlineKeyboardButton
