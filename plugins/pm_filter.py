@@ -1034,8 +1034,9 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.text(MQTTT.format(query)),
-                    reply_markup=InlineKeyboardMarkup(btn))
+    await msg.reply(
+                  text=(MQTTT.format(query)),
+                  reply_markup=InlineKeyboardMarkup(btn))
     reply = query.replace(" ", '+')  
     reply_markup = InlineKeyboardMarkup([[
     InlineKeyboardButton("🔍 Click To Check Spilling ✅", url=f"https://www.google.com/search?q={reply}")
