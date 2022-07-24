@@ -803,7 +803,7 @@ def instatus(client, message):
         long_time_ago += 1
       else:
         uncached += 1
-    sent_message.text(STATUS.format(message.chat.title, recently, within_week, within_month, long_time_ago, deleted_acc, bot, uncached))
+    sent_message.tuple(STATUS.format(message.chat.title, recently, within_week, within_month, long_time_ago, deleted_acc, bot, uncached))
 
 
 
