@@ -63,9 +63,7 @@ async def get_ststs(bot, message):
                text=(GHHMT.format(total_users)),
                reply_markup=InlineKeyboardMarkup(
                                       [[
-                                        InlineKeyboardButton('💢 Request to admin 💢', url="https://t.me/m_admins"),
-                                        InlineKeyboardButton('💢 Request to admin 💢', url="https://t.me/m_admins")
-                                                                         
+                                        InlineKeyboardButton('🌐 Add Me To Your Groups 🌐', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                                       ]]
                ),
                parse_mode='html'
@@ -562,6 +560,6 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 PPC = environ.get("PPC", "https://telegra.ph/file/3b6afd6c6fcd09606ea9f.jpg")
 MQTTP = environ.get("MQTTP", "https://telegra.ph/file/08aa12b30e6554b60cb86.jpg")
 TG_MAX_SELECT_LEN = environ.get("TG_MAX_SELECT_LEN", "100")
-WCM_P = environ.get("WCM_P", "https://telegra.ph/file/bdaa63ddf255fd3506f0a.jpg")
+WCM_P = environ.get("WCM_P", "https://telegra.ph/file/40041311faa3ac18cc2b6.jpg")
 SMART_PIC = environ.get("SMART_PIC", "https://telegra.ph/file/7cf564b255461abfc75fe.jpg")
 
