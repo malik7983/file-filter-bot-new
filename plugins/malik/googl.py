@@ -1,3 +1,0 @@
-       
-MOVIETET = """malik {}.   {}.."""
-     
