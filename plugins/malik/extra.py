@@ -516,7 +516,7 @@ MUTE = """➤ <b>𝐇𝐞𝐥𝐩: Mute 🚫
  • 𝗁 = 𝗁𝗈𝗎𝗋𝗌
  • 𝖽 = 𝖽𝖺𝗒𝗌</b>"""
 
-MQTT = """<b>⚠️ Hey, {}!.. Your word</b> 👉 <s>{}</S> \n<b>is No Movie/Series Related to the Given Word Was Found 🥺\nPlease Go to Google and Confirm the Correct Spelling 🥺🙏</b>"""
+MQTT = """<b>⚠️ Hey, {}!.. Your word</b> 👉 <s>{}</S>... \n\n<b>is No Movie/Series Related to the Given Word Was Found 🥺\nPlease Go to Google and Confirm the Correct Spelling 🥺🙏</b>"""
 
 
 STTS = """<b>🗂𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
