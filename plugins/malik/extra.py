@@ -727,13 +727,13 @@ def inkick(client, message):
             count += 1
             sleep(1)
           except (ChatAdminRequired, UserAdminInvalid):
-            sent_message.edit(script.ADMIN_REQUIRED)
+            sent_message.edit(ADMIN_REQUIRED),
             client.leave_chat(message.chat.id)
             break
           except FloodWait as e:
             sleep(e.x)
       try:
-        sent_message.edit(KICKED.format(count))
+        sent_message.edit(KICKED.format(count)),
       except ChatWriteForbidden:
         pass
     else:
@@ -760,7 +760,7 @@ def dkick(client, message):
           count += 1
           sleep(1)
         except (ChatAdminRequired, UserAdminInvalid):
-          sent_message.edit(script.ADMIN_REQUIRED)
+          sent_message.edit(ADMIN_REQUIRED),
           client.leave_chat(message.chat.id)
           break
         except FloodWait as e:
