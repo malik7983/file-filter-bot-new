@@ -730,10 +730,10 @@ def inkick(client, message):
       except ChatWriteForbidden:
         pass
     else:
-    sent_message = message.reply_text(INPUT_REQUIRED)
-    sleep(15)
-    sent_message.delete()
-    message.delete()
+      sent_message = message.reply_text(INPUT_REQUIRED)
+      sleep(15)
+      sent_message.delete()
+      message.delete()
   else:
     sent_message = message.reply_text(CREATOR_REQUIRED)
     sleep(5)
