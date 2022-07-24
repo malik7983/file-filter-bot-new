@@ -1045,6 +1045,7 @@ async def advantage_spell_chok(msg):
         photo=(MQTTP),
         caption=(MQTTT.format(query)),
         reply_markup=reply_markup
+    else:
         reply_markup=InlineKeyboardMarkup(btn))    
     await asyncio.sleep(100) 
     await a.delete()
