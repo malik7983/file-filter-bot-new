@@ -1,7 +1,6 @@
 #malik
+
 from __future__ import unicode_literals
-
-
 import math
 import wget
 import time
