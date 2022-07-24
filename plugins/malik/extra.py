@@ -892,7 +892,7 @@ ADMIN_REQUIRED = """❗<b>എന്നെ Admin ആക്കത്ത സ്ഥ�
       
 DKICK = """✔️ Kicked {} Deleted Accounts Successfully."""
       
-FETCHING_INFO = """<b>ഇപ്പൊ എല്ലാം അടിച്ചുമാറ്റി തരാം...</b>"""
+FETCHING_INFO = """<b>wait...</b>"""
       
 STATUS = """{}\n<b>Chat Member Status</b>**\n\n```<i>Recently``` - {}\n```Within Week``` - {}\n```Within Month``` - {}\n```Long Time Ago``` - {}\nDeleted Account - {}\nBot - {}\nUnCached - {}</i>
 """
