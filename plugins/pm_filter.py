@@ -2,8 +2,7 @@
 import asyncio
 import re
 import ast
-from plugins.malik.extra import MOVIETET
-from plugins.malik.extra import GHHMT, STTS, PPC, REPORT, PURGE, MUTE
+from plugins.malik.extra import GHHMT, STTS, MQTT, MQTTP, PPC, REPORT, PURGE, MUTE
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script, ALURT_FND, M_NT_FND, M_NNT_FND, M_NNT_FNDD
 import pyrogram
@@ -980,11 +979,11 @@ async def advantage_spell_chok(msg):
         ]]  
         )    
         a = await msg.reply_photo(
-            photo=(SMART_PIC),
-            caption=(MOVIETET.format(msg.from_user.mention, query)),
+            photo=(MQTTP),
+            caption=(MQTT.format(msg.from_user.mention, query)),
             reply_markup=reply_markup                 
         )
-        await asyncio.sleep(60) 
+        await asyncio.sleep(100) 
         await a.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
@@ -1020,11 +1019,11 @@ async def advantage_spell_chok(msg):
         ]]  
         )    
         a = await msg.reply_photo(
-            photo=(SMART_PIC),
-            caption=(MOVIETET.format(msg.from_user.mention, query)),
+            photo=(MQTTP),
+            caption=(MQTT.format(msg.from_user.mention, query)),
             reply_markup=reply_markup                 
         )
-        await asyncio.sleep(60) 
+        await asyncio.sleep(100) 
         await a.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
