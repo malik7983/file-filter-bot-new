@@ -29,6 +29,11 @@ from Script import script
 import time
 from time import time, sleep
 from pyrogram.errors import FloodWait
+from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
+from pyrogram.errors.exceptions.bad_request_400 import ChatAdminRequired, UserAdminInvalid
+
+
+
 from typing import List
 from pyrogram.types.messages_and_media import message
 from pyrogram.types import Message, ChatPermissions, InlineKeyboardButton
@@ -703,15 +708,6 @@ async def vsong(client, message: Message):
 
 
 # kick py
-
-
-
-
-
-from pyrogram.errors import FloodWait
-from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
-from pyrogram.errors.exceptions.bad_request_400 import ChatAdminRequired, UserAdminInvalid
-
 
 @Client.on_message(filters.incoming & ~filters.private & filters.command('inkick'))
 def inkick(client, message):
