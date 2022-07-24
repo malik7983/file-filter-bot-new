@@ -518,11 +518,13 @@ MUTE = """➤ <b>𝐇𝐞𝐥𝐩: Mute 🚫
 
 MQTT = """<b>⚠️ Hey, {}!.. Your word</b> 👉 <s>{}</S>... \n\n<b>is No Movie/Series Related to the Given Word Was Found 🥺\nPlease Go to Google and Confirm the Correct Spelling 🥺🙏</b>"""
 
-WCM = """<b>Hey {} .!   Welcome to <s>{}..</s>
+WCM = """<b>Hey {} .!   
+
+Welcome to 👉 <s>{}</s>
 
 🔹 This is a Movie Group
 
-🔹 All Categories Of Movies Available Here. .
+🔹 All Categories Of Movies    Available Here. .
 
 🔹 Just Tipe The Movie Name
 
