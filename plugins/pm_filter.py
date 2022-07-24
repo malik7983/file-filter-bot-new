@@ -1034,13 +1034,20 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    m = await msg.reply_video(video=(VIDEO_VD),
-                            caption=(ALURT_FND.format(query)),
-                    reply_markup=InlineKeyboardMarkup(btn))
-    await asyncio.sleep(600)
-    await m.delete()
-
-
+        reply = query.replace(" ", '+')  
+        reply_markup = InlineKeyboardMarkup([[
+        InlineKeyboardButton("🔍 Click To Check Spilling ✅", url=f"https://www.google.com/search?q={reply}")
+        ],[
+        InlineKeyboardButton("🔍 Click To Check Release Date 📅", url=f"https://www.google.com/search?q={reply}+release+date")
+        ]]  
+        )    
+        a = await msg.reply_photo(
+            photo=(MQTTP),
+            caption=(MQTT.format(msg.from_user.mention, query)),
+            reply_markup=reply_markup                 
+        )
+        await asyncio.sleep(100) 
+        await a.delete()
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
