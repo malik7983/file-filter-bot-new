@@ -760,7 +760,7 @@ def dkick(client, message):
           count += 1
           sleep(1)
         except (ChatAdminRequired, UserAdminInvalid):
-          sent_message.edit(ADMIN_REQUIRED),
+          sent_message.edit(ADMIN_REQUIRED)
           client.leave_chat(message.chat.id)
           break
         except FloodWait as e:
@@ -770,7 +770,7 @@ def dkick(client, message):
     except ChatWriteForbidden:
       pass
   else:
-    sent_message = message.reply_text(CREATOR_REQUIRED),
+    sent_message = message.reply_text(CREATOR_REQUIRED)
     sleep(5)
     sent_message.delete()
     message.delete()
