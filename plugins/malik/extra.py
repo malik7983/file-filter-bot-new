@@ -516,7 +516,7 @@ MQTT = """<b>⚠️ Hey, {}!..
 
 Your word</b> 👉 <s>{}</S>...
 <b>is No Movie/Series Related to the Given Word Was Found 🥺
-Please Go to Google and Confirm the Correct Spelling 🥺🙏</b> <b><a href=https://www.google.com>Google</a></b>"""
+Please Go to Google and Confirm the Correct Spelling 🥺</b> <b><a href=https://www.google.com>Google</a></b>"""
 
 
 WCM = """<b>Hey {} .!   
