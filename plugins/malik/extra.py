@@ -794,8 +794,9 @@ def instatus(client, message):
       else:
         uncached += 1
     sent_message.edit(STATUS.format(message.chat.title, recently, within_week, within_month, long_time_ago, deleted_acc, bot, uncached))
-
-
+    sleep(20)
+    sent_message.delete()
+    message.delete()
 
 
 
