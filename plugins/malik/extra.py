@@ -1,10 +1,8 @@
 #malik
 import re
 import os
-import shutil
 import pyrogram
 import asyncio
-from telegraph import upload_file
 from os import environ
 from info import PHT, ADMINS, AUTH_USERS
 from Script import script
