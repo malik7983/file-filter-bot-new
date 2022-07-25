@@ -1048,9 +1048,9 @@ async def advantage_spell_chok(msg):
         caption=(MQTT.format(msg.from_user.mention, query)),
         reply_markup=reply_markup 
     ) 
-    await asyncio.sleep(10)
+    await asyncio.sleep(300)
     await m.delete()               
-    await asyncio.sleep(10) 
+    await asyncio.sleep(30) 
     await a.delete()
         
 
