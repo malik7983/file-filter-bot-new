@@ -1043,11 +1043,6 @@ async def advantage_spell_chok(msg):
     InlineKeyboardButton("🔍 Click To Check Ott Release Date 🖥", url=f"https://www.google.com/search?q={reply}+ott+release+date")
     ]]  
     )    
-    a = await msg.reply_photo(
-        photo=(MQTTP),
-        caption=(MQTT.format(msg.from_user.mention, query)),
-        reply_markup=reply_markup 
-    ) 
     m = await msg.reply(f"<b>Hey, {msg.from_user.mention}...😎\n\nCHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. \n\n दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें 👇👇👇</b>",
                     reply_markup=InlineKeyboardMarkup(btn))
 
