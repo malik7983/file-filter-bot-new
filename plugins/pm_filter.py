@@ -1045,8 +1045,7 @@ async def advantage_spell_chok(msg):
     )
     a = await msg.reply_text(
         text=(MQTT.format(msg.from_user.mention, query)), 
-        reply_markup=reply_markup(btn))          
-    )
+        reply_markup=reply_markup(btn)),         
 
 
 
