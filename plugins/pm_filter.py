@@ -971,20 +971,9 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        reply = query.replace(" ", '+')  
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🔍 Click To Check Spilling ✅", url=f"https://www.google.com/search?q={reply}")
-        ],[
-        InlineKeyboardButton("🔍 Click To Check Release Date 📅", url=f"https://www.google.com/search?q={reply}+release+date")
-        ]]  
-        )    
-        a = await msg.reply_photo(
-            photo=(MQTTP),
-            caption=(MQTT.format(msg.from_user.mention, query)),
-            reply_markup=reply_markup                 
-        )
-        await asyncio.sleep(100) 
-        await a.delete()
+        k = await msg.reply("I couldn't find any movie in that name.")
+        await asyncio.sleep(8)
+        await k.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
     gs = list(filter(regex.match, g_s))
@@ -1011,20 +1000,9 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        reply = query.replace(" ", '+')  
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🔍 Click To Check Spilling ✅", url=f"https://www.google.com/search?q={reply}")
-        ],[
-        InlineKeyboardButton("🔍 Click To Check Release Date 📅", url=f"https://www.google.com/search?q={reply}+release+date")
-        ]]  
-        )    
-        a = await msg.reply_photo(
-            photo=(MQTTP),
-            caption=(MQTT.format(msg.from_user.mention, query)),
-            reply_markup=reply_markup                 
-        )
-        await asyncio.sleep(100) 
-        await a.delete()
+        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        await asyncio.sleep(8)
+        await k.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
@@ -1034,18 +1012,10 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    reply = query.replace(" ", '+')
-    InlineKeyboardMarkup = InlineKeyboardMarkup([[
-    InlineKeyboardButton("🔍 Click To Check Spilling ✅", url=f"https://www.google.com/search?q={reply}")
-    ],[
-    InlineKeyboardButton("🔍 Click To Check Release Date 📅", url=f"https://www.google.com/search?q={reply}+release+date")
-    ],[
-    InlineKeyboardButton("🔍 Click To Check Ott Release Date 🖥", url=f"https://www.google.com/search?q={reply}+ott+release+date")
-    ]]  
-    )
-    a = await msg.reply_text(
-        text=(MQTT.format(msg.from_user.mention, query)), 
-        reply_markup=InlineKeyboardMarkup(btn)),         
+    m = await msg.reply(f"<b>Hey, {msg.from_user.mention}...😎\n\nCHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. \n\n दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें 👇👇👇</b>",
+                    reply_markup=InlineKeyboardMarkup(btn))
+    await asyncio.sleep(300)
+    await m.delete()
 
 
 
