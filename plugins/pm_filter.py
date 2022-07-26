@@ -939,20 +939,20 @@ async def auto_filter(client, msg, spoll=False):
     if imdb and imdb.get('poster'):
         try:
             abc = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(10)
+            await asyncio.sleep(300)
             await abc.delete()
             await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             sbs = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(10)
+            await asyncio.sleep(300)
             await sbs.delete()
             await message.delete()
         except Exception as e:
             logger.exception(e)
             mbb = await message.reply_photo(photo=SMART_PIC, caption=cap, reply_markup=InlineKeyboardMarkup(btn)) 
-            await asyncio.sleep(10)
+            await asyncio.sleep(300)
             await mbb.delete()
             await message.delete()
     else:
