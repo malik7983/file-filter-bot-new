@@ -2,7 +2,7 @@
 import asyncio
 import re
 import ast
-from plugins.malik.Gfilter import manual_filters
+from plugins.malik.Gfilter import manual_filters, advantage_spell_chok
 from plugins.malik.extra import GHHMT, SMART_PIC, STTS, MQTT, MQTTT, MQTTP, PPC, REPORT, PURGE, MUTE
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script, ALURT_FND, M_NT_FND, M_NNT_FND, M_NNT_FNDD
