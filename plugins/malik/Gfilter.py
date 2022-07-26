@@ -1,3 +1,36 @@
+# Kanged From @sahid malik
+import asyncio
+import re
+import ast
+
+from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
+from Script import script, ALURT_FND, M_NT_FND
+import pyrogram
+from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
+    make_inactive
+from info import ADMINS, AUTH_CHANNEL, VIDEO_VD, AUTH_USERS, M_NT_F, SMART_PIC, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, \
+    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+from pyrogram import Client, filters
+from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
+from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings
+from database.users_chats_db import db
+from database.ia_filterdb import Media, get_file_details, get_search_results
+from database.filters_mdb import (
+    del_all,
+    find_filter,
+    get_filters,
+)
+import logging
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.ERROR)
+
+BUTTONS = {}
+SPELL_CHECK = {}
+
+
+
 async def advantage_spell_chok(msg):
     query = re.sub(
         r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)",
